@@ -1,0 +1,113 @@
+.custom-checkbox {
+  input + label {
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+      color: #6ABC00;
+      &:after {
+        border-color: #6ABC00;
+      }
+    }
+  }
+  input:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  input:not(checked) + label {
+    position: relative;
+    padding-left: 19px;
+  }
+  input:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #e4e2e2;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    width: 14px;
+    height: 14px;
+  }
+  input:not(checked) + label:before {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 8px;
+    border-left: 2px solid #6ABC00;
+    border-bottom: 2px solid #6ABC00;
+    left: 3px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: all .2s;
+  }
+  input:checked + label:before {
+    opacity: 1;
+  }
+  input:checked + label:after {
+    border-color: #6ABC00;
+  }
+  input:checked + label {
+    color: #6ABC00;
+  }
+}
+
+//-------------------------------------------------------------------------------------
+
+.custom-radio {
+  input + label {
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+      color: #6ABC00;
+      &:after {
+        border-color: #6ABC00;
+      }
+    }
+  }
+  input:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  input:not(checked) + label {
+    position: relative;
+    padding-left: 19px;
+  }
+  input:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    border: 2px solid #e4e2e2;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    width: 14px;
+    height: 14px;
+  }
+  input:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #6ABC00;
+    opacity: 0;
+    transition: all .2s;
+  }
+  input:checked + label:before {
+    opacity: 1;
+  }
+  input:checked + label:after {
+    border-color: #6ABC00;
+  }
+  input:checked + label {
+    color: #6ABC00;
+  }
+}

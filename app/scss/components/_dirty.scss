@@ -1,0 +1,19 @@
+//Dirty
+.dirty {
+    background-color: $grey_bg;
+    
+    &__wrp {
+        padding-top: em(110);
+        padding-bottom: em(110);
+        text-align: center;
+    }
+    
+    &__heading {
+        margin-bottom: em(26,24);
+    }
+
+    &_size_xs &__wrp {
+        padding-top: em(80);
+        padding-bottom: em(80);
+    }
+}

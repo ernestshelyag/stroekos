@@ -1,0 +1,90 @@
+//Post-slider
+.post-slider {
+    margin-right: -$col_lg;
+    @include clearfix;
+    position: relative;
+
+    .slick-arrow {
+        position: absolute;
+        z-index: 3;
+        top: -($col_lg*1.5 + $col_lg/2);
+        font-size: $col_lg/2;
+        line-height: 1;
+        @include transition(all 0.4s ease);
+
+        &:hover {
+            color: $green;
+        }
+
+        &:active {
+            @include scale(0.9);
+        }
+
+        .icon {
+            display: inline-block;
+            padding: $col_lg/2;
+        }
+    }
+
+    .slick-prev {
+        right: $col_lg*3;
+    }
+
+    .slick-next {
+        right: $col_lg*1.5;
+    }
+
+    @media #{$breakpointDisplay} {
+        margin-right: -$col_md;
+
+        .slick-arrow {
+            top: -($col_lg*1.5 + $col_md - $col_lg/2);
+        }
+
+        .slick-prev {
+            right: $col_md*2;
+        }
+
+        .slick-next {
+            right: $col_md - $col_lg/2;
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        margin-right: -$col_sm;
+
+        .slick-arrow {
+            top: -($col_lg*1.5 + $col_sm - $col_lg/2);
+        }
+
+        .slick-prev {
+            right: $col_sm*2;
+        }
+
+        .slick-next {
+            right: $col_sm - $col_lg/2;
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        margin-right: 0;
+        
+        .slick-arrow {
+            top: auto;
+            bottom: - ($col_lg/2 - $col_xs*2);
+
+            .icon {
+                padding: $col_xs $col_xs/2;
+            }
+        }
+
+        .slick-prev {
+            right: 50%;
+        }
+
+        .slick-next {
+            right: auto;
+            left: 50%;
+        }
+    }
+}

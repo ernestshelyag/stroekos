@@ -1,0 +1,138 @@
+//Howitworks
+.howitworks {
+    @extend %gradient;
+    min-height: 440px;
+    position: relative;
+    z-index: 3;
+    @extend %shadow;
+    
+    &__wrp {
+        @extend %wrp;
+        @extend %padding_g;
+        position: relative;
+    }
+    
+    &__img {
+        position: absolute;
+        width: $col_lg*7;// 7 columns
+        top: 60px;
+        left: $col_lg*2;
+        line-height: 0;
+        z-index: 1;
+        
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    &__content {
+        padding-left: $col_lg*7;// 7 columns
+        padding-top: em(70);
+        padding-bottom: em(65);
+        z-index: 2;
+        position: relative;
+    }
+    
+    &__heading {
+        color: #fff;
+    }
+    
+    &__caption {
+        color: #fff;
+        margin: em(30,17) 0;
+    }
+    
+    &__hint {
+        color: $green_light;
+        margin: 1em 0 0;
+    }
+
+    @media #{$breakpointDisplay} {
+        min-height: 350px;
+        
+        &__img {
+            width: $col_md*7.5;// 7 columns
+            left: $col_md/4;
+        }
+
+        &__content {
+            padding-left: $col_md*7;// 7 columns
+            padding-top: em(36,15);
+            padding-bottom: em(32,15);
+        }
+
+        &__heading {
+            margin-bottom: em(36,36);
+        }
+
+        &__caption {
+            color: #fff;
+            margin: em(15,15) 0;
+        }
+
+        &__hint {
+            font-size: em(20,15);
+            line-height: em(27,20);
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        min-height: 326px;
+
+        &__img {
+            width: $col_sm*9;// 9 columns
+            left: 5px;
+        }
+
+        &__content {
+            padding-left: $col_sm*8;// 8 columns
+            padding-top: em(41,13);
+            padding-bottom: 2px;
+        }
+
+        &__heading {
+            margin-bottom: em(27,27);
+        }
+
+        &__caption {
+            color: #fff;
+            margin: em(15,15) 0;
+        }
+
+        &__hint {
+            font-size: em(14,13);
+            line-height: em(20,14);
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        min-height: 340px;
+
+        &__img {
+            display: none;
+        }
+
+        &__content {
+            padding-top: em(30,12);
+            padding-left: $col_sm*0.5;
+            padding-right: $col_sm*0.5;
+            text-align: center;
+        }
+
+        &__heading {
+            margin-bottom: em(14,21);
+        }
+
+        &__caption {
+            font-size: em(14,12);
+            line-height: em(16,14);
+            margin: em(14,14) 0;
+        }
+
+        &__hint {
+            font-size: em(14,12);
+            line-height: em(20,14);
+            margin-top:em(22,14);
+        }
+    }
+}

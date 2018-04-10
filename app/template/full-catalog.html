@@ -1,0 +1,175 @@
+@@include('layout/_head.html', {
+"title" : "Купить септик для частного дома с установкой в компании «Строительные Экосистемы», г. Москва",
+"description" : "В компании «Строительные Экосистемы» вы можете купить септик для частного дома или гостиницы с установкой. У нас представлены различные виды. Мы поможем выбрать вариант, который подходит именно для вас",
+"keywords" : "септик для частного дома, септик для дачи, септик купить, септик с установкой, виды септиков, септики, Как выбрать септик, септики для частных домов"
+})
+
+<section class="onepage onepage_type_blog">
+  @@include('layout/_header.html', {
+  "navigationTheme" : "navigation_theme_dark"
+  })
+
+  <div class="onepage__blog blog full-catalog">
+
+    <!--хлебные крошки-->
+    <div class="breadcrumb">
+      <a href="index.html" class="breadcrumb__item breadcrumb__item_link">Главная</a>
+      <span class="breadcrumb__item">Каталог</span>
+    </div>
+    <!--------->
+
+    <div class="blog__content full-catalog__wrapper">
+
+      <h1 class="blog__title heading heading_type_h1">
+        Каталог
+      </h1>
+
+      <!--синий фильтр-->
+      <div class="blog__filter">
+        <button data-toggle="all" class="blog__filter-btn js-filter-btn active button button_size_filter button_theme_filter ">
+						<span class="button__text">
+							Все виды септиков
+						</span>
+        </button>
+        <button data-toggle="bio" class="blog__filter-btn js-filter-btn button button_size_filter button_theme_filter">
+						<span class="button__text">
+							Станции биологической очистки
+						</span>
+        </button>
+        <button data-toggle="nrg" class="blog__filter-btn js-filter-btn button button_size_filter button_theme_filter">
+						<span class="button__text">
+							Энергозависимые септики
+						</span>
+        </button>
+        <button data-toggle="geo" class="blog__filter-btn js-filter-btn button button_size_filter button_theme_filter">
+						<span class="button__text">
+							Геометрические емкости
+						</span>
+        </button>
+      </div>
+      <!--------->
+
+      <!--бокс - товары + главный фильтр-->
+      <div class="blog__list full-catalog__main-content">
+
+        <!--сортировка + товары + пагинация-->
+        <div class="full-catalog__card-block">
+
+          <!--сортировка-->
+          <div class="full-catalog__sort-line ">
+            <span class="full-catalog__sort-line-text">Сортировать :</span>
+            <div class="full-catalog__sort-line-item full-catalog__sort-line-item_first active">По популярности</div>
+            <div class="full-catalog__sort-line-item">По названию</div>
+            <div class="full-catalog__sort-line-item">По объему</div>
+            <div class="full-catalog__sort-line-item">По цене</div>
+          </div>
+          <div class="full-catalog__sort-line_hidden">
+            <select class="full-catalog__sort-menu-select">
+              <option class="full-catalog__sort-menu-option" value="">По популярности</option>
+              <option class="full-catalog__sort-menu-option" value="">По названию (от А до Я )</option>
+              <option class="full-catalog__sort-menu-option" value="">По названию (от Я до А )</option>
+              <option class="full-catalog__sort-menu-option" value="">По объему (От меньшего)</option>
+              <option class="full-catalog__sort-menu-option" value="">По объему (От большего)</option>
+              <option class="full-catalog__sort-menu-option" value="">По цене (От меньшей)</option>
+              <option class="full-catalog__sort-menu-option" value="">По цене (От большей)</option>
+            </select>
+          </div>
+
+          <!--------->
+
+          <!--товары (бокс с карточками)-->
+          <div class="full-catalog__card-wrp">
+
+            <!--карточка товара-->
+            @@include('components/_card.html')
+            @@include('components/_card.html')
+            @@include('components/_card.html')
+            @@include('components/_card.html')
+            @@include('components/_card.html')
+            @@include('components/_card.html')
+            <!--------->
+
+          </div>
+          <!--------->
+
+          <!--пагинация-->
+          <div class="full-catalog__pagination pagination">
+            <a style="" class="pagination__btn">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+            <div class="pagination__box-numbers">
+              <a href="#" class="pagination__item active">1</a>
+              <a href="#" class="pagination__item">2</a>
+              <a href="#" class="pagination__item">3</a>
+              <a href="#" class="pagination__item">...</a>
+              <a href="#" class="pagination__item">14</a>
+            </div>
+            <a class="pagination__btn">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+          <!--------->
+
+        </div>
+
+        <!--главный фильтр-->
+        <div class="full-catalog__filter-block">
+
+          <div class="full-catalog__filter-block-hidden-buttons">
+            <!--сортировка-mobile-->
+            <div class="full-catalog__hidden-sort-btn">
+              <div class="full-catalog__sort-menu">
+                <select class="full-catalog__sort-menu-select">
+                  <option class="full-catalog__sort-menu-option" value="">По популярности</option>
+                  <option class="full-catalog__sort-menu-option" value="">По названию (от А до Я )</option>
+                  <option class="full-catalog__sort-menu-option" value="">По названию (от Я до А )</option>
+                  <option class="full-catalog__sort-menu-option" value="">По объему (От меньшего)</option>
+                  <option class="full-catalog__sort-menu-option" value="">По объему (От большего)</option>
+                  <option class="full-catalog__sort-menu-option" value="">По цене (От меньшей)</option>
+                  <option class="full-catalog__sort-menu-option" value="">По цене (От большей)</option>
+                </select>
+              </div>
+            </div>
+            <!--------->
+            <div class="full-catalog__hidden-filter-btn trangle">
+                Фильтры
+            </div>
+          </div>
+
+          @@include('components/_filter-form.html')
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('layout/_footer.html', {"theme" : ""})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

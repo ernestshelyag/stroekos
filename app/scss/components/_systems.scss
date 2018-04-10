@@ -1,0 +1,145 @@
+//Systems
+.systems {
+    
+    &__wrp {
+        @extend %wrp;
+        @extend %padding_g;
+    }
+    
+    &__list {
+        list-style-type: none;
+        margin: 0 0 em(24);
+        padding: em(36) 0 em(36);
+    }
+    
+    &__item {
+        display: inline-block;
+        margin-right: em(40,20);
+        margin-bottom: 0;
+        
+        .icon {
+            font-size: em(22,20);
+            color: $green_light;
+            margin-right: em(11,22);
+            vertical-align: -10%;
+        }
+    }
+
+    &__list_type_grid {
+        padding: em(10) 0 em(36);
+    }
+
+    &__list_type_grid &__item {
+        width: 30%;
+        position: relative;
+        padding-left: 3.5em;
+        margin: 2em 0;
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            font-size: em(40,20);
+            margin-right: 0;
+            width: em(28,20);
+            text-align: center;
+            vertical-align: baseline;
+            margin-top: - em(10,20);
+        }
+
+        @media #{$breakpointMobile} {
+            width: 100%;
+            margin: 1em 0;
+        }
+    }
+    
+    &_or {
+        font-size: em(18);
+        line-height: em(48,18);
+        margin: 0 em(34,18);
+    }
+
+    @media #{$breakpointDisplay} {
+        
+        &__list {
+            margin: 0 0 em(34,15);
+            padding: em(14,15) 0 em(14,15);
+        }
+
+        &__item {
+            margin-right: em(18,18);
+
+            .icon {
+                font-size: em(22,18);
+                margin-right: em(11,22);
+            }
+        }
+
+        &_or {
+            font-size: em(16,15);
+            line-height: em(40,16);
+            margin: 0 em(24,16);
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        &__list {
+            margin: 0 0 em(14,13);
+            padding: em(11,13) 0 em(11,13);
+        }
+
+        &__item {
+            margin-right: em(20,18);
+
+            .icon {
+                font-size: em(22,18);
+                margin-right: em(11,22);
+            }
+        }
+
+        &_or {
+            font-size: em(16,13);
+            line-height: em(40,16);
+            margin: 0 em(18,16);
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        text-align: center;
+        
+        &__wrp {
+            padding-left: $col_xs*2;
+            padding-right: $col_xs*2;
+        }
+        
+        &__list {
+            margin: 0 0 em(29,12);
+            padding: 0;
+            text-align: left;
+        }
+
+        &__item {
+            display: block;
+            margin: 15px 0 15px $col_xs*4;
+            font-size: em(12,12);
+            line-height: em(16,12);
+
+            .icon {
+                text-align: center;
+                display: inline-block;
+                min-width: 24px;
+                font-size: em(19,12);
+                margin-right: em(11,19);
+                vertical-align: -18%;
+            }
+        }
+
+        &_or {
+            display: none;
+        }
+        
+        &__button {
+            margin-top: 5px;
+        }
+    }
+}

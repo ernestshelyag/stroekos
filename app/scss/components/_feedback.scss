@@ -1,0 +1,89 @@
+//Feedback 
+.feedback {
+    
+    &__feedback-form {
+        margin-top: em(40);
+        width: 62.5%;// 10 / 16col
+        position: relative;
+        z-index: 1;
+
+        @media #{$breakpointDisplay} {
+            margin-top: em(20,15);
+            width: 77.778%;// 14 / 18col
+        }
+
+        @media #{$breakpointTablet} {
+            
+        }
+
+        @media #{$breakpointMobile} {
+            margin-top: em(20,12);
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    }
+    
+    &__box {
+        width: 50%;
+        @include flex-basis(50%);
+
+        @media #{$breakpointMobile} {
+            width: 100%;
+            @include flex-basis(100%);
+        }
+    }
+    
+    &__heading {
+        @media #{$breakpointMobile} {
+            text-align: center;
+        }
+    }
+    
+    &__caption {
+        @include opacity(0.8);
+        
+        @media #{$breakpointTablet} {
+            margin-left: 0;
+            margin-right: 0;
+            font-size: em(14,13);
+            line-height: em(20,14);
+        }
+
+        @media #{$breakpointMobile} {
+            text-align: center;
+            font-size: em(13,12);
+            line-height: em(16,13);
+        }
+    }
+    
+    &__button-box {
+
+        @media #{$breakpointMobile} {
+            position: absolute !important;
+            width: 93.0756%;
+            left: 0;
+            top: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 15px;
+        }
+    }
+    
+    &__button {
+        min-width: 100%;
+        margin-top: 10px;
+
+        @media #{$breakpointDisplay} {
+            margin-top: 10px;
+        }
+
+        @media #{$breakpointTablet} {
+            margin-top: 0;
+        }
+
+        @media #{$breakpointMobile} {
+            
+            
+        }
+    }
+}

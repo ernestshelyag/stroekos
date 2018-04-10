@@ -1,0 +1,69 @@
+//Reviews
+.reviews {
+    
+    &__heading {
+        margin-bottom: em(6,42);
+    }
+    
+    &__slider {
+        position: relative;
+        
+        .slick-arrow {
+            position: absolute;
+            z-index: 3;
+            bottom: -$col_lg/2;
+            font-size: $col_lg/2;
+            line-height: 1;
+            @include transition(all 0.4s ease);
+
+            @media #{$breakpointMobile} {
+                bottom: -$col_xs*2;
+            }
+
+            &:hover {
+                color: $green;
+            }
+
+            &:active {
+                @include scale(0.9);
+            }
+
+            .icon {
+                display: inline-block;
+                padding: $col_lg/2;
+
+                @media #{$breakpointDisplay} {
+                    padding: $col_lg/2 ($col_md - $col_lg/2);
+                }
+
+                @media #{$breakpointTablet} {
+
+                }
+
+                @media #{$breakpointMobile} {
+                    padding: $col_xs $col_xs/2;
+                }
+            }
+        }
+
+        .slick-prev {
+            right: 50%;
+        }
+
+        .slick-next {
+            left: 50%;
+        }
+    }
+
+    @media #{$breakpointDisplay} {
+        
+    }
+
+    @media #{$breakpointTablet} {
+
+    }
+
+    @media #{$breakpointMobile} {
+
+    }
+}

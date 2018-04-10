@@ -1,0 +1,158 @@
+//Caption
+.caption {
+    
+    &_size_g {
+        font-size: em(17);
+        line-height: em(22,17);
+    }
+
+    &_size_xs {
+        font-size: em(14);
+        line-height: em(17,14);
+    }
+
+    &_size_s {
+        font-size: em(15);
+        line-height: em(18,15);
+    }
+    
+    &_size_m {
+        font-size: em(18);
+        line-height: em(25,18);
+        
+        &_high {
+            line-height: em(27,18);
+        }
+    }
+    
+    &_size_xl {
+        font-size: em(21);
+        line-height: em(32,21);
+    }
+
+    &_no_margin {
+        margin: 0;
+    }
+    
+    &_bold {
+        font-weight: 700;
+    }
+
+    &_double_margin {
+        margin: 2em 0;
+    }
+    
+    &_onehalf_margin {
+        margin: 1.5em 0;
+    }
+    
+    &_half_margin {
+        margin: 0.5em 0;
+    }
+
+    &_align_center {
+        text-align: center;
+    }
+    
+    &_align_left {
+        text-align: left;
+    }
+    
+    &_opacity {
+        @include opacity(0.8);
+    }
+
+    @media #{$breakpointDisplay} {
+        &_size_g {
+            font-size: em(15,15);
+            line-height: em(20,15);
+        }
+
+        &_size_xs {
+            font-size: em(14,15);
+            line-height: em(17,14);
+        }
+
+        &_size_s {
+            font-size: em(14,15);
+            line-height: em(18,14);
+        }
+
+        &_size_m {
+            font-size: em(16,15);
+            line-height: em(25,16);
+
+            &_high {
+                line-height: em(25,16);
+            }
+        }
+
+        &_size_xl {
+            font-size: em(18,15);
+            line-height: em(27,18);
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        &_size_g {
+            font-size: em(14,13);
+            line-height: em(18,14);
+        }
+
+        &_size_xs {
+            font-size: em(14,13);
+            line-height: em(17,14);
+        }
+
+        &_size_s {
+            font-size: em(14,13);
+            line-height: em(18,14);
+        }
+
+        &_size_m {
+            font-size: em(14,13);
+            line-height: em(25,14);
+
+            &_high {
+                line-height: em(21,14);
+            }
+        }
+
+        &_size_xl {
+            font-size: em(16,13);
+            line-height: em(25,16);
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        &_size_g {
+            font-size: em(13,12);
+            line-height: em(16,13);
+        }
+
+        &_size_xs {
+            font-size: em(13,12);
+            line-height: em(17,14);
+        }
+
+        &_size_s {
+            font-size: em(14,12);
+            line-height: em(18,14);
+        }
+
+        &_size_m {
+            font-size: em(13,12);
+            line-height: em(19,13);
+
+            &_high {
+                font-size: em(13,12);
+                line-height: em(16,13);
+            }
+        }
+
+        &_size_xl {
+            font-size: em(14,12);
+            line-height: em(20,14);
+        }
+    }
+}

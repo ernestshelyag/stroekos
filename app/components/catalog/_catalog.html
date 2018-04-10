@@ -1,0 +1,36 @@
+<section class="catalog">
+	<div class="catalog__wrp">
+		
+		<h2 class="catalog__heading heading heading_type_h2">
+			@@heading
+		</h2>
+
+		
+		
+		<div class="catalog__slider post-slider carousel_catalog">
+			
+			@@loop("_post.html", "components/catalog/septik_@@id.json")
+			
+		</div>
+		
+		<div class="catalog__footer">
+
+			<!--<a href="#" class="catalog__button button button_theme_lite button_size_s">-->
+			<!--<span class="button__text">-->
+				<!--Посмотреть каталог-->
+			<!--</span>-->
+			<!--</a>-->
+
+			<a href="#modal_order" class="js-popup-link catalog__button button button_theme_white button_size_s" data-heading="Заказать расчет">
+			<span class="button__text">
+				Заказать расчет
+			</span>
+			</a>
+			
+			<div class="catalog__hint caption caption_size_m c_green caption_bold">
+				<span class="star c_green_dark">*</span>Возможна беспроцентная рассрочка.
+			</div>
+			
+		</div>		
+	</div>
+</section>

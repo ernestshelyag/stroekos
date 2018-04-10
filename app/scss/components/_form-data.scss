@@ -1,0 +1,203 @@
+//form-data
+.form-data {
+    width: 100%;
+
+    &__parametr {
+        
+        &_with_button {
+            text-align: center;
+        }
+    }
+    
+    &__parametr_error &__input {
+        border: 3px solid $error;
+        padding-top: em(13,15);
+        padding-bottom: em(13,15);
+    }
+    
+
+    &__input,
+    &__textarea,
+    &__select,
+    .ui-selectmenu-button {
+        border: none;
+        background-color: #fff;
+        outline: none;
+        font: em(15,20) $futura;
+        color: #000;
+        padding: em(15,15) em(20,15);
+        width: 100%;
+        @include placeholder($grey);
+        @include transition(all 0.1s linear);
+    }
+
+    &__input,
+    &__textarea {
+        @extend %shadow_input;
+    }
+    
+    &__input,
+    &__select,
+    .ui-selectmenu-button {
+        height: em(48,15);
+    }
+    
+    &__select,
+    .ui-selectmenu-button {
+        @extend %gradient_select;
+    }
+
+    &_type_inline {
+        @extend %flexbox;
+        @include justify-content(space-between);
+        @include flex-wrap(wrap);
+    }
+
+    &_type_inline &__parametr {
+        width: 32.5%;
+
+        @media #{$breakpointMobile} {
+            padding: 0 $col_xs*3;
+            width: 100%;
+            margin-bottom: em(10,12);
+        }
+    }
+
+    &_type_flex {
+        @extend %flexbox;
+
+        @media #{$breakpointMobile} {
+            @include flex-wrap(wrap);
+            @include justify-content(center);
+            position: relative;
+        }
+    }
+
+    &_type_flex &__parametr {
+        margin-top: 10px;
+        margin-right: 10px;
+
+        @media #{$breakpointMobile} {
+            margin-top: 5px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+
+    &_type_flex &__parametr &__textarea {
+        height: em(164,15);
+
+        @media #{$breakpointDisplay} {
+            height: 140px;
+        }
+
+        @media #{$breakpointTablet} {
+            height: 124px;
+        }
+
+        @media #{$breakpointMobile} {
+            margin-top: 5px;
+            height: 84px;
+        }
+    }
+    
+    textarea {
+        max-width: 100%;
+    }
+}
+
+
+.ui-selectmenu-text {
+    margin-right: 0;
+}
+
+.ui-selectmenu-button {
+    margin-right: 0;
+    position: relative;
+    
+    &::after {
+        content: '\e90e';
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        font-family: $icon_font;
+        font-size: 7px;
+        color: $green;
+        margin-top: -3px;
+        @include transition(all 0.3s linear);
+        @include transform-origin(50% 50%);
+    }
+    
+    &-closed {
+        .ui-selectmenu-text {
+            color: inherit;
+        }
+        
+        &::after {
+            @include rotate(0);
+        } 
+    }
+    
+    &-open {
+        .ui-selectmenu-text {
+            color: $grey_dark;
+        }
+        
+        &::after {
+            @include rotate(180deg);
+        } 
+    }
+}
+
+//#calc-select-deep-menu {
+//    margin-top: - em(38);
+//}
+
+.ui-menu {
+    @extend %gradient_select;
+    @extend %shadow;
+    @include transition(all 0.3s linear);
+    margin-top: -1px;
+    
+    &.scroll {
+        max-height: em(240);
+        
+    }
+
+    .ui-menu-item-wrapper {
+        border: none;
+        outline: none;
+        font: em(15) $futura;
+        color: #000;
+        padding: em(15,15) em(20,15);
+        width: 100%;
+        @include placeholder($grey);
+        height: em(48,15);
+        @include transition(all 0.3s linear);
+
+        &.ui-state-active {
+            color: $green;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

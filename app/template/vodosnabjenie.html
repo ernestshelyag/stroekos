@@ -1,0 +1,293 @@
+@@include('layout/_head.html', {
+	"title" : "Заказать бурение, обустройство скважины или организацию водоснабжения дома в компании «Строительные Экосистемы», г. Москва",
+	"description" : "В компании «Строительные Экосистемы» вы можете заказать бурение и обустройство скважины или организацию водоснабжения в частном доме под ключ. Обращайтесь по телефонам +7 (499) 649-64-50, 8 800 500-24-92",
+	"keywords" : "бурение скважин на воду, цена, водоснабжение частного дома, обустройство скважины, бурение скважин под воду, стоимость бурения скважины, бурение скважин под ключ, бурение скважин на воду под ключ"
+})
+
+	<section class="onepage">
+		@@include('layout/_header.html', {
+		"navigationTheme" : "navigation_theme_light"
+		})
+	
+		@@include('components/_promo-slider.html', {
+		"image" : "images/water/banner.jpg",
+		"linkPrev" : "Вернуться на главную",
+		"classMain" : "onepage__promo-slider promo-slider_theme_light",
+		"title" : "Обустройство скважин<br />и&nbsp;систем водоснабжения дома",
+		"text" : ""
+		})
+	</section>
+
+	<section class="section section_theme_blue section_shadow section_numbered-list section_numbered-list-min">
+		<div class="section__wrp">
+			
+			<h2 class="heading heading_type_h2 heading_align_center">
+				Почти 70% загородных домов<br class="xs-hide" />
+				не&nbsp;имеют источника воды
+			</h2>
+			
+			<p class="caption caption_size_m caption_align_center caption_onehalf_margin caption_bold">
+				Мы&nbsp;работаем над тем, чтобы их&nbsp;стало меньше.
+			</p>
+			
+			<div class="numbered-list numbered-list_margin_top_m grid grid_flex">
+	
+				@@loop('components/_numbered.html', [
+				{ "number": "01", "heading": "Первичный расчет<br />проекта <span class='c_green_light'>за&nbsp;15&nbsp;минут</span>" },
+				{ "number": "02", "heading": "Бесплатный выезд<br />замерщика<br />и&nbsp;<span class='c_green_light'>проект в&nbsp;подарок</span>" },
+				{ "number": "03", "heading": "Комплексное<br />оборудование<br />скважины <span class='c_green_light'>&laquo;под ключ&raquo;</span>" },
+				{ "number": "04", "heading": "Возможна <br />беспроцентная <br /><span class='c_green_light'>рассрочка</span>" }
+				])
+	
+			</div>
+		</div>
+	</section>
+
+	<section class="section section_big_top section_numbered-list-min">
+		<div class="section__wrp">
+			<h1 class="section__heading heading heading_type_h1 heading_align_center">
+				Выбирайте, что вам нужно
+			</h1>
+	
+			<p class="caption caption_size_m caption_align_center caption_onehalf_margin c_grey">
+				Водоснабжение&nbsp;&mdash; одна из&nbsp;самых важных составляющих загородных коммуникаций. При этом, одна из&nbsp;самых сложных.<br class="xs-hide" />
+				Мы&nbsp;понимаем это, и&nbsp;поэтому предлагаем вам комплексное решение вопроса: от&nbsp;бурения скважины до&nbsp;прокладки и&nbsp;обустройства<br class="xs-hide" />
+				системы водоснабжения как для летнего использования, так и&nbsp;для зимнего использования, а&nbsp;также установки сантехники в&nbsp;доме.
+			</p>
+	
+			<div class="numbered-list numbered-list_margin_top_xl grid grid_flex numbered-list_size_min numbered-list_theme_dark carousel-mobile">
+	
+				@@loop('components/_numbered.html', [
+				{ "number": "01. Заявка", "heading": "Наш менеджер перезвонит <br />вам для уточнения деталей." },
+				{ "number": "02. Проектирование", "heading": "Если это будет необходимо,<br />наш инженер приедет к&nbsp;вам,<br />чтобы произвести все замеры,<br />и&nbsp;просчитать детальную смету." },
+				{ "number": "03. Предложение", "heading": "Предложим несколько<br />вариантов, исходя из&nbsp;вашего<br />запроса: от&nbsp;недорогих<br />до&nbsp;премиальных." },
+				{ "number": "04. Выезд мастера", "heading": "Останется только договориться <br />о&nbsp;времени установки. <br />Мы&nbsp;приедем, когда вам <br />будет удобно." }
+				])
+	
+			</div>
+		</div>
+	</section>
+
+	<section class="variant section_big" style="background-image: url('images/water/bg_1.jpg');">
+		<div class="variant__wrp section__wrp">
+			
+			<h5 class="heading heading_type_h5 heading_type_h5_l heading_align_center">
+				Наши инженеры установят все необходимое оборудование, включая сантехнику.<br />
+				Все работы займут не&nbsp;более трех дней. В&nbsp;конце мы&nbsp;обязательно<br />
+				приберем все за&nbsp;собой. Вам останется только наслаждаться водой во&nbsp;всем доме.
+			</h5>
+	
+			<div class="variant__footer">
+				<a href="#modal_order" class="js-popup-link button button_theme_default button_size_m button_margin_top" data-heading="Рассчитать проект">
+				<span class="button__text">
+					Рассчитать проект
+				</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section_factors">
+		<div class="section__wrp">
+			<div class="heading heading_type_h2 heading_align_center">
+				От&nbsp;чего зависит выбор системы
+			</div>
+	
+			<div class="factors grid grid_three grid_flex grid_flex_center">
+				@@loop('components/_fact.html', [
+				{"classMain": "grid__box", "number": "10", "name": "Глубина скважины и&nbsp;колодца<br />и&nbsp;их&nbsp;отдаленность от&nbsp;дома"},
+				{"classMain": "grid__box", "number": "11", "name": "Количество санузлов"},
+				{"classMain": "grid__box", "number": "3", "name": "Режим проживания"}
+				])
+			</div>
+		</div>
+	</section>
+
+	<section class="section section_theme_blue section_shadow section_dirty section_dirty_xs section_align_center section_catalog-promo">
+		<div class="section__wrp">
+			
+			<div class="heading heading_align_center heading_type_h1">
+                Качество, проверенное временем
+            </div>
+
+            <p class="caption caption_align_center">
+                Наверняка вы&nbsp;уже изучили самые популярные модели и&nbsp;бренды. У&nbsp;нас вы&nbsp;найдете<br />
+                только самые лучшие из&nbsp;них.
+            </p>
+
+            <div class="partners partners_size_six">
+                <div class="partners__item">
+                    <img src="images/brand/1.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/brand/2.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/brand/3.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/brand/4.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/brand/5.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/brand/6.png" alt=""/>
+                </div>
+            </div>
+
+            <div class="catalog-promo carousel-mobile">
+                <div class="catalog-promo__item">
+                    <div class="catalog-promo__item-pic">
+                        <img src="images/img3.jpg" alt=""/>
+
+                        <span class="catalog-promo__item-label catalog-promo__item-label_theme_red">
+                            Временно и дешево
+                        </span>
+                    </div>
+                    
+                    <div class="catalog-promo__item-name">
+                        Летний полив
+                    </div>
+                    
+                    <div class="catalog-promo__item-price">
+						от&nbsp;30&nbsp;000&nbsp;<span class="rub">₽</span>
+                    </div>
+
+					<a href="#modal_order" class="js-popup-link catalog-promo__item-link" data-heading="Запросить смету">
+						Запросить смету
+					</a>
+                </div>
+
+                <div class="catalog-promo__item">
+                    <div class="catalog-promo__item-pic">
+                        <img src="images/img4.jpg" alt=""/>
+
+                        <span class="catalog-promo__item-label catalog-promo__item-label_theme_yellow">
+                            Эконом-вариант
+                        </span>
+                    </div>
+
+                    <div class="catalog-promo__item-name">
+                        С адаптером
+                    </div>
+
+                    <div class="catalog-promo__item-price">
+						от&nbsp;65&nbsp;000&nbsp;<span class="rub">₽</span>
+                    </div>
+
+					<a href="#modal_order" class="js-popup-link catalog-promo__item-link" data-heading="Запросить смету">
+						Запросить смету
+					</a>
+                </div>
+
+                <div class="catalog-promo__item">
+                    <div class="catalog-promo__item-pic">
+                        <img src="images/img5.jpg" alt=""/>
+
+                        <span class="catalog-promo__item-label catalog-promo__item-label_theme_blue">
+                            Стандартный монтаж
+                        </span>
+                    </div>
+
+                    <div class="catalog-promo__item-name">
+                        С металлическим кессоном
+                    </div>
+
+                    <div class="catalog-promo__item-price">
+						от&nbsp;95&nbsp;000&nbsp;<span class="rub">₽</span>
+                    </div>
+
+					<a href="#modal_order" class="js-popup-link catalog-promo__item-link" data-heading="Запросить смету">
+						Запросить смету
+					</a>
+                </div>
+
+                <div class="catalog-promo__item">
+                    <div class="catalog-promo__item-pic">
+                        <img src="images/img6.jpg" alt=""/>
+
+                        <span class="catalog-promo__item-label catalog-promo__item-label_theme_green">
+                            Дорого и надежно
+                        </span>
+                    </div>
+
+                    <div class="catalog-promo__item-name">
+                        С пластиковым кессоном
+                    </div>
+
+                    <div class="catalog-promo__item-price">
+						от&nbsp;115&nbsp;000&nbsp;<span class="rub">₽</span>
+                    </div>
+
+					<a href="#modal_order" class="js-popup-link catalog-promo__item-link" data-heading="Запросить смету">
+						Запросить смету
+					</a>
+                </div>
+            </div>
+		</div>
+	</section>
+
+	<section class="section section_theme_grey section_advantages-slider">
+		<div class="section__wrp">
+			<div class="heading heading_type_h2">
+				Почему вам стоит обратиться<br />
+				в&nbsp;&laquo;Строительные экосистемы&raquo;?
+			</div>
+	
+			<div class="advantages-slider">
+				<div class="advantages-slider__slider">
+					@@loop('components/_advantages.html', [
+					{"title": "Опытные сотрудники", "text": "Все наши специалисты&nbsp;&mdash; инженеры с&nbsp;высшим образованием и&nbsp;более чем <nobr>10-летним</nobr> стажем работы. Они не&nbsp;только быстро и&nbsp;качественно установят оборудование, но&nbsp;и&nbsp;покажут, как им&nbsp;пользоваться, а&nbsp;также расскажут о&nbsp;дальнейшем обслуживании."},
+					{"title": "Различные варианты оплаты", "text": "Никогда не&nbsp;попросим 100% предоплаты. Вы&nbsp;сможете оплатить все работы после установки любым удобным для вас способом: наличные, по&nbsp;карте, безналичный расчет. Мы&nbsp;также готовы забронировать для вас стоимость септика на&nbsp;несколько месяцев."},
+					{"title": "Высокий уровень качества", "text": "Мы&nbsp;не&nbsp;просто продаем септики, мы&nbsp;действительно разбираемся в&nbsp;них. Наша экспертиза позволяет разрабатывать и&nbsp;устанавливать сложные комплексные системы, которые сделают вашу жизнь действительно комфортной."},
+					{"title": "Работаем без промедления", "text": "Расчет заказа происходит за&nbsp;несколько часов. В&nbsp;90% случаев мы&nbsp;будем готовы приехать к&nbsp;вам на&nbsp;следующий день. Зачем терять время?"}
+					])
+				</div>
+	
+				<div class="advantages-slider__buttons slider-count-wrap">
+					<span class="slider-count-wrap__current"></span>
+					<span class="slider-count-wrap__total"></span>
+				</div>
+	
+				<a href="#modal_order" class="js-popup-link advantages-slider__button button button_theme_default button_size_m" data-heading="Оставить заявку">
+                    <span class="button__text">
+                        Оставить заявку
+                    </span>
+				</a>
+			</div>
+	
+			<div class="section__promo-img section__promo-img_type_4">
+				<img src="images/water/slider_big.png" alt=""/>
+			</div>
+		</div>
+	</section>
+
+
+	@@include('components/team/_team.html')
+
+	<section class="reviews section section_standart section_theme_grey">
+		
+		<h2 class="reviews__heading heading heading_type_h2 heading_align_center">
+			Отзывы наших клиентов
+		</h2>
+		
+		<div class="reviews__slider carousel_reviews">
+			
+			@@loop('components/reviews/_review.html', [
+			{ "number": "6", "date" : "23.10.2016", "name": "Талдомский район, деревня Дубки", "heading" : "Родин Илья Александрович", "caption" : "Сделали водоснабжение в&nbsp;доме просто на&nbsp;ура! Теперь у&nbsp;нас всё есть&nbsp;&mdash; и&nbsp;туалет, и&nbsp;душ. Спасибо за&nbsp;такой комфорт в&nbsp;доме! Монтаж произвели за&nbsp;2 дня&nbsp;&mdash; при таком большом объёме!" },
+			{ "number": "7", "date" : "20.04.2017", "name": "Тверская область, деревня Сенинское", "heading" : "Филатова Антонина", "caption" : "Не&nbsp;разбиралась ранее в&nbsp;теме &laquo;Водоснабжение дома&raquo;, вызвала инженера компании <nobr>ООО &laquo;Строительные Экосистемы&raquo;</nobr>. Он&nbsp;мне все объяснил и&nbsp;показал информацию по&nbsp;водоснабжению дома&nbsp;&mdash; настолько понятно и&nbsp;хорошо, что я&nbsp;без сомнений заказала работы по&nbsp;благоустройству дома!" },
+			{ "number": "8", "date" : "15.03.2017", "name": "Московская область, деревня Акулово", "heading" : "Ряплов Евгений", "caption" : "Монтажники очень четко все выполнили, очень скрупулезно, молодцы. Инженер заранее приехал, посмотрел, что надо сделать, какие расходные материалы докупить, сам все приобрел. Спасибо большое. Обязательно буду рекомендовать компанию &laquo;Строииельные Экосистемы&raquo;!" },
+			{ "number": "9", "date" : "16.10.2016", "name": "Московская область, Ямонтово", "heading" : "Анна Юрьевна", "caption" : "Полностью удовлетворена работой с&nbsp;компанией &laquo;Строииельные Экосистемы&raquo;! Был необходим целый комплекс работ. Монтажники сделал все профессионально, все согласно договоренностям, дал ценные советы по&nbsp;будущему обслуживанию. Рекомендую!" },
+			{ "number": "10", "date" : "20.11.2016", "name": "Московская область, СНТ Нарцисс", "heading" : "Шермагин Антон Вячеславович", "caption" : "Спасибо Вам за&nbsp;работу! Пошли на&nbsp;встречу по&nbsp;времени, так как необходимо было начать работу, как можно раньше! Приехали вовремя, опрятные рабочи и&nbsp;бригадир с&nbsp;БОЛЬШИМ опыытом! Настоящий проффесионал! Рекомендуем Олега из&nbsp;компании &laquo;Строительные Экосистемы&raquo;" }
+			])
+			
+		</div>
+	
+	</section>
+	
+	@@include('components/_feedback.html', {
+	"image" : "../images/water/bg_2.jpg"
+	})
+
+@@include('layout/_footer.html', {"theme" : ""})

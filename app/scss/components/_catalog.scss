@@ -1,0 +1,102 @@
+//Catalog
+.catalog {
+    background-color: $grey_bg;
+    padding-top: em(118);
+    padding-bottom: em(110);
+    
+    &__wrp {
+        width: 100%;
+        margin: 0 auto;
+        @extend %padding_s;
+    }
+    
+    &__heading {
+        
+    }
+    
+    &__caption {
+        color: $grey;
+    }
+    
+    &__slider {
+        margin-top: $col_lg;
+    }
+    
+    &__footer {
+        margin-top: $col_lg;
+    }
+    
+    &__button {
+        margin-right: em(30);
+    }
+    
+    &__hint {
+        display: inline-block;
+
+	    @media #{$breakpointMobile} {
+		    margin-top: 1em;
+		    display: block;
+		    text-align: center;
+	    }
+    }
+
+    @media #{$breakpointDisplay} {
+        padding-top: em(78,15);
+        padding-bottom: em(100,15);
+
+        &__slider {
+            margin-top: $col_md;
+        }
+
+        &__footer {
+            margin-top: $col_md;
+        }
+
+        &__button:first-child {
+            margin-right: em(20, 15);
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        padding-top: em(68,13);
+        padding-bottom: em(50,13);
+
+        &__slider {
+            margin-top: $col_sm;
+        }
+
+        &__footer {
+            margin-top: $col_sm;
+        }
+
+        &__button:first-child {
+            margin-right: em(20, 13);
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        padding-top: em(33,12);
+        padding-bottom: em(40,12);
+        text-align: center;
+        
+        &__wrp {
+            padding-left: $col_xs*2;
+            padding-right: $col_xs*2;
+        }
+
+        &__slider {
+            margin-top: $col_xs;
+            padding-bottom: 66px;
+        }
+
+        &__footer {
+            margin-top: $col_xs;
+            margin-left: -($col_xs + 4px);
+            margin-right: -($col_xs + 4px);
+        }
+
+        &__button:first-child {
+            margin-right: 4px;
+        }
+    }
+}

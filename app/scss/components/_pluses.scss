@@ -1,0 +1,64 @@
+//Pluses section
+.pluses {
+    background-color: $grey_bg;
+    
+    &__wrp {
+        @extend %wrp;
+        @extend %padding_g;
+        padding-top: em(100);
+        padding-bottom: em(100);
+        
+        @extend %flexbox;
+        @include justify-content(space-between);
+        @include align-items(center);
+    }
+    
+    &__img {
+        font-size: 0;
+        width: 28.038%;// 323 / 1152
+    }
+    
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media #{$breakpointDisplay} {
+        &__wrp {
+            padding-top: em(85,15);
+            padding-bottom: em(85,15);
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        &__wrp {
+            padding-top: em(85,13);
+            padding-bottom: em(75,13);
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        &__wrp {
+            padding-left: $col_xs*2;
+            padding-right: $col_xs*2;
+            padding-top: em(30,12);
+            padding-bottom: em(25,12);
+            @include flex-wrap(wrap);
+            @include justify-content(center);
+        }
+        
+        &__list {
+            width: 100%;
+            @include flex-basis(100%);
+            @include order(2);
+        }
+        
+        &__img {
+            width: 54.6875%;
+            @include flex-basis(54.6875%);
+            @include order(1);
+        }
+    }
+    
+}

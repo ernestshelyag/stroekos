@@ -1,0 +1,32 @@
+.pagination {
+  font-size: 36px;
+
+  @media #{$breakpointTablet} {
+    font-size: 26px;
+  }
+
+  @media #{$breakpointMobile} {
+    margin: 20px auto 0 auto;
+  }
+
+  @extend %flexbox;
+  @include align-items(center);
+  &__btn {
+    color: #000;
+
+    line-height: 36px;
+    transition: all .3s;
+    margin: 0 em(10,36);
+    &:hover {
+      color: #9fcd3b;
+    }
+  }
+  &__item {
+    color: #000;
+    padding: 0 em(3,36);
+    text-decoration: none;
+    &.active {
+      color: #9fcd3b;
+    }
+  }
+}

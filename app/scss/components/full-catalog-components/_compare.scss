@@ -1,0 +1,40 @@
+.compare {
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  .active {
+    display: block;
+  }
+  &__block {
+    position: relative;
+    cursor: pointer;
+    display: none;
+    &_add {
+      color: #9fcd3b;
+    }
+    &_cancel {
+      color: #949a9f;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+  }
+  &__text {
+    white-space: nowrap;
+    font-size: 15px;
+    padding-left: 19px;
+
+
+    @media #{$breakpointTablet} {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+  }
+}

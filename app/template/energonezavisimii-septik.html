@@ -1,0 +1,67 @@
+@@include('layout/_head.html', {
+	"title" : "Купить энергонезависимый септик с установкой в компании «Строительные Экосистемы», г. Москва",
+	"description" : "В нашей компании вы можете купить энергонезависимый септик для дома или дачи с установкой. Мы гарантируем качество своих работ и доступную цену",
+	"keywords" : "энергонезависимые септики, энергонезависимые септики для дачи, энергонезависимые септики с откачкой, лучшие энергонезависимые септики, купить энергонезависимый септик, энергонезависимый септик для дома, энергонезависимые септики для загородного дома, энергонезависимые септики цена, энергонезависимый септик под ключ,,купить энергонезависимый септик с установкой"
+})
+
+    <section class="onepage">
+        @@include('layout/_header.html', {
+            "navigationTheme" : "navigation_theme_light"
+        })
+
+        @@include('components/_promo-slider.html', {
+            "image" : "images/septik/1/banner.jpg",
+            "linkPrev" : "Все типы септиков",
+            "classMain" : "onepage__promo-slider promo-slider_theme_light",
+            "title" : "Энергонезависимые септики",
+            "text" : "Энергонезависимые септики&nbsp;&mdash; удобный и&nbsp;простой вариант очищения<br /><nobr>хозяйственно-бытового</nobr> стока для дачи и&nbsp;загородного дома."
+        })
+    </section>
+
+	@@include('components/_howitworks.html', {
+	"id" : "1",
+	"caption" : "Энергонезависимый септик&nbsp;&mdash; резервуар с&nbsp;несколькими отсеками из&nbsp;полипропилена или стеклопластика. Попадая в&nbsp;него, сток перетекает из&nbsp;одного пространства в&nbsp;другое. Постепенное окисление способствует естественному гниению. Зачастую для того, чтобы ускорить процесс требуется добавление септика (порошка или жидкости).",
+	"hint" : "Такой способ требует дополнительно <br class='xs-hide' />поле фильтрации, так как очищает <br class='xs-hide' />воды лишь на&nbsp;50&ndash;60%."
+	})
+
+	@@include('components/catalog/_catalog.html', {
+	"id" : "1",
+	"heading" : "Мы&nbsp;предлагаем различные виды <br class='xs-hide' />энергонезависимых септиков <br class='xs-hide' />для любых участков"
+	})
+
+
+	<section class="variant" style="background-image: url(../images/variant_bg.jpg);">		
+
+		<div class="variant__wrp">
+			
+			<p class="variant__caption caption caption_size_m caption_align_center">
+				Важной особенностью энергонезависимых септиков является необходимость отвода воды.
+			</p>
+			
+			<h2 class="variant__heading heading heading_type_h2 heading_align_center">
+				Мы&nbsp;готовы предложить несколько вариантов,<br class="xs-hide" />
+				которые подойдут <span class="c_green_light">именно&nbsp;вам</span>
+			</h2>
+
+			<div class="variant__list numbered-list grid grid_flex">
+
+				@@loop('components/_numbered.html', [
+				{ "number": "01", "heading": "Дренажное поле" },
+				{ "number": "02", "heading": "Поле фильтрации" },
+				{ "number": "03", "heading": "Регулярная утилизация<br />стока при помощи<br />сторонних организаций" }
+				])
+
+			</div>
+			
+			<div class="variant__footer">
+				<a href="#modal_order" class="js-popup-link variant__button button button_size_m button_theme_default button_align_center" data-heading="Оставить заявку">
+					<span class="button__text">
+						Оставить заявку
+					</span>
+				</a>
+			</div>
+
+		</div>
+	</section>
+
+@@include('layout/_footer.html', {"theme" : ""})

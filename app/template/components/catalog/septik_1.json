@@ -1,0 +1,22 @@
+[
+  {
+    "parent": "1",
+    "number": "1",
+    "title": "Евролос Эко",
+    "price": "32&nbsp;000"
+  },
+
+  {
+    "parent": "1",
+    "number": "2", 
+    "title": "Росток",
+    "price": "32&nbsp;000"
+  },
+
+  {
+    "parent": "1",
+    "number": "3",
+    "title": "Термит",
+    "price": "37&nbsp;800"
+  }
+]

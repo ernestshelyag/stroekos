@@ -1,0 +1,131 @@
+//catalog-promo
+.catalog-promo {
+    background: #fff;
+    padding: em(20) em(28);
+    margin-left: - em(30);
+    margin-right: - em(30);
+    margin-top: em(30);
+    @include clearfix();
+
+    @media #{$breakpointDisplay} {
+        margin-left: 0;
+        margin-right: 0;
+        padding: em(10,15) 0;
+    }
+
+    @media #{$breakpointMobile} {
+        padding: em(10,12);
+    }
+
+    &__item {
+        float: left;
+        width: 25%;
+        border: 2px solid #fff;
+        border-top-width: 8px;
+        padding-bottom: em(30);
+
+        @media #{$breakpointMobile} {
+            padding: 0 $col_xs*2 em(30,12);
+        }
+
+        &-pic {
+            position: relative;
+            max-height: em(285);
+            margin-bottom: em(40);
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                vertical-align: middle;
+            }
+        }
+
+        &-name {
+            font: 700 em(18) $roboto;
+            color: #000;
+            margin-bottom: em(5, 18);
+        }
+
+        &-price {
+            font-size: em(18);
+            color: $grey;
+            margin-bottom: em(20,18);
+        }
+
+        &-label {
+            display: block;
+            position: absolute;
+            font-size: em(16);
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            padding: em(10,16) em(10,16);
+            z-index: 1;
+            top: em(15, 16);
+            left: em(20,16);
+            right: em(20,16);
+            line-height: normal;
+
+            @media #{$breakpointDisplay} {
+                top: em(10, 15);
+                left: em(10,15);
+                right: em(10,15);
+            }
+
+            @media #{$breakpointTablet} {
+                top: em(10, 13);
+                left: em(10,13);
+                right: em(10,13);
+            }
+
+            @media #{$breakpointMobile} {
+                top: em(10, 12);
+                left: em(10,12);
+                right: em(10,12);
+            }
+
+            &_theme_red {
+                background: rgba($red, .9);
+            }
+
+            &_theme_yellow {
+                background: rgba($yellow, .9);
+            }
+
+            &_theme_blue {
+                background: rgba($blue_dark, .9);
+            }
+
+            &_theme_green {
+                background: rgba($green, .9);
+            }
+        }
+
+        &-status {
+            display: block;
+            position: absolute;
+            top: 100%;
+            font-size: em(12);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            line-height: normal;
+            letter-spacing: .1em;
+            width: 100%;
+            z-index: 1;
+            @include opacity(.8);
+            padding-top: em(18,12);
+        }
+
+        &_active {
+            background: $green;
+            border-color: $green;
+        }
+
+        &_active &-name,
+        &_active &-price,
+        &_active &-link {
+            color: #fff;
+        }
+    }
+}

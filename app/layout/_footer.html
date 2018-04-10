@@ -1,0 +1,314 @@
+<footer class="footer @@theme">
+    <div class="footer__container">
+        <div class="footer__panel footer__panel_top">
+            <a href="/" class="logo footer__logo footer__panel-box">
+                <img src="images/logo@@theme.jpg" alt="logo"/>
+            </a>
+
+            <nav class="footer__panel-box footer__navigation navigation navigation_type_inline">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="septik.html" class="navigation__link">
+                            Септики
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="vodosnabjenie.html" class="navigation__link">
+                            Водоснабжение
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="otoplenie.html" class="navigation__link">
+                            Отопление
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="drenazh.html" class="navigation__link">
+                            Дренаж
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="footer__panel-box footer__contacts">
+                <div class="footer__phones">
+                    <a href="tel:+74996496450" class="footer__phones-link">
+                        +7 (499) 649-64-50
+                    </a>
+                    <a href="tel:88005002492" class="footer__phones-link">
+                        8 800 500-24-92
+                    </a>
+                </div>
+
+                <div class="footer__hint-text">
+					<span class="footer__hint-phrase caption caption_size_xl caption_bold c_green">
+                        Звоните 24/7&ensp;
+                    </span>
+					Работаем во&nbsp;все выходные и&nbsp;праздничные дни.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__panel footer__panel_bottom">
+            <div class="footer__panel-box footer__hint-text footer__copyright">
+                &copy; 2010&ndash;2017
+            </div>
+
+            <div class="footer__panel-box">
+                <a href="#modal_legal" class="js-popup-link footer__hint-text" data-heading="Правовая информация">
+                    Правовая информация
+                </a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<div id="modal_order" class="popup zoom-anim-dialog mfp-hide">
+
+    <div class="popup__content">
+
+        <div class="popup__heading heading heading_type_h1 heading_align_center">
+            Заказать расчет
+        </div>
+
+        <form action="" class="form-data popup__form-data form_feedback">
+	
+			<input type="hidden" name="utm" class="js-get-utm">
+
+            <div class="form-data__parametr">
+                <input type="text" class="form-data__input" placeholder="Имя" name="name">
+            </div>
+
+            <div class="form-data__parametr">
+                <input type="text" class="form-data__input" placeholder="Телефон" name="phone">
+            </div>
+            
+            <div class="form-data__parametr form-data__parametr_with_button">
+                <button type="submit" class="popup__button button button_theme_default button_size_m">
+                    <span class="button__text">
+                        Отправить
+                    </span>
+                </button>
+            </div>
+            
+        </form>
+
+    </div>
+
+    <div class="popup__close">
+        <span class="icon icon-close"></span>
+    </div>
+
+</div>
+
+<div id="modal-tz" class="popup zoom-anim-dialog mfp-hide">
+
+    <div class="popup__content">
+
+        <div class="popup__heading heading heading_type_h1 heading_align_center">
+            Отправьте нам техническое задание
+        </div>
+
+        <form method="post" enctype="multipart/form-data" class="form-data popup__form-data form_feedback">
+			<input type="hidden" name="utm" class="js-get-utm">
+			
+            <div class="form-data__parametr">
+                <input type="text" class="form-data__input" placeholder="Имя" name="name">
+            </div>
+
+            <div class="form-data__parametr">
+                <input type="text" class="form-data__input" placeholder="Телефон" name="phone">
+            </div>
+
+            <div class="form-data__parametr">
+                <input type="text" class="form-data__input" placeholder="E-mail" name="email">
+            </div>
+
+            <div class="form-data__parametr download">
+                <div class="download__text download__text_error"></div>
+
+                <div class="download__inp-box">
+                    <div class="download__text">
+                        <span class="download__text-icon icon icon-unlink"></span>
+                        <span class="download__text-name">Прикрепить файлы</span>
+                    </div>
+                    <input type="file" class="download__input" name="file[]" multiple="multiple">
+                </div>
+
+                <div class="download__text download__text_hint">
+                    Вы можете загрузить png, jpg, jpeg, doc, docx, rtf, pdf, xls, xlss файлов до 10 MB каждый.<br>
+                    Максимальное количество файлов 5.
+                </div>
+            </div>
+
+            <div class="form-data__parametr form-data__parametr_with_button">
+                <button type="submit" class="popup__button button button_theme_default button_size_m">
+                    <span class="button__text">
+                        Отправить
+                    </span>
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="popup__close">
+        <span class="icon icon-close"></span>
+    </div>
+
+</div>
+
+<div id="modal_success" class="popup zoom-anim-dialog mfp-hide">
+
+    <div class="popup__content popup__content_align_center">
+
+        <div class="popup__heading heading heading_type_h1 heading_align_center">
+            Спасибо!
+        </div>
+
+        <div class="popup__subhead heading heading heading_type_h5 heading_align_center">
+            Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение<br />
+            рабочего часа.
+        </div>
+
+        <button class="popup__button popup__button_close button button_theme_default button_size_m">
+            <span class="button__text">
+                Закрыть
+            </span>
+        </button>
+    </div>
+
+    <div class="popup__close">
+        <span class="icon icon-close"></span>
+    </div>
+
+</div>
+
+<div id="modal_legal" class="popup popup_legal zoom-anim-dialog mfp-hide">
+
+    <div class="popup__content">
+
+        <div class="popup__heading heading heading_type_h1">
+            Политика конфиденциальности
+        </div>
+        <p class="popup__caption caption caption_size_s">
+            Соблюдение вашей конфиденциальности важно для нас. По&nbsp;этой причине мы&nbsp;разработали Политику конфиденциальности,
+            которая описывает, как мы&nbsp;используем и&nbsp;храним вашу информацию. Пожалуйста, ознакомьтесь с&nbsp;нашими правилами
+            соблюдения конфиденциальности и&nbsp;сообщите нам, если у&nbsp;вас возникнут <nobr>какие-либо</nobr> вопросы.
+        </p>
+        
+        <div class="popup__subhead heading heading heading_type_h5">
+            Сбор и&nbsp;использование персональной информации
+        </div>
+        <p class="popup__caption caption caption_size_s">
+            Под персональной информацией понимаются данные, которые могут быть использованы для идентификации определенного лица
+            либо связи с&nbsp;ним.
+        </p>
+        <p class="popup__caption caption caption_size_s">
+            От&nbsp;вас может быть запрошено предоставление вашей персональной информации в&nbsp;любой момент, когда вы&nbsp;связываетесь с&nbsp;нами.
+        </p>
+        <p class="popup__caption caption caption_size_s">
+            Ниже приведены некоторые примеры типов персональной информации, которую мы&nbsp;можем собирать, и&nbsp;как мы&nbsp;можем
+            использовать такую информацию.
+        </p>
+        
+        <div class="popup__subhead heading heading heading_type_h5">
+            Какую персональную информацию мы&nbsp;собираем
+        </div>
+        <p class="popup__caption caption caption_size_s">
+            Когда вы&nbsp;оставляете заявку на&nbsp;сайте, мы&nbsp;можем собирать различную информацию, включая ваши имя, номер телефона, адрес
+            электронной почты <nobr>и т. д.</nobr>
+        </p>
+        
+        <div class="popup__subhead heading heading heading_type_h5">
+            Как мы&nbsp;используем вашу персональную информацию
+        </div>
+        <p class="popup__caption caption caption_size_s">
+            Собираемая нами персональная информация позволяет нам связываться с&nbsp;вами и&nbsp;сообщать об&nbsp;уникальных предложениях,
+            акциях и&nbsp;других мероприятиях и&nbsp;ближайших событиях.
+        </p>
+        <p class="popup__caption caption caption_size_s">
+            Время от&nbsp;времени, мы&nbsp;можем использовать вашу персональную информацию для отправки важных уведомлений и&nbsp;сообщений.
+        </p>
+        <p class="popup__caption caption caption_size_s">
+            Мы&nbsp;также можем использовать персональную информацию для внутренних целей, таких как проведения аудита, анализа данных
+            и&nbsp;различных исследований в&nbsp;целях улучшения услуг предоставляемых нами и&nbsp;предоставления вам рекомендаций относительно
+            наших услуг.
+        </p>
+        <p class="popup__caption caption caption_size_s">
+            Если вы&nbsp;принимаете участие в&nbsp;розыгрыше призов, конкурсе или сходном стимулирующем мероприятии, мы&nbsp;можем использовать
+            предоставляемую вами информацию для управления такими программами.
+        </p>
+        
+        <div class="popup__subhead heading heading heading_type_h5">
+            Раскрытие информации третьим лицам
+        </div>
+        <p class="popup__caption caption caption_size_s">
+            Мы&nbsp;не&nbsp;раскрываем полученную от&nbsp;вас информацию третьим лицам.
+        </p>
+
+        
+
+        <div class="popup__subhead heading heading heading_type_h5">
+            Исключения
+        </div>
+        <p class="popup__caption caption caption_size_s">
+            В&nbsp;случае если необходимо&nbsp;&mdash; в&nbsp;соответствии с&nbsp;законом, судебным порядком, в&nbsp;судебном разбирательстве, и/или на&nbsp;основании
+            публичных запросов или запросов от&nbsp;государственных органов на&nbsp;территории РФ&nbsp;&mdash; раскрыть вашу персональную информацию.
+            Мы&nbsp;также можем раскрывать информацию о&nbsp;вас если мы&nbsp;определим, что такое раскрытие необходимо или уместно в&nbsp;целях
+            безопасности, поддержания правопорядка, или иных общественно важных случаях.
+        </p>
+        <p class="popup__caption caption caption_size_s">
+            В&nbsp;случае реорганизации, слияния или продажи мы&nbsp;можем передать собираемую нами персональную информацию
+            соответствующему третьему лицу&nbsp;&mdash; правопреемнику.
+        </p>
+        
+        <div class="popup__subhead heading heading heading_type_h5">
+            Защита персональной информации
+        </div>
+        <p class="popup__caption caption caption_size_s">
+            Мы&nbsp;предпринимаем меры предосторожности&nbsp;&mdash; включая административные, технические и&nbsp;физические&nbsp;&mdash; для защиты вашей
+            персональной информации от&nbsp;утраты, кражи, и&nbsp;недобросовестного использования, а&nbsp;также от&nbsp;несанкционированного доступа,
+            раскрытия, изменения и&nbsp;уничтожения.
+        </p>
+        
+        <div class="popup__subhead heading heading heading_type_h5">
+            Соблюдение вашей конфиденциальности на&nbsp;уровне компании
+        </div>
+        <p class="popup__caption caption caption_size_s">
+            Для того чтобы убедиться, что ваша персональная информация находится в&nbsp;безопасности, мы&nbsp;доводим нормы соблюдения
+            конфиденциальности и&nbsp;безопасности до&nbsp;наших сотрудников, и&nbsp;строго следим за&nbsp;исполнением мер соблюдения
+            конфиденциальности.
+        </p>
+    </div>
+
+    <div class="popup__close">
+        <span class="icon icon-close"></span>
+    </div>
+
+</div>
+
+<!--build:js js/vendor.min.js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.inputmask.bundle.js"></script>
+<!-- bower:js -->
+<!-- endbower -->
+<!-- endbuild -->
+<!--build:js js/main.min.js -->
+<script src="js/main.js"></script>
+<script src="js/online-test.js"></script>
+<script src="js/full-catalog.js"></script>
+<!-- endbuild -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjJGoGZpbHP0NAU5AdG_LmUGIVg-_HCL8&callback=initMap"
+        async defer></script>
+<script src="js/map.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+.card-single {
+
+  max-width: 1000px;
+
+  @media #{$breakpointDisplay} {
+    max-width: 800px;
+  }
+
+  @media #{$breakpointTablet} {
+    max-width: 600px;
+  }
+
+  @media #{$breakpointMobile} {
+    margin: auto;
+  }
+
+  @media #{$breakpointBig} {
+
+  }
+
+  //top-block-----------
+  &__top-block {
+    @include flexbox;
+    @include justify-content(space-between);
+    @media #{$breakpointMobile} {
+      @include flex-wrap(wrap);
+      align-items: center;
+    }
+    @media #{$breakpointMobile} {
+      text-align: center;
+    }
+  }
+  &__info-block {
+    @include flex-grow(1);
+    padding-left: 30px;
+    @media #{$breakpointMobile} {
+      //padding-left: 0;
+      padding: 0 10px;
+    }
+  }
+  &__razdel {
+    color: #808A91;
+  }
+  &__description-block {
+    @include flexbox;
+    @include justify-content(space-between);
+    @media #{$breakpointTablet} {
+      @include flex-direction(column);
+    }
+    @media #{$breakpointMobile} {
+      text-align: center;
+    }
+  }
+  &__price-block {
+    margin-right: 20px;
+    @media #{$breakpointMobile} {
+      margin-right: 0;
+    }
+  }
+  &__img-block {
+    @media #{$breakpointMobile} {
+      margin: auto;
+    }
+  }
+  &__img {
+    width: 289px;
+    height: 289px;
+
+    @media #{$breakpointDisplay} {
+      width: 200px;
+      height: 200px;
+    }
+    @media #{$breakpointTablet} {
+      width: 289px;
+      height: 289px;
+    }
+  }
+  &__description-button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 8px 10px 0;
+    &_hit {
+      background-color: #ffd800;
+    }
+    &_blue {
+      background-color: #65aaff;
+      color: #fff;
+    }
+  }
+  //---------------------
+  &__paragraph-text {
+    text-indent: 10px;
+    color: #808A91;
+    @media #{$breakpointMobile} {
+      padding: 0 10px;
+    }
+  }
+  //bottom-block----------
+  &__options-block {
+    list-style: none;
+    padding: 0;
+    @include flexbox;
+    @include justify-content(space-around);
+    margin: 40px 0;
+    border-bottom: solid 1px #f6f6f6;
+    font-weight: 600;
+    line-height: 30px;
+    @media #{$breakpointMobile} {
+      @include flex-direction(column);
+      padding-left: 20px;
+      margin: 20px 0;
+    }
+  }
+
+  &__option {
+    cursor: pointer;
+    padding: 0 10px;
+    &.active {
+      border-bottom: solid 2px #87bb16;
+    }
+    @media #{$breakpointMobile} {
+      width: 200px;
+    }
+  }
+
+  &__content-block {
+    position: relative;
+    @media #{$breakpointMobile} {
+      margin: 0 10px;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    transition: all .3s;
+    &.active {
+      position: relative;
+      top: 0;
+      opacity: 1;
+      transition: all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+  }
+
+  &__about-text {
+    color: #808A91;
+  }
+  //------------------------------------
+  .compare__block {
+    @media #{$breakpointMobile} {
+      width: 153px;
+      margin: auto;
+    }
+  }
+  .card__card-table {
+    @media #{$breakpointMobile} {
+      margin: auto;
+      text-align: left;
+    }
+  }
+  .card__price {
+    @media #{$breakpointMobile} {
+      margin: auto;
+
+      width: 154px;
+    }
+  }
+
+
+
+}
+//---------------------------------------------------------------------
+.character {
+  display: table;
+  &__title {
+    margin: 5px 0;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 20px;
+    @media #{$breakpointMobile} {
+      font-size: 15px;
+    }
+  }
+  &__table-name-block, &__table-value-block {
+    display: table-cell;
+    width:  200px;
+    padding: 5px 0;
+  }
+  &__table-name, &__table-value {
+    padding: 10px 0;
+    line-height: 19px;
+    @media #{$breakpointMobile} {
+      padding: 5px 0;
+      line-height: 15px;
+    }
+  }
+  &__table-name-block {
+    color: #808A91;
+  }
+}
+//-----------------------------------------
+.chart {
+  @include flexbox;
+  @include justify-content(space-between);
+
+  @media #{$breakpointMobile} {
+    @include flex-direction(column);
+    align-items: center;
+  }
+  &__table-block {
+    @include flex-grow(1);
+    max-width: 360px;
+    @media #{$breakpointTablet} {
+      margin-left: 10px;
+      max-width: 290px;
+    }
+    @media #{$breakpointMobile} {
+     margin-top: 20px;
+      max-width: 360px;
+    }
+  }
+
+  &__img-block {
+
+  }
+  &__download {
+    display: block;
+    margin: 10px 0;
+    padding-left: 18px;
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 1px;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      content: " ";
+      width: 12px;
+      height: 12px;
+      background: url("../images/download.png") no-repeat;
+    }
+  }
+  &__img {
+    width: 289px;
+    height: 253px;
+    @media #{$breakpointTablet} {
+      width: 192px;
+      height: 167px;
+    }
+    @media #{$breakpointMobile} {
+      width: 289px;
+      height: 253px;
+    }
+  }
+  &__table-name {
+    vertical-align: top;
+    color: #808A91;
+  }
+  &__table-value {
+    vertical-align: top;
+    font-weight: 600;
+    font-size: 15px;
+    width: 130px;
+  }
+  &__table-value, &__table-name {
+    padding: 5px 10px 5px 0;
+  }
+}
+//-----------------------------------------
+.card-feedback {
+   &__img {
+     width: 82px;
+     height: 82px;
+   }
+   &__wrp {
+     margin-top: 30px;
+   }
+   &__box {
+     @include flexbox;
+     margin: 15px 0;
+     border-bottom: solid 1px #f6f6f6;
+   }
+   &__info-block {
+     padding-left: 30px;
+   }
+   &__name {
+     font-weight: 600;
+   }
+   &__date {
+     color: #808A91;
+   }
+}
+//-----------------------------------------
+.article {
+  &__img {
+    width: 82px;
+    height: 82px;
+  }
+  &__wrp {
+    margin-top: 30px;
+  }
+  &__box {
+    @include flexbox;
+    margin: 15px 0;
+    border-bottom: solid 1px #f6f6f6;
+  }
+  &__info-block {
+    padding-left: 30px;
+  }
+  &__name {
+    font-weight: 600;
+  }
+}
+//-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

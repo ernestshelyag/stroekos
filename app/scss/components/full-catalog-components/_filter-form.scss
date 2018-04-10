@@ -1,0 +1,113 @@
+.filter-form {
+  width: 216px;
+
+  @media #{$breakpointMobile} {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .mobile-hide {
+    @media #{$breakpointMobile} {
+      display: none;
+      margin-bottom: 15px;
+    }
+  }
+
+  label {
+    line-height: 20px;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: #f6f6f6;
+    margin: 0;
+    margin-top: 15px;
+    @media #{$breakpointMobile} {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 40px;
+    display: block;
+    &.trangle {
+      &:after {
+        opacity: 0;
+      }
+    }
+    @media #{$breakpointMobile} {
+      cursor: pointer;
+      &.trangle {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+    &_count {
+      display: inline-block;
+    }
+  }
+  &__count-input {
+    width: 50px;
+    border: solid 1px #cacaca;
+    padding-left: 5px;
+    text-align: right;
+    margin-left: 20px;
+
+    @media #{$breakpointMobile} {
+      float: right;
+      margin-top: 12px;
+    }
+  }
+  &__volum-range, &__price-range {
+    height: 4px;
+    background: #e0e0e0;
+    border: none !important;
+    margin: 21px 0 31px;
+    .ui-slider-handle {
+      background: #87bb16;
+      border-radius: 50px;
+      width: 20px;
+      height: 20px;
+      border: none;
+      margin-top: -3px;
+      outline: none;
+      cursor: pointer;
+    }
+    .ui-slider-range {
+      background: #87bb16;
+      height: 4px;
+    }
+  }
+  &__volum-input-boxes, &__price-input-boxes {
+    margin-top: 20px;
+    input {
+      border: solid 1px #cacaca;
+      width: 73px;
+      padding-left: 4px;
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
+    span {
+      font-weight: 600;
+      padding-right: 4px;
+    }
+  }
+  &__volum-input-left, &__price-input-left {
+    margin-right: 9px;
+  }
+  &__more-options {
+    display: none;
+  }
+  &__submit {
+    width: 100%;
+    margin: 20px 0 8px;
+  }
+  &__submit-btn {
+    min-width: 100%;
+  }
+}

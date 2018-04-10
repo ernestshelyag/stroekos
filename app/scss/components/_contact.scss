@@ -1,0 +1,42 @@
+//contact
+.contact {
+    position: relative;
+
+    &__map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__box-text {
+        margin-right: em(30);
+
+        @media #{$breakpointMobile} {
+            margin: 0 em(5,12);
+        }
+
+        &_size_m {
+            font-size: em(19);
+            font-weight: 700;
+
+            @media #{$breakpointMobile} {
+                font-size: em(13,12);
+            }
+        }
+    }
+
+    &__feedback-form {
+        margin-top: em(70);
+    }
+
+    &__link-prev {
+        margin-left: 0;
+
+        @media #{$breakpointMobile} {
+            margin-bottom: em(30,12);
+        }
+    }
+}

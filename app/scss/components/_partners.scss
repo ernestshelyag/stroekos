@@ -1,0 +1,57 @@
+//partners
+.partners {
+    @extend %flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include flex-wrap(wrap);
+
+    &__item {
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        margin: 1.5em 0;
+        padding: 0 1%;
+
+        @media #{$breakpointTablet} {
+            padding: 0 3%;
+        }
+
+        @media #{$breakpointMobile} {
+            width: 50%;
+            padding: 0 10%;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    &_size_six {
+        @media #{$breakpointDisplay} {
+            padding-left: $col_md;
+            padding-right: $col_md;
+        }
+
+        @media #{$breakpointTablet} {
+            padding-left: $col_sm;
+            padding-right: $col_sm;
+        }
+
+        @media #{$breakpointMobile} {
+            padding-left: $col_xs;
+            padding-right: $col_xs;
+        }
+    }
+
+    &_size_six &__item {
+        max-width: 16.66667%;
+        width: auto;
+
+        @media #{$breakpointMobile} {
+            max-width: inherit;
+            width: 32%;
+            padding: 0 2%;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+//carousel-mobile
+
+@media #{$breakpointMobile} {
+    .carousel-mobile {
+        padding-bottom: em(80,12);
+
+        .slick-arrow {
+            position: absolute;
+            z-index: 3;
+            bottom: em(8,12);
+            font-size: $col_lg/2;
+            line-height: 1;
+            @include transition(all 0.4s ease);
+
+            &:hover {
+                color: $green;
+            }
+
+            &:active {
+                @include scale(0.9);
+            }
+
+            .icon {
+                display: inline-block;
+                padding: $col_xs/2;
+            }
+        }
+
+        .slick-prev {
+            right: 50%;
+        }
+
+        .slick-next {
+            left: 50%;
+            right: auto;
+        }
+        
+        &.team__row .slick-arrow {
+            color: #000;
+            bottom: $col_xs;
+
+            &:hover {
+                color: $green;
+            }
+
+            &:active {
+                @include scale(0.9);
+            }
+        }
+        
+
+
+        &.numbered-list_size_min .slick-arrow {
+            bottom: em(4,12);
+        }
+        &.numbered-list_size_min .slick-prev {
+            right: auto;
+            left: $col_xs*4;
+        }
+        &.numbered-list_size_min .slick-next {
+            right: $col_xs*4;
+        }
+        
+        &.catalog-promo {
+            padding-bottom: em(10,12);
+            margin-bottom: em(60,12);
+        }
+        &.catalog-promo .slick-arrow {
+            bottom: - em(22,12);
+        }
+    }
+}

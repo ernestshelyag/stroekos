@@ -1,0 +1,39 @@
+//fact
+.fact {
+    text-align: center;
+    margin: em(33) 0;
+
+    &__img {
+        height: em(160);
+        margin-bottom: em(15);
+        line-height: em(160);
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    &__name {
+        font: 700 em(20) $roboto;
+    }
+
+    @media #{$breakpointMobile} {
+        @include flexbox();
+        @include align-items(center);
+        margin: em(10,12);
+
+        &__img {
+            width: $col_xs*6;
+            margin-right: $col_xs;
+            height: auto;
+            line-height: normal;
+            float: left;
+        }
+
+        &__name {
+            text-align: left;
+        }
+    }
+}

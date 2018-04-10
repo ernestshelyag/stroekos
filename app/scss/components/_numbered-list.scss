@@ -1,0 +1,27 @@
+//Numbered-list
+.numbered-list {
+
+    & + .button {
+        margin-top: 2em;
+    }
+    
+    &_margin_top {
+        
+        &_s {
+            margin-top: em(10);
+        }
+        
+        &_m {
+            margin-top: em(50);
+        }
+        
+        &_l {
+            margin-top: em(68);
+        }
+        
+        &_xl {
+            margin-top: em(76);
+        }
+    }
+    
+}

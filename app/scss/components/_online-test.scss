@@ -1,0 +1,396 @@
+//online-test
+.online-test {
+
+  &__block {
+    max-width: 904px;
+    min-width: 320px;
+    margin: 50px auto;
+    text-align: center;
+    form {
+      .step {
+        .step-box {
+          @extend %shadow;
+          position: relative;
+          padding: 38px 0 44px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .small {
+            max-width: 538px;
+          }
+          &:before {
+            content: "\e902";
+            color: #DEDEDE;
+            position: absolute;
+            left: 50px;
+            font-size: 36px;
+            height: 36px;
+          }
+          &:after {
+            content: "\e901";
+            color: #DEDEDE;
+            position: absolute;
+            right: 50px;
+            font-size: 36px;
+            height: 36px;
+          }
+          &:before, &:after {
+            /* use !important to prevent issues with browser extensions that change fonts */
+            font-family: $icon_font !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            /* Better Font Rendering =========== */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+          .title-step {
+            margin-bottom: 25px;
+            font-size: 27px;
+            font-weight: 600;
+          }
+          .questions__block {
+            text-align: left;
+          }
+          .box-btn {
+            .next {
+              position: absolute;
+              right: 50px;
+              height: 36px;
+              font-size: 36px;
+              color: #000;
+              &:hover {
+                color: #87bb16;
+                transition: all .3s;
+              }
+            }
+            .back {
+              position: absolute;
+              left: 50px;
+              height: 36px;
+              font-size: 36px;
+              color: #000;
+              &:hover {
+                color: #87bb16;
+                transition: all .3s;
+              }
+            }
+            a {
+              cursor: pointer;
+              z-index: 20;
+            }
+          }
+        }
+      }
+    }
+  }
+  .final-step {
+    @extend %shadow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .back {
+      position: absolute;
+      height: 36px;
+      font-size: 36px;
+      color: #000;
+      &:hover {
+        color: #87bb16;
+        transition: all .3s;
+      }
+    }
+    .title-step {
+      margin: 25px 0 10px;
+      font-size: 27px;
+      font-weight: 600;
+    }
+    .small {
+      margin-bottom: 20px;
+      color: #798187;
+    }
+    .form-p {
+      margin-bottom: 20px;
+      span {
+        text-transform: lowercase;
+        display: block;
+        text-align: left;
+        position: relative;
+        cursor: pointer;
+        line-height: 20px;
+        &:before {
+          position: absolute;
+          content: '';
+          height: 5px;
+          width: 8px;
+          left: -15px;
+          bottom: 8px;
+          transform: rotate(-45deg);
+          border-left: 2px solid #6ABC00;
+          border-bottom: 2px solid #6ABC00;
+        }
+      }
+      .btn-group {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 320px;
+        z-index: 100;
+        background: #fff;
+        border: solid 1px #cacaca;
+        padding-right: 10px;
+        ul {
+          list-style: none;
+          text-align: left;
+          .select-box {
+            line-height: 17px;
+            position: relative;
+            label {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .send__form {
+      .info {
+        p {
+          color: #fff;
+          font-size: 27px;
+        }
+      }
+      span {
+        font-size: 15px;
+        color: #fff;
+      }
+    }
+    .send__form {
+      @extend %gradient;
+      .info {
+        input {
+          display: block;
+          margin: 0 auto;
+          padding: 12px;
+          width: 280px;
+          margin-bottom: 10px;
+          border: none;
+        }
+      }
+      .submit {
+        .main-btn {
+          background: #9FCD3B;
+          box-shadow: 1px 2px 1px #00AB3B;
+          border: none;
+          padding: 12px;
+          width: 220px;
+          color: #fff;
+          transition: all .3s;
+          &:hover {
+            background: #87BB16;
+            transition: all .3s;
+          }
+        }
+      }
+      .warning {
+        margin: 20px 0 30px;
+        display: block;
+      }
+    }
+  }
+  .select-box {
+    position: relative;
+    line-height: 27px;
+    .datepicker {
+      visibility: visible;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 150px;
+      margin: auto;
+      border: solid 1px #cacaca;
+      @extend %shadow;
+      padding-left: 5px;
+      display: none;
+    }
+    input {
+      position: absolute;
+      visibility: hidden;
+      &:checked ~ .check {
+        border: 2px solid #6ABC00;
+        background: #E6FFC3;
+        &:before {
+          background: #6ABC00;
+        }
+      }
+      &:checked ~ label {
+        color: #6ABC00;
+      }
+    }
+    label {
+      font-size: 17px;
+      display: block;
+      position: relative;
+      padding: 0px 25px 0px 30px;
+      margin: 10px auto;
+      z-index: 9;
+      cursor: pointer;
+      -webkit-transition: all 0.25s linear;
+    }
+    &:hover {
+      label {
+        color: #6ABC00;
+      }
+      .check {
+        border: 2px solid #6ABC00;
+      }
+    }
+    .check {
+      display: block;
+      position: absolute;
+      border: 2px solid #e4e2e2;
+      border-radius: 100%;
+      height: 12px;
+      width: 12px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0px;
+      z-index: 5;
+      transition: border .25s linear;
+      -webkit-transition: border .25s linear;
+      &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        border-radius: 100%;
+        height: 4px;
+        width: 4px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        transition: background 0.25s linear;
+        -webkit-transition: background 0.25s linear;
+      }
+    }
+  }
+  &__error {
+    border:solid 3px red!important;
+  }
+}
+
+//datapicker-styles
+
+.ui-datepicker {
+  background: #fff;
+  padding: 20px;
+  border: solid 1px #cacaca;
+  z-index: 1000!important;
+  font-family: "futurabookcregular", sans-serif;
+  color: #6ABC00;
+
+  .ui-datepicker-header {
+    background: transparent;
+    border: none;
+    color: #333;
+  }
+
+  .ui-state-default {
+    background: transparent!important;
+    border: solid 1px transparent!important;
+  }
+
+  .ui-state-highlight {
+    color: #333!important;
+    border: solid 1px #6ABC00!important;
+  }
+
+  .ui-state-active {
+    border: solid 1px transparent!important;
+    background: #6ABC00!important;
+    color: #fff!important;
+  }
+
+  // стрелки для календаря
+  .ui-datepicker-prev {
+    background-image: url(../images/back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .ui-datepicker-next {
+    background-image: url(../images/next.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
+
+
+
+
+//responsive
+
+@media screen and (min-width: 769px) {
+  .online-test {
+    .step-box {
+      min-height: 340px;
+      &:before, &:after {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+    .box-btn {
+      .next, .back {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+    .final-step {
+      .back {
+        margin: 0;
+        top: 25px;
+        left: 50px;
+      }
+    }
+    .questions__block {
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .online-test {
+    .step-box {
+      min-height: 400px;
+      &:before, &:after {
+        bottom: 20px;
+      }
+    }
+    .box-btn {
+      .next, .back {
+        bottom: 20px;
+      }
+    }
+    .final-step {
+      .back {
+        top: 25px;
+        left: 5px;
+      }
+    }
+  }
+  .questions__block {
+    margin: auto 40px;
+  }
+}
+
+.btn-group {
+  display: none;
+}

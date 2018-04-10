@@ -1,0 +1,98 @@
+//Numbered
+.numbered {
+    text-align: left;
+
+    &__number {
+        color: $green_light;
+        margin-bottom: em(36,48);
+    }
+
+    &__heading {
+        .numbered-list_size_min & {
+            font: 400 em(17) $futura;
+        }
+    }
+
+    .numbered-list_theme_dark & {
+        color: $grey;
+    }
+
+    &__button {
+        display: block;
+        margin-top: 5em;
+    }
+
+    @media #{$breakpointDisplay} {
+        &__number {
+            margin-bottom: em(36,48);
+
+            .numbered-list_size_min & {
+                font-size: em(18,15);
+            }
+        }
+
+        &__heading {
+            font-size: em(14,15);
+            line-height: em(19,14);
+            
+            .numbered-list_size_min & {
+                font: 400 em(15,15) $futura;
+            }
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        &__number {
+            font-size: em(48,13);
+            line-height: em(46,48);
+            margin-bottom: em(26,48);
+
+            .numbered-list_size_min & {
+                font-size: em(14,13);
+            }
+        }
+
+        &__heading {
+            font-size: em(14,13);
+            line-height: em(19,14);
+
+            .numbered-list_size_min & {
+                font: 400 em(14,13) $futura;
+            }
+        }
+
+        .numbered-list_size_min & {
+            max-width: 23%;
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        @include flexbox();
+        @include align-items(flex-start);
+
+        .numbered-list_size_min & {
+            text-align: center;
+        }
+
+
+        &__number {
+            font-size: em(24,12);
+            line-height: em(24,24);
+            margin-bottom: em(32,24);
+            margin-right: em(26,24);
+
+            .numbered-list_size_min & {
+                font-size: em(14,12);
+            }
+        }
+
+        &__heading {
+            font-size: em(14,12);
+            line-height: em(20,14);
+
+            .numbered-list_size_min & {
+                font: 400 em(14,12) $futura;
+            }
+        }
+    }
+}

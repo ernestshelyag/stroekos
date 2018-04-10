@@ -1,0 +1,92 @@
+[
+  {
+    "parent": "2",
+    "number": "11",
+    "title": "Кристалл",
+    "price": "66&nbsp;300"
+  },
+  
+  {
+    "parent": "2",
+    "number": "1",
+    "title": "Топас",
+    "price": "73&nbsp;000"
+  },
+
+  {
+    "parent": "2",
+    "number": "2",
+    "title": "Топас-С",
+    "price": "61&nbsp;700"
+  },
+
+  {
+    "parent": "2",
+    "number": "3",
+    "title": "Тверь",
+    "price": "66&nbsp;300"
+  },
+
+  {
+    "parent": "2",
+    "number": "4",
+    "title": "Астра",
+    "price": "66&nbsp;300"
+  },
+
+  {
+    "parent": "2",
+    "number": "5",
+    "title": "Экоград",
+    "price": "66&nbsp;300"
+  },
+
+  {
+    "parent": "2",
+    "number": "6",
+    "title": "Евробион",
+    "price": "66&nbsp;300"
+  },
+
+  {
+    "parent": "2",
+    "number": "7",
+    "title": "Евролос Био",
+    "price": "66&nbsp;300"
+  },
+
+  {
+    "parent": "2",
+    "number": "8",
+    "title": "Евролос Про",
+    "price": "66&nbsp;300"
+  },
+
+  {
+    "parent": "2",
+    "number": "9",
+    "title": "Биодека",
+    "price": "66&nbsp;300"
+  },
+
+  {
+    "parent": "2",
+    "number": "10",
+    "title": "Биокси",
+    "price": "66&nbsp;300"
+  },
+
+  {
+    "parent": "2",
+    "number": "12",
+    "title": "Альта Био",
+    "price": "66&nbsp;300"
+  },
+
+  {
+    "parent": "2",
+    "number": "13",
+    "title": "Барс",
+    "price": "66&nbsp;300"
+  }
+]

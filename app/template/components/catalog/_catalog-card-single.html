@@ -1,0 +1,21 @@
+<section class="catalog">
+  <div class="catalog__wrp">
+
+    <h2 class="catalog__heading heading heading_type_h2">
+      @@heading
+    </h2>
+
+    @@if (context.caption) {
+    <p class="catalog__caption caption caption_size_m">
+      @@caption
+    </p>
+    }
+
+    <div class="catalog__slider post-slider carousel_catalog">
+
+      @@loop("_post.html", "components/catalog/septik_@@id.json")
+
+    </div>
+
+  </div>
+</section>

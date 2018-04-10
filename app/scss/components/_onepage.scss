@@ -1,0 +1,51 @@
+//onepage
+.onepage {
+    min-height: 800px;
+    height: 100vh;
+    position: relative;
+    @extend %flexbox;
+    overflow: hidden;
+    
+    &_type_blog {
+        height: 100%;
+    }
+
+    @media #{$breakpointDisplay} {
+        min-height: 600px;
+    }
+
+    @media #{$breakpointTablet} {
+        min-height: 480px;
+    }
+
+    @media #{$breakpointMobile} {
+        height: auto;
+        min-height: 220px;
+        @include flex-wrap(wrap);
+    }
+
+    &__header {
+        @include flex-basis(290px);
+        @include flex-shrink(0);
+
+        @media #{$breakpointDisplay} {
+            @include flex-basis(205px);
+        }
+
+        @media #{$breakpointTablet} {
+            @include flex-basis(152px);
+        }
+
+        @media #{$breakpointMobile} {
+            @include flex-basis(100%);
+        }
+    }
+
+    &__promo-slider {
+        @include flex-grow(1);
+
+        @media #{$breakpointMobile} {
+            @include flex-basis(100%);
+        }
+    }
+}

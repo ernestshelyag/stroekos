@@ -1,0 +1,55 @@
+//Social
+.social {
+	
+	
+	&__heading {
+		font-size: 24px;
+		line-height: em(30,24);
+		display: inline-block;
+		margin-right: em(100,24);
+		padding-top: 3px;
+
+		@media #{$breakpointTablet} {
+			font-size: 20px;
+			margin-right: 79px;
+		}
+
+		@media #{$breakpointMobile} {
+			text-align: center;
+			display: block;
+			margin-right: 0;
+		}
+	} 
+	
+	&__list {
+		display: inline-block;
+		vertical-align: middle;
+		padding-bottom: 10px;
+
+		@media #{$breakpointMobile} {
+			text-align: center;
+			display: block;
+			padding-bottom: 0;
+		}
+		
+	}
+
+	&__item {
+		display: inline-block;
+		margin-right: em(43);
+		width: 30px;
+		height: 30px;
+		
+		&:hover {
+			@include opacity(.7);
+		}
+
+		@media #{$breakpointMobile} {
+			margin: 10px 10px 0;
+		}
+	}
+	
+	&__icon {
+		
+	}
+}

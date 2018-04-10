@@ -1,0 +1,272 @@
+@@include('layout/_head.html', {
+    "title" : "Заказать монтаж дренажной системы в компании «Строительные Экосистемы», г. Москва",
+    "description" : "В компании «Строительные Экосистемы» вы можете заказать дренажные работы для участка по выгодной цене. Мы рассчитаем стоимость проекта и произведем монтаж дренажной системы. Все подробности на сайте, заходите!",
+    "keywords" : "дренажная система дома, дренажная система на участке, дренажная система цена, купить, расчет, проектирование, установка дренажной системы, монтаж"
+})
+    <section class="onepage">
+        @@include('layout/_header.html', {
+        "navigationTheme" : "navigation_theme_light"
+        })
+
+        @@include('components/_promo-slider.html', {
+        "image" : "images/drenazh/banner.jpg",
+        "linkPrev" : "Вернуться на главную",
+        "classMain" : "onepage__promo-slider promo-slider_theme_light",
+        "title" : "Дренажные системы &laquo;под ключ&raquo;",
+        "text" : "Заболоченная почва, влажность в&nbsp;подвале и&nbsp;доме, постепенно размывающийся <br class='md-hide' />фундамент&nbsp;&mdash; это признаки высоких грунтовых вод. Решение этих проблем &mdash; <br class='md-hide' />дренажная система на&nbsp;загородном участке."
+        })
+    </section>
+
+    <section class="section section_theme_blue section_shadow section_numbered-list section_numbered-list-min">
+        <div class="section__wrp">
+            <div class="numbered-list grid grid_flex">
+
+                @@loop('components/_numbered.html', [
+                { "number": "01", "heading": "Первичный расчет <br />проекта <span class='c_green_light'>за&nbsp;15&nbsp;минут</span>" },
+                { "number": "02", "heading": "Бесплатный выезд <br />замерщика <br />и&nbsp;<span class='c_green_light'>проект в&nbsp;подарок</span>" },
+                { "number": "03", "heading": "<span class='c_green_light'>Комплексная установка</span> <br />системы дренажа и&nbsp;септика" },
+                { "number": "04", "heading": "Возможна <br />беспроцентная <br /><span class='c_green_light'>рассрочка</span>" }
+                ])
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_dirty section_dirty_xs section_align_center">
+        <div class="section__wrp">
+            <div class="section__heading heading heading_type_h1">
+                Лишняя влага&nbsp;&mdash; лишние хлопоты
+            </div>
+
+            <p class="caption caption_align_center c_grey">
+                Глиняная почва, высокие грунтовые воды&nbsp;&mdash; все это приводит к&nbsp;глубоким &laquo;застойным&raquo; лужам,<br class="xs-hide" />
+                которые могут не&nbsp;высыхать несколько дней. Это приводит к&nbsp;гниению растений и&nbsp;построек на&nbsp;участке.<br class="xs-hide" />
+                Решение одно&nbsp;&mdash; проведение дренажа.
+            </p>
+        </div>
+    </section>
+
+    <section class="variant" style="background-image: url(../images/variant_bg2.jpg);">
+        <div class="variant__wrp">
+            <div class="variant__heading heading heading_type_h3 heading_align_center">
+                Компания &laquo;Строительные экосистемы&raquo;<br class="xs-hide" />
+                проектирует и&nbsp;устанавливает различные виды<br class="xs-hide" />
+                системы водоотведения.
+            </div>
+
+            <div class="variant__list numbered-list grid grid_flex">
+
+                @@loop('components/_numbered.html', [
+                { "number": "01", "heading": "Глубинный дренаж <br />участка" },
+                { "number": "02", "heading": "Дренаж фундамента <br />и&nbsp;подвала" },
+                { "number": "03", "heading": "Поверхностный <br />дренаж участка" },
+                { "number": "04", "heading": "Ливневая канализация" }
+                ])
+
+            </div>
+
+            <div class="variant__footer">
+                <a href="#modal_order" class="js-popup-link variant__button button button_theme_lite button_size_s button_align_center" data-heading="Рассчитать проект">
+                    <span class="button__text">
+                        Рассчитать проект
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_factors">
+        <div class="section__wrp">
+            <div class="heading heading_type_h2 heading_align_center">
+                Зачем вам нужно установить<br />
+                систему водоотведения
+            </div>
+
+            <div class="factors grid grid_three grid_flex grid_flex_center">
+                @@loop('components/_fact.html', [
+                {"classMain": "grid__box", "number": "5", "name": "Вы&nbsp;постоянно живете <br />в&nbsp;загородном доме"},
+                {"classMain": "grid__box", "number": "12", "name": "Хотите обустроить участок <br />и&nbsp;заняться ландшафтным <br />дизайном"},
+                {"classMain": "grid__box", "number": "13", "name": "Каждый раз после дождя <br />или по&nbsp;весне поднимаются <br />грунтовые воды"}
+                ])
+            </div>
+        </div>
+    </section>
+
+    <section class="calc section_theme_blue section_shadow">
+        <div class="calc__wrp">
+            
+            <h2 class="calc__heading heading heading_type_h2 heading_align_center">
+                Рассчитайте примерную стоимость работ
+            </h2>
+            
+            <p class="calc__caption caption_size_m caption_size_m_high caption_double_margin caption_bold caption_align_center">
+                Стоимость дренажа зависит от&nbsp;глубины прокладки трубы и&nbsp;от&nbsp;его предназначения.
+            </p>
+            
+            <div class="calc__content grid grid_flex">
+                
+                <div class="calc__form">
+                    <form action="" class="form-data">
+                        
+                        <div class="form-data__parametr">
+                            <select class="form-data__select js-calc-select-main" name="calc-select-main">
+                                <option value="calc1" selected="selected">Дренаж участка</option>
+                                <option value="calc2">Дренаж фундамента</option>
+                            </select>
+                        </div>
+                        
+                        <div class="calc__box calc__box_active calc__calc1" data-id="calc1">
+                            <div class="form-data__parametr calc__value-calc1">
+                                <input type="text" class="form-data__input js-calc-value-calc1" placeholder="Количество соток" value="" name="calc-value-calc1">
+                            </div>
+                            
+                            <div class="calc__hint">
+                                <p class="caption_size_xs caption_opacity caption_half_margin">
+                                    *&nbsp;1&nbsp;м. дренажа осушает примерно 7&ndash;8&nbsp;м&sup2;
+                                </p>
+
+                                <p class="caption_size_xs caption_opacity caption_half_margin">
+                                    **&nbsp;в&nbsp;стоимость не&nbsp;входят песок и&nbsp;щебень, а&nbsp;также поворотные,
+                                    смотровые и&nbsp;дренажные колодцы с&nbsp;насосным<br />
+                                    оборудованием (по&nbsp;необходимости).
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="calc__box" data-id="calc2">
+                            <div class="form-data__parametr">
+                                <input type="text" class="form-data__input js-calc-value-calc2" placeholder="Периметр фундамента, м" value="" name="calc-value-calc2">
+                            </div>
+
+                            <div class="form-data__parametr grid grid_flex grid_flex_center_vertical calc__deep">
+                                <label for="calc-select-deep" class="form-data__label calc__label caption caption_size_s caption_bold">
+                                    Глубина фундамента,&nbsp;м
+                                </label>
+                                
+                                <select class="form-data__select js-calc-select-deep" name="calc-select-deep" id="calc-select-deep">
+                                    <option value="1850" selected="selected">1,5</option>
+                                    <option value="1950">1,6</option>
+                                    <option value="2125">1,7</option>
+                                    <option value="2320">1,8</option>
+                                    <option value="2530">1,9</option>
+                                    <option value="2760">2,0</option>
+                                    <option value="2950">2,1</option>
+                                    <option value="3150">2,2</option>
+                                    <option value="3350">2,3</option>
+                                    <option value="3650">2,4</option>
+                                    <option value="3850">2,5</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+                
+                <div class="calc__info">
+                    <div class="calc__total heading heading_type_h2 c_green_light">
+                        <div class="js-calc-total normal">от&nbsp;15 000</div>&nbsp;<span class="rub">₽</span>
+                    </div>
+
+                    <p class="caption_size_m caption_size_m_high caption_bold caption_opacity">
+                        Мы&nbsp;используем только качественные расходные материалы: щебень, геотекстиль, ПНД труба. А&nbsp;также систему <nobr>Софт-Рок</nobr> (<nobr>Эко-дренаж</nobr>).
+                    </p>
+
+                    <a href="#modal_order" class="js-popup-link calc__button button button_theme_lite button_size_s" data-heading="Оставить заявку">
+                        <span class="button__text js-calc-button">
+                            Оставить заявку
+                        </span>
+                    </a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="section section_align_center section_numbered-list section_numbered-list-min">
+        <div class="section__wrp">
+            <div class="section__heading heading heading_type_h2">
+                Как мы работаем?
+            </div>
+
+            <div class="numbered-list grid grid_flex numbered-list_size_min numbered-list_theme_dark numbered-list_margin_top_l carousel-mobile">
+
+                @@loop('components/_numbered.html', [
+                { "number": "01. Заявка", "heading": "Наш менеджер перезвонит <br />вам для уточнения деталей." },
+                { "number": "02. Проектирование", "heading": "Если это будет необходимо, <br />наш инженер приедет к&nbsp;вам, <br />чтобы произвести все замеры, <br />и&nbsp;просчитать детальную смету." },
+                { "number": "03. Предложение", "heading": "Предложим несколько <br />вариантов, исходя из&nbsp;вашего <br />запроса: от&nbsp;недорогих <br />до&nbsp;премиальных." },
+                { "number": "04. Выезд мастера", "heading": "Останется только договориться <br />о&nbsp;времени установки. Мы <br />приедем, когда вам будет <br />удобно." }
+                ])
+
+            </div>
+
+            <a href="#modal_order" class="js-popup-link button button_theme_lite button_size_s" data-heading="Рассчитать проект">
+                <span class="button__text">
+                    Рассчитать проект
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <section class="section section_theme_grey section_advantages-slider">
+        <div class="section__wrp">
+            <div class="heading heading_type_h2">
+                Почему вам стоит обратиться<br />
+                в&nbsp;&laquo;Строительные экосистемы&raquo;?
+            </div>
+
+            <div class="advantages-slider">
+                <div class="advantages-slider__slider">
+                    @@loop('components/_advantages.html', [
+                    {"title": "Опытные сотрудники", "text": "Все наши специалисты&nbsp;&mdash; инженеры с&nbsp;высшим образованием и&nbsp;более чем <nobr>10-летним</nobr> стажем работы. Они не&nbsp;только быстро и&nbsp;качественно установят оборудование, но&nbsp;и&nbsp;покажут, как&nbsp;им&nbsp;пользоваться, а&nbsp;также расскажут о&nbsp;дальнейшем обслуживании."},
+                    {"title": "Высокий уровень качества", "text": "Наша экспертиза позволяет разрабатывать и&nbsp;устанавливать сложные комплексные системы, а&nbsp;также&nbsp;разовые проекты."},
+                    {"title": "Различные варианты оплаты", "text": "Никогда не&nbsp;попросим 100% предоплаты. Вы&nbsp;сможете оплатить все работы после установки любым удобным для вас способом: наличные, по&nbsp;карте, безналичный расчет. Мы&nbsp;также готовы забронировать для вас стоимость оборудования на&nbsp;несколько месяцев."},
+                    {"title": "Работаем без промедления", "text": "Расчет заказа происходит за&nbsp;несколько часов. В&nbsp;90% случаев мы&nbsp;будем готовы приехать к&nbsp;вам на&nbsp;следующий день. Зачем терять время?"}
+                    ])
+                </div>
+
+                <div class="advantages-slider__buttons slider-count-wrap">
+                    <span class="slider-count-wrap__current"></span>
+                    <span class="slider-count-wrap__total"></span>
+                </div>
+
+                <a href="#modal_order" class="js-popup-link advantages-slider__button button button_theme_default button_size_m"  data-heading="Оставить заявку">
+                    <span class="button__text">
+                        Оставить заявку
+                    </span>
+                </a>
+            </div>
+
+            <div class="section__promo-img section__promo-img_type3">
+                <img src="images/drenazh/slider_big.png" alt="bg"/>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/team/_team.html')
+
+    <section class="reviews section section_standart section_theme_grey">
+        
+        <h2 class="reviews__heading heading heading_type_h2 heading_align_center">
+            Отзывы наших клиентов
+        </h2>
+        
+        <div class="reviews__slider carousel_reviews">
+            
+            @@loop('components/reviews/_review.html', [
+            { "number": "16", "date" : "15.11.2016", "name": "Московская область, СНТ Лесное", "heading" : "Михеева Анна Евгеньевна", "caption" : "После осенних ливней вода стояла в&nbsp;подвале, нужно было сделать качественный дренаж. Искала долго подходщую компанию и&nbsp;приехала компания &laquo;Строительные Экосистемы&raquo; и&nbsp;сделала отличный монтаж. Недорого и&nbsp;качественно." },
+            { "number": "17", "date" : "20.03.2017", "name": "Тульская область, деревня Савино", "heading" : "Пашков Андрей Юрьевич", "caption" : "Замечательные специалисты, работу сделали с&nbsp;опережением графика. Помогли подобрать всё необходимое для&nbsp;дренажа участка. Я&nbsp;был спокоен за&nbsp;результат. Спасибо. Буду обращаться к&nbsp;Вам еще не&nbsp;раз." },
+            { "number": "18", "date" : "10.04.2017", "name": "Московская область, деревня Афанасово", "heading" : "Ежов Михаил", "caption" : "Считаю компанию &laquo;Строительные Экоистемы&raquo; профессионалами своего дела. Работу выполнили за&nbsp;один день. Доброжелательные, вежливые и&nbsp;самое главное грамотные специалисты. Подробно объяснили каждый пункт проводимых работ, ответили на&nbsp;интересующие вопросы. Цена услуги оказалась более чем доступной." },
+            { "number": "19", "date" : "15.05.2017", "name": "Московская область, СНТ Радуга", "heading" : "Полтавский андрей Михайлович", "caption" : "Результат достигнут наилучший! Стоимость работ по&nbsp;договоренности, никаких дополнительных трат не&nbsp;было. Профессионально, четко, доброжелательно, аккуратно. Я&nbsp;буду рекомендовать компанию моим знакомым." },
+            { "number": "20", "date" : "29.04.2017", "name": "Тверская область, деревня Горная", "heading" : "Козина Елена Анатольевна", "caption" : "Я&nbsp;довольна компанией &laquo;Строительные Экосистемы&raquo;! Прошло все быстро. После установки всё выглядит опрятно и&nbsp;чисто. Монтажники очень работоспособные и&nbsp;хорошие ребята." }
+            ])
+        
+        </div>
+    
+    </section>
+
+    @@include('components/_feedback.html', {
+    "image" : "../images/drenazh/bg_3.jpg"
+    })
+
+@@include('layout/_footer.html', {"theme" : ""})

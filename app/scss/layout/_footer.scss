@@ -1,0 +1,147 @@
+//FOOTER LAYOUT
+.footer {
+    &__container {
+        @extend %wrp;
+        @extend %padding_s;
+
+        @media #{$breakpointDisplay} {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__panel {
+        padding-top: em(50);
+        padding-bottom: em(45);
+        @include clearfix();
+        border-bottom: 1px solid $border;
+
+        @media #{$breakpointDisplay} {
+            padding-left: $col_md;
+            padding-right: $col_md;
+        }
+
+        @media #{$breakpointTablet} {
+            padding-left: $col_sm;
+            padding-right: $col_sm;
+        }
+
+        @media #{$breakpointMobile} {
+            padding-left: $col_xs*3;
+            padding-right: $col_xs*3;
+            padding-top: em(20,12);
+            padding-bottom: em(20,12);
+            text-align: center;
+        }
+
+        &-box {
+            float: left;
+
+            &:first-child {
+                width: 25%;
+            }
+
+            &:last-child {
+                float: right;
+            }
+
+            @media #{$breakpointMobile} {
+                float: none;
+
+                &:first-child {
+                    width: 100%;
+                }
+
+                &:last-child {
+                    float: none;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+
+            @media #{$breakpointDisplay} {
+                height: em(40,15);
+            }
+
+            @media #{$breakpointMobile} {
+                height: em(30,12);
+                margin-bottom: em(20,12);
+            }
+        }
+    }
+
+    &__phones {
+        margin-bottom: em(20);
+
+        @media #{$breakpointTablet} {
+            margin-bottom: em(4);
+        }
+
+        &-link {
+            display: inline-block;
+            font-size: em(19);
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            margin: 0 em(55, 19) 0 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            @media #{$breakpointMobile} {
+                font-size: em(12,12);
+                margin: em(10,12) em(5,12) 0;
+            }
+        }
+    }
+
+    &__hint-text {
+        font-size: 14px;
+        color: $grey;
+        line-height: 1.429;
+
+        @media #{$breakpointMobile} {
+            font-size: 11px;
+        }
+    }
+    
+    &__hint-phrase {
+        
+        @media #{$breakpointTablet} {
+            text-align: center;
+            display: block;
+        }
+
+        @media #{$breakpointMobile} {
+            
+        }
+    }
+
+    &__copyright {
+        @media #{$breakpointMobile} {
+            margin-bottom: em(18);
+        }
+    }
+
+    &__developer {
+        margin-top: em(-10);
+
+        @media #{$breakpointMobile} {
+            display: inline-block;
+            margin-top: em(20);
+        }
+    }
+
+    //Theme
+    &_theme_grey {
+        background: $grey_bg;
+    }
+}

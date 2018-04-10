@@ -1,0 +1,157 @@
+<!--форма-->
+<form action="" class="full-catalog__filter-form filter-form">
+
+  <!--кол-во человек-->
+  <div class="filter-form__count">
+              <span class="filter-form__title filter-form__title_count">
+                Кол-во человек
+              </span>
+    <input type="text" class="filter-form__count-input">
+    <hr>
+  </div>
+  <!--------->
+
+  <!--бренд-->
+  <div class="filter-form__brand">
+    <span class="filter-form__title trangle">Бренд</span>
+
+    <div class="filter-form__brand-select custom-checkbox mobile-hide">
+      <input id="barand-biotank" type="checkbox" name="biotank" value="">
+      <label for="barand-biotank">Биотанк</label>
+      <br>
+      <input id="brand-tver" type="checkbox" name="tver" value="">
+      <label for="brand-tver">Тверь</label>
+      <br>
+      <input id="brand-crystal" type="checkbox" name="crystal" value="">
+      <label for="brand-crystal">Кристал</label>
+      <br>
+      <input id="brand-biodeka" type="checkbox" name="biodeka" value="">
+      <label for="brand-biodeka">Биотека</label>
+      <br>
+      <input id="brand-astra" type="checkbox" name="astra" value="">
+      <label for="brand-astra">Астра</label>
+    </div>
+    <hr>
+
+  </div>
+  <!--------->
+
+  <!--объем-->
+  <div class="filter-form__volum">
+    <span class="filter-form__title trangle">Объем, л.</span>
+    <div class="mobile-hide">
+      <div class="filter-form__volum-range"></div>
+      <div class="filter-form__volum-input-boxes">
+        <span>От</span>
+        <input type="text" class="filter-form__volum-input-left" name="vol-min" id="vol_1">
+        <span>До</span>
+        <input type="text" class="filter-form__volum-input-right" name="vol-max" id="vol_2">
+      </div>
+    </div>
+    <hr>
+  </div>
+  <!--------->
+
+  <!--цена-->
+  <div class="filter-form__price">
+    <span class="filter-form__title trangle">Цена, руб.</span>
+    <div class="mobile-hide">
+      <div class="filter-form__price-range"></div>
+      <div class="filter-form__price-input-boxes">
+        <span>От</span>
+        <input type="text" class="filter-form__price-input-left" name="price-min" id="price_1">
+        <span>До</span>
+        <input type="text" class="filter-form__price-input-right" name="price-max" id="price_2">
+      </div>
+    </div>
+    <hr>
+  </div>
+  <!--------->
+
+  <!--отвод воды-->
+  <div class="filter-form__option-water">
+    <span class="filter-form__title trangle">Отвод воды</span>
+    <div class="filter-form__option-water-select custom-radio mobile-hide">
+      <input id="water-option1" type="radio" name="water-option" value="" onclick="">
+      <label for="water-option1">Любой</label>
+      <br>
+      <input id="water-option2" type="radio" name="water-option" value="" onclick="">
+      <label for="water-option2">Самотоком</label>
+      <br>
+      <input id="water-option3" type="radio" name="water-option" value="" onclick="">
+      <label for="water-option3">Принудительно</label>
+    </div>
+    <hr>
+  </div>
+  <!--------->
+
+  <!--уровень грунтовых вод-->
+  <div class="filter-form__option-ground">
+    <span class="filter-form__title trangle">Уровень грунтовых вод</span>
+    <div class="filter-form__option-ground-select custom-radio mobile-hide">
+      <input id="ground-option1" type="radio" name="ground-option" value="" onclick="">
+      <label for="ground-option1">Любой</label>
+      <br>
+      <input id="ground-option2" type="radio" name="ground-option" value="" onclick="">
+      <label for="ground-option2">Высокий</label>
+      <br>
+      <input id="ground-option3" type="radio" name="ground-option" value="" onclick="">
+      <label for="ground-option3">Нормальный</label>
+    </div>
+    <hr>
+  </div>
+  <!--------->
+
+  <!--дополнительные фильтры-->
+  <div class="filter-form__more-options">
+
+    <div class="filter-form__lorem-checkbox">
+      <span class="filter-form__title trangle">lorem</span>
+      <div class="filter-form__lorem-checkbox-select custom-checkbox mobile-hide">
+        <input id="checkbox1" type="checkbox" name="" value="">
+        <label for="checkbox1">lorem</label>
+        <br>
+        <input id="checkbox2" type="checkbox" name="" value="">
+        <label for="checkbox2">lorem</label>
+        <br>
+        <input id="checkbox3" type="checkbox" name="" value="">
+        <label for="checkbox3">lorem</label>
+        <br>
+        <input id="checkbox4" type="checkbox" name="" value="">
+        <label for="checkbox4">lorem</label>
+        <br>
+        <input id="checkbox5" type="checkbox" name="" value="">
+        <label for="checkbox5">lorem</label>
+      </div>
+      <hr>
+    </div>
+
+    <div class="filter-form__lorem-radio">
+      <span class="filter-form__title trangle">lorem</span>
+      <div class="filter-form__lorem-radio-select custom-radio mobile-hide">
+        <input id="option1" type="radio" name="option" value="" onclick="">
+        <label for="option1">lorem</label>
+        <br>
+        <input id="option2" type="radio" name="option" value="" onclick="">
+        <label for="option2">lorem</label>
+        <br>
+        <input id="option3" type="radio" name="option" value="" onclick="">
+        <label for="option3">lorem</label>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <!--------->
+
+  <!--кнопка - применить фильтр-->
+  <div class="filter-form__submit">
+    <button type="submit" name="submit" class="filter-form__submit-btn section__button button button_theme_default button_size_m">
+      Применить
+    </button>
+  </div>
+  <!--------->
+  <div class="full-catalog__filter-toggle-btn button button_theme_white button_size_s">
+    Подробный фильтр
+  </div>
+
+</form>

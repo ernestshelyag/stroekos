@@ -1,0 +1,370 @@
+@@include('layout/_head.html', {
+	"title" : "Купить септик для частного дома с установкой в компании «Строительные Экосистемы», г. Москва",
+	"description" : "В компании «Строительные Экосистемы» вы можете купить септик для частного дома или гостиницы с установкой. У нас представлены различные виды. Мы поможем выбрать вариант, который подходит именно для вас",
+	"keywords" : "септик для частного дома, септик для дачи, септик купить, септик с установкой, виды септиков, септики, Как выбрать септик, септики для частных домов"
+})
+
+    <section class="onepage">
+        @@include('layout/_header.html', {
+        "navigationTheme" : "navigation_theme_light"
+        })
+
+        @@include('components/_promo-slider.html', {
+        "image" : "images/septik/banner.jpg",
+        "linkPrev" : "Вернуться на главную",
+        "classMain" : "onepage__promo-slider promo-slider_theme_light",
+        "title" : "Септики для&nbsp;частных домов",
+        "text" : "&laquo;Строительные экосистемы&raquo;&nbsp;&mdash; переработка бытовых стоков, очистка стоков,<br class='sm-hide'/> организация системы канализации."
+        })
+    </section>
+
+    <section class="section section_theme_blue section_shadow section_numbered-list section_numbered-list-min">
+        <div class="section__wrp">
+            <div class="numbered-list grid grid_flex">
+
+                @@loop('components/_numbered.html', [
+                { "number": "01", "heading": "<span class='c_green_light'>Не&nbsp;просто продаем септик</span>,<br /> а&nbsp;предлагаем комплексное<br /> решение именно вашего<br /> вопроса" },
+                { "number": "02", "heading": "Обеспечим<br /> <span class='c_green_light'>постпродажное<br /> обслуживание</span>" },
+                { "number": "03", "heading": "<span class='c_green_light'>Гарантия</span> на&nbsp;все<br /> работы&nbsp;&mdash; два года" },
+                { "number": "04", "heading": "Возможна <br />беспроцентная <br /><span class='c_green_light'>рассрочка</span>" }
+                ])
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_factors">
+        <div class="section__wrp">
+            <div class="heading heading_type_h2 heading_align_center">
+                Как выбрать правильный септик
+            </div>
+
+            <p class="c_grey caption caption_size_m caption_align_center">
+                От&nbsp;этих и&nbsp;других факторов будет зависеть необходимый вам вид септика и&nbsp;способ его установки:
+            </p>
+
+            <div class="factors grid grid_three grid_flex grid_flex_center">
+                @@loop('components/_fact.html', [
+                {"classMain": "grid__box", "number": "1", "name": "Тип грунта"},
+                {"classMain": "grid__box", "number": "2", "name": "Наличие канавы"},
+                {"classMain": "grid__box", "number": "3", "name": "Режим проживания"},
+                {"classMain": "grid__box", "number": "4", "name": "Этап строительства дома"},
+                {"classMain": "grid__box", "number": "5", "name": "Количество проживающих"},
+                {"classMain": "grid__box", "number": "6", "name": "Близость от&nbsp;соседних строений"}
+                ])
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_theme_blue section_shadow section_dirty section_dirty_xs section_align_center">
+        <div class="section__wrp">
+            <div class="section__heading heading heading_type_h5 heading_type_h5_l">
+                Вы&nbsp;можете подумать об&nbsp;этом сами,<br class="xs-hide" />
+                но&nbsp;лучше обратиться к&nbsp;профессионалам.
+            </div>
+
+            <a href="#modal_order" class="js-popup-link section__button button button_theme_default button_size_m button_align_center" data-heading="Заказать расчет">
+                <span class="button__text">
+                    Заказать расчет
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <section class="variant variant_with_section" style="background-image: url('images/septik/bg_1.jpg');">
+        <div class="variant__wrp">
+            <p class="variant__caption heading heading_type_h3 heading_align_center">
+                Компания &laquo;Строительные экосистемы&raquo; уже более 10 лет<br class="sm-hide" />
+                занимается продажей и&nbsp;установкой септиков<br class="sm-hide" />
+                различного типа и&nbsp;конфигурации.
+            </p>
+        </div>
+    </section>
+
+    <section class="section section_promo-tabs section_theme_grey">
+        <div class="section__wrp">
+            <div class="section__tabs tabs grid grid_flex grid_flex_stretch">
+                <div class="tabs__col tabs__col_left">
+                    <div class="heading">
+                        Виды септиков
+                    </div>
+
+                    <p class="c_grey">
+                        Мы&nbsp;предлагаем только проверенное и&nbsp;<nobr>по-настоящему</nobr>
+                        качественное оборудование, которое прослужит
+                        вам долгие годы.
+                    </p>
+                    <p class="c_grey">
+                        Выберите один из&nbsp;видов, чтобы узнать о&nbsp;нем больше:
+                    </p>
+
+                    <ul class="tabs__nav">
+                        <li class="tabs__nav-item">
+                            <a href="#" class="tabs__nav-link tabs__nav-link_active" data-toggle="tab1">
+                                Станции биологической очистки
+                            </a>
+                        </li>
+                        <li class="tabs__nav-item">
+                            <a href="#" class="tabs__nav-link" data-toggle="tab2">
+                                Энергонезависимые септики
+                            </a>
+                        </li>
+                        <li class="tabs__nav-item">
+                            <a href="#" class="tabs__nav-link" data-toggle="tab3">
+                                Герметичные емкости
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabs__col tabs__col_theme_blue tabs__col_right carousel-mobile">
+                    <div class="tabs__box tabs__box_active" data-id="tab1">
+                        <div class="tabs__box-pic">
+                            <img src="images/septik/2/howitworks.png" alt=""/>
+                        </div>
+                        <div class="heading">
+                            Станции биологической очистки
+                        </div>
+
+                        <div class="tabs__box-text">
+                            <p>
+                                Автономные станции биологической очистки&nbsp;&mdash; один из&nbsp;самых лучших
+                                вариантов септиков для дачи. Уровень очистки воды составляет около 95%,
+                                а&nbsp;значит, в&nbsp;дальнейшем её можно использовать для бытовых нужд
+                                (поливки растений, мытье машины и&nbsp;другие).
+                            </p>
+                        </div>
+
+                        <a href="catalog.pdf" target="_blank" class="tabs__box-button button button_theme_default button_size_s">
+                            <span class="button__text">
+                                Посмотреть каталог
+                            </span>
+                        </a>
+
+                        <a href="stancii-biologicheskoi-ochistki.html" class="tabs__box-button button button_theme_white button_size_s">
+                            <span class="button__text">
+                                Узнать подробнее
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="tabs__box" data-id="tab2">
+                        <div class="tabs__box-pic">
+                            <img src="images/septik/1/howitworks.png" alt=""/>
+                        </div>
+                        <div class="heading">
+                            Энергонезависимые септики
+                        </div>
+
+                        <div class="tabs__box-text">
+                            <p>
+                                Это септики со&nbsp;встроенным компрессором, который подает в&nbsp;камеру воздух.
+                                Таким образом разложение проходит быстрее, а&nbsp;очистка&nbsp;&mdash; качественнее.
+                                В&nbsp;дальнейшем сток можно направлять в&nbsp;грунтовые воды.
+                            </p>
+                        </div>
+
+                        <a href="catalog.pdf" target="_blank" class="tabs__box-button button button_theme_default button_size_s">
+                            <span class="button__text">
+                                Посмотреть каталог
+                            </span>
+                        </a>
+
+                        <a href="energonezavisimii-septik.html" class="tabs__box-button button button_theme_white button_size_s">
+                            <span class="button__text">
+                                Узнать подробнее
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="tabs__box" data-id="tab3">
+                        <div class="tabs__box-pic">
+                            <img src="images/septik/3/howitworks.png" alt=""/>
+                        </div>
+                        <div class="heading">
+                            Герметичные емкости
+                        </div>
+
+                        <div class="tabs__box-text">
+                            <p>
+                                Герметичные емкости рассчитаны только на&nbsp;сбор бытовых отходов,
+                                и&nbsp;им&nbsp;регулярно требуется утилизация. Подходит для
+                                небольших дач и&nbsp;загородных домов.
+                            </p>
+                        </div>
+
+                        <a href="catalog.pdf" target="_blank" class="tabs__box-button button button_theme_default button_size_s">
+                            <span class="button__text">
+                                Посмотреть каталог
+                            </span>
+                        </a>
+
+                        <a href="plastikovie-emkosti-dlya-kanalizacii.html" class="tabs__box-button button button_theme_white button_size_s">
+                            <span class="button__text">
+                                Узнать подробнее
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/_online-test.html')
+
+    <section class="section section_theme_blue section_shadow section_numbered-list section_numbered-list-min">
+        <div class="section__wrp">
+            <div class="section__heading heading heading_type_h2">
+                Как мы&nbsp;работаем
+            </div>
+
+            <div class="numbered-list grid grid_flex numbered-list_size_min carousel-mobile">
+
+                @@loop('components/_numbered.html', [
+                { "number": "01. Заявка", "heading": "Наш менеджер перезвонит <br />вам для уточнения деталей. " },
+                { "number": "02. Проектирование", "heading": "Мастер приедет к&nbsp;вам, <br />чтобы снять замеры, а&nbsp;после <br />рассчитает самое оптимальное <br />решение. Эскиз проекта <br />у&nbsp;нас всегда делается <br />бесплатно." },
+                { "number": "03. Предложение", "heading": "Предложим несколько <br />вариантов, исходя из&nbsp;вашего <br />запроса." },
+                { "number": "04. Выезд мастера", "heading": "Останется только договориться <br />о&nbsp;времени установки. <br />Мы&nbsp;приедем, когда вам <br />будет удобно." }
+                ])
+
+            </div>
+
+            <a href='#modal_order' class='js-popup-link button button_theme_lite button_size_s button_align_center'  data-heading='Получить предложение'>
+                <span class='button__text'>
+                    Получить предложение
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <section class="section section_theme_grey section_advantages-slider">
+        <div class="section__wrp">
+            <div class="heading heading_type_h2">
+                Почему вам стоит обратиться<br />
+                в&nbsp;&laquo;Строительные экосистемы&raquo;?
+            </div>
+
+            <div class="advantages-slider">
+                <div class="advantages-slider__slider">
+                    @@loop('components/_advantages.html', [
+                    {"title": "Более 10 лет на&nbsp;рынке", "text": "Занимаемся септиками уже более 10 лет. Все наши специалисты&nbsp;&mdash; инженеры с&nbsp;высшим образованием. Они не&nbsp;только быстро и&nbsp;качественно установят оборудование, но&nbsp;и&nbsp;покажут, как им&nbsp;пользоваться, а&nbsp;также расскажут о&nbsp;дальнейшем обслуживании."},
+                    {"title": "Высокий уровень качества", "text": "Мы&nbsp;не&nbsp;просто продаем септики, мы&nbsp;действительно разбираемся в&nbsp;них. Наша экспертиза позволяет разрабатывать и&nbsp;устанавливать сложные комплексные системы, которые сделают вашу жизнь действительно комфортной."},
+                    {"title": "Различные варианты оплаты", "text": "Никогда не&nbsp;попросим 100% предоплаты. Вы&nbsp;сможете оплатить все работы после установки любым удобным для вас способом: наличные, по&nbsp;карте, безналичный расчет. Мы&nbsp;также готовы забронировать для вас стоимость септика на&nbsp;несколько месяцев."},
+                    {"title": "Работаем без промедления", "text": "Расчет заказа происходит за&nbsp;несколько часов. В&nbsp;90% случаев мы&nbsp;будем готовы приехать к&nbsp;вам на&nbsp;следующий день. Зачем терять время?"}
+                    ])
+                </div>
+
+                <div class="advantages-slider__buttons slider-count-wrap">
+                    <span class="slider-count-wrap__current"></span>
+                    <span class="slider-count-wrap__total"></span>
+                </div>
+
+                <a href="#modal_order" class="js-popup-link advantages-slider__button button button_theme_default button_size_m" data-heading="Оставить заявку">
+                    <span class="button__text">
+                        Оставить заявку
+                    </span>
+                </a>
+            </div>
+            
+            <div class="section__promo-img">
+                <img src="images/septik/slider_big.png" alt=""/>
+            </div>
+        </div>
+    </section>
+
+	<section class="systems section section_standart section_theme_blue section_shadow">
+		<div class="systems__wrp">
+	
+			<h2 class="heading heading_type_h2">
+				Системы очистки для бизнеса
+			</h2>
+	
+			<p class="caption caption_size_m">
+				Компания &laquo;Строительные экосистемы&raquo; также проектирует и&nbsp;устанавливает сложные<br />
+				системы очистки бытовых отходов для различного типа бизнеса.
+			</p>
+	
+			<ul class="systems__list">
+				<li class="systems__item heading heading_type_h5">
+					<span class="icon icon-hotel"></span>
+					Гостиницы
+				</li>
+				<li class="systems__item heading heading_type_h5">
+					<span class="icon icon-cafe"></span>
+					Кафе
+				</li>
+				<li class="systems__item heading heading_type_h5">
+					<span class="icon icon-forest"></span>
+					Дома отдыха
+				</li>
+				<li class="systems__item heading heading_type_h5">
+					<span class="icon icon-water"></span>
+					Автомойки
+				</li>
+				<li class="systems__item heading heading_type_h5">
+					<span class="icon icon-factory"></span>
+					Производства
+				</li>
+			</ul>
+			
+			<div class="systems__footer">
+				<a href="#modal-tz" class="js-popup-link systems__button button button_theme_default button_size_l">
+					Отправьте нам техническое задание
+				</a>
+				<span class="systems_or">или</span>
+				<a href="#modal_order" class="js-popup-link systems__button button button_theme_white button_size_l" data-heading="Оставить заявку">
+					Оставьте заявку для уточнения подробностей
+				</a>
+			</div>
+	
+		</div>
+	</section>
+
+	<section class="wemade section section_standart section_theme_grey">
+		<div class="wemade__wrp catalog__wrp">
+
+			<h2 class="wemade__heading catalog__heading heading heading_type_h2 heading_align_center">
+				Выполненные проекты
+			</h2>
+			
+			<div class="catalog__slider post-slider carousel_catalog">
+
+				@@loop("components/catalog/_wemade-post.html", [
+				{ "number": "1", "caption": "Стандартный монтаж Астра&nbsp;5 в&nbsp;Пушкинском <br class='md-hide' />районе Московской области для семьи <br class='md-hide' />из&nbsp;<nobr>4&ndash;х</nobr>&nbsp;человек." },
+				{ "number": "2", "caption": "Монтаж станции биологической очистки <br class='md-hide' />Топас&nbsp;5. Это оптимальный выбор <br class='md-hide' />для постоянного проживания 4&ndash;5 человек." },
+				{ "number": "3", "caption": "<nobr>Шеф&ndash;монтаж</nobr> станции <nobr>Эко-Гранд</nobr>&nbsp;8 <br class='md-hide' />для постоянного проживания загородом." },
+				{ "number": "4", "caption": "<nobr>Шеф&ndash;монтаж</nobr> станции <nobr>Эко-Гранд</nobr>&nbsp;8 <br class='md-hide' />для постоянного проживания загородом." }
+				])
+
+			</div>
+			
+		</div>		
+	</section>
+
+	@@include('components/team/_team.html')
+
+	<section class="reviews section section_standart section_theme_grey">
+		
+		<h2 class="reviews__heading heading heading_type_h2 heading_align_center">
+			Отзывы наших клиентов
+		</h2>
+		
+		<div class="reviews__slider carousel_reviews">
+			
+			@@loop('components/reviews/_review.html', [
+			{ "number": "1", "date" : "15.10.2016", "name": "Калужская область, деревня Глухово", "heading" : "Берсеньев Евгений Михайлович", "caption" : "Спасибо компании <nobr>ООО &laquo;Строительные Экосистемы&raquo;</nobr> за&nbsp;монтаж и&nbsp;таких хороших бригадиров! Всё подключили и&nbsp;объяснили очень ясно. Оплату принимают в&nbsp;любом виде и&nbsp;установили все за&nbsp;один день! Будем рекомендовать компанию нашим друзьям!" },
+			{ "number": "2", "date" : "05.02.2017", "name": "Московская область, деревня Острово", "heading" : "Латушкина Елена Юрьевна", "caption" : "Вызвала несколько компаний для подбора оборудования. Сделала выбор этой компании, потому что у&nbsp;инженера была профессиональная техника и&nbsp;расчёты были понятные. В&nbsp;день монтажа всё прошло гладко и&nbsp;мы&nbsp;остались довольны!" },
+			{ "number": "3", "date" : "25.04.2017", "name": "Московская область д. Лисавино", "heading" : "Сергей Николаевич", "caption" : "Приобрел в&nbsp;компании <nobr>ООО &laquo;Строительные Экосистемы&raquo;</nobr> станцию Юнилос 5 Пр.&nbsp;Все доставили быстро и&nbsp;в&nbsp;срок. Хочу поблагодарить коллектив этой компании, а&nbsp;именно бригаду Ковалева Константина за&nbsp;качественную и&nbsp;профессиональную установку, все установили качественно и&nbsp;аккуратно, отдельное спасибо за&nbsp;доброе уважительное отношение к&nbsp;заказчику, хочу пожелать дальнейшего процветания компании и&nbsp;побольше таких сотрудников как Константин Ковалев. Удачи вам." },
+			{ "number": "4", "date" : "16.04.2017", "name": "Владимирская область, СНТ Рябинушка", "heading" : "Елена Анатольева", "caption" : "Обслуживание качественное, Септик оказался даже лучше чем менеджер рассказал. Мы&nbsp;очень довольны приобретением! Будем обращаться только в&nbsp;вашу компанию теперь для всех дачных приобретений!!! Менеджер по&nbsp;имени Дмитрий помог выбрать именно тот Септик который нам подходит, хотя он&nbsp;дешевле того который мы&nbsp;изначально хотели приобрести. Это большая редкость, чувствуется что на&nbsp;клиентах не&nbsp;хотят &laquo;нажиться&raquo;, а&nbsp;действительно искренне хотят помочь, посоветовать, решить проблему. Сердечная благодарность!" },
+			{ "number": "5", "date" : "28.12.2016", "name": "Московская область, деревня Бунаково", "heading" : "Егоров Антон Сергеевич", "caption" : "Выражаю благодарность <nobr>ООО &laquo;Строительные Экосистемы&raquo;</nobr>! Заказал станцию <nobr>Тверь 1</nobr>, монтаж станции произведен аккуратно, быстро, в&nbsp;установленные сроки и&nbsp;профессионально. Рекомендую компанию!" }
+			])
+		
+		</div>
+	
+	</section>
+
+	@@include('components/_feedback.html', {
+	"image" : "../images/septik/bg_2.jpg"
+	})
+
+@@include('layout/_footer.html', {"theme" : ""})

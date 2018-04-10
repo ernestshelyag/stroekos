@@ -1,0 +1,110 @@
+//Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700&subset=cyrillic');
+
+@font-face {
+    font-family: $icon_font;
+    src:  url('../fonts/septic.eot?3ek41');
+    src:  url('../fonts/septic.eot?3ek41#iefix') format('embedded-opentype'),
+    url('../fonts/septic.ttf?3ek41') format('truetype'),
+    url('../fonts/septic.woff?3ek41') format('woff'),
+    url('../fonts/septic.svg?3ek41#septic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $blokk;
+    src: url('../fonts/blokk-neue-regular.woff2') format('woff2'),
+    url('../fonts/blokk-neue-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futurabookcregular';
+    src: url('../fonts/futurabookc-webfont.eot');
+    src: url('../fonts/futurabookc-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futurabookc-webfont.woff2') format('woff2'),
+    url('../fonts/futurabookc-webfont.woff') format('woff'),
+    url('../fonts/futurabookc-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//@font-face {
+//    font-family: 'futurabookcregular';
+//    src: url('../fonts/futurabookc-italic-webfont.eot');
+//    src: url('../fonts/futurabookc-italic-webfont.eot?#iefix') format('embedded-opentype'),
+//    url('../fonts/futurabookc-italic-webfont.woff2') format('woff2'),
+//    url('../fonts/futurabookc-italic-webfont.woff') format('woff'),
+//    url('../fonts/futurabookc-italic-webfont.ttf') format('truetype');
+//    font-weight: normal;
+//    font-style: italic;
+//}
+
+@font-face {
+    font-family: 'futurabookcregular';
+    src: url('../fonts/futurademic-webfont.eot');
+    src: url('../fonts/futurademic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futurademic-webfont.woff2') format('woff2'),
+    url('../fonts/futurademic-webfont.woff') format('woff'),
+    url('../fonts/futurademic-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+//@font-face {
+//    font-family: 'futurabookcregular';
+//    src: url('../fonts/futurademic-italic-webfont.eot');
+//    src: url('../fonts/futurademic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+//    url('../fonts/futurademic-italic-webfont.woff2') format('woff2'),
+//    url('../fonts/futurademic-italic-webfont.woff') format('woff'),
+//    url('../fonts/futurademic-italic-webfont.ttf') format('truetype');
+//    font-weight: 700;
+//    font-style: italic;
+//}
+
+//@font-face {
+//    font-family: 'futurabookcregular';
+//    src: url('../fonts/futuralightc-webfont.eot');
+//    src: url('../fonts/futuralightc-webfont.eot?#iefix') format('embedded-opentype'),
+//    url('../fonts/futuralightc-webfont.woff2') format('woff2'),
+//    url('../fonts/futuralightc-webfont.woff') format('woff'),
+//    url('../fonts/futuralightc-webfont.ttf') format('truetype');
+//    font-weight: 300;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'futurabookcregular';
+//    src: url('../fonts/futuralightc-italic-webfont.eot');
+//    src: url('../fonts/futuralightc-italic-webfont.eot?#iefix') format('embedded-opentype'),
+//    url('../fonts/futuralightc-italic-webfont.woff2') format('woff2'),
+//    url('../fonts/futuralightc-italic-webfont.woff') format('woff'),
+//    url('../fonts/futuralightc-italic-webfont.ttf') format('truetype');
+//    font-weight: 300;
+//    font-style: italic;
+//}
+
+//@font-face {
+//    font-family: 'futurabookcregular';
+//    src: url('../fonts/futuramediumc-webfont.eot');
+//    src: url('../fonts/futuramediumc-webfont.eot?#iefix') format('embedded-opentype'),
+//    url('../fonts/futuramediumc-webfont.woff2') format('woff2'),
+//    url('../fonts/futuramediumc-webfont.woff') format('woff'),
+//    url('../fonts/futuramediumc-webfont.ttf') format('truetype');
+//    font-weight: 500;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'futurabookcregular';
+//    src: url('../fonts/futuramediumc-italic-webfont.eot');
+//    src: url('../fonts/futuramediumc-italic-webfont.eot?#iefix') format('embedded-opentype'),
+//    url('../fonts/futuramediumc-italic-webfont.woff2') format('woff2'),
+//    url('../fonts/futuramediumc-italic-webfont.woff') format('woff'),
+//    url('../fonts/futuramediumc-italic-webfont.ttf') format('truetype');
+//    font-weight: 500;
+//    font-style: italic;
+//}

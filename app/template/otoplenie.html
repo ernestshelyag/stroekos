@@ -1,0 +1,263 @@
+@@include('layout/_head.html', {
+	"title" : "Установка отопления для частного дома, дачи или коттеджа в компании «Строительные Экосистемы», г. Москва",
+	"description" : "В компании «Строительные Экосистемы» вы можете подобрать современную систему отопления для частного дома, коттеджа или дачи с монтажом. Мы поможем выбрать вариант, который подходит именно вам",
+	"keywords" : "отопление для частного дома, дачи, коттеджа, монтаж систем отопления дома, современные системы отопления для дома"
+})
+    <section class="onepage">
+        @@include('layout/_header.html', {
+        "navigationTheme" : "navigation_theme_light"
+        })
+
+        @@include('components/_promo-slider.html', {
+        "image" : "images/otoplenie/banner.jpg",
+        "linkPrev" : "Вернуться на главную",
+        "classMain" : "onepage__promo-slider promo-slider_theme_light",
+        "title" : "Системы отопления <br />для загородного дома",
+        "text" : ""
+        })
+    </section>
+
+    <section class="section section_theme_blue section_shadow section_numbered-list section_numbered-list-min">
+        <div class="section__wrp">
+            <div class="numbered-list grid grid_flex">
+
+                @@loop('components/_numbered.html', [
+                { "number": "01", "heading": "Первичный расчет <br />проекта <span class='c_green_light'>за&nbsp;15&nbsp;минут</span>" },
+                { "number": "02", "heading": "Бесплатный выезд <br />замерщика <br />и&nbsp;<span class='c_green_light'>проект в&nbsp;подарок</span>" },
+                { "number": "03", "heading": "Системы отопления <br /><span class='c_green_light'>&laquo;под ключ&raquo; и&nbsp;разовые <br />работы</span> без проектирования" },
+				{ "number": "04", "heading": "Возможна <br />беспроцентная <br /><span class='c_green_light'>рассрочка</span>" }
+                ])
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_factors">
+        <div class="section__wrp">
+            <div class="heading heading_type_h2 heading_align_center">
+                Чтобы в&nbsp;доме было тепло
+            </div>
+
+            <p class="c_grey caption caption_size_m caption_align_center">
+                Тему отопления загородного дома каждый рассматривает <nobr>по-разному</nobr>.<br />
+                Это может быть сложная система с&nbsp;использованием технологий &laquo;умного дома&raquo; или просто радиатор для обогрева<br />
+                одной из&nbsp;комнат. Мы&nbsp;готовы помочь с&nbsp;решением вопросов любой сложности, связанных с&nbsp;отоплением.
+            </p>
+
+            <p class="c_grey caption caption_size_m caption_align_center">
+                Посмотрите, от&nbsp;чего может зависеть выбор системы отопления вашего дома:
+            </p>
+
+            <div class="factors grid grid_three grid_flex grid_flex_center">
+                @@loop('components/_fact.html', [
+                {"classMain": "grid__box", "number": "7", "name": "Площадь <br />дома"},
+                {"classMain": "grid__box", "number": "4", "name": "Этап <br />строительства"},
+                {"classMain": "grid__box", "number": "3", "name": "Режим проживания <br />(сезон или круглый год)"},
+                {"classMain": "grid__box", "number": "8", "name": "Источник <br />электроэнергии"},
+                {"classMain": "grid__box", "number": "9", "name": "Предполагаемый <br />бюджет"}
+                ])
+            </div>
+        </div>
+    </section>
+
+    <section class="variant systems" style="background-image: url(../images/variant_bg3.jpg);">
+        <div class="variant__wrp">
+            <div class="heading heading_type_h1 heading_align_center">
+                Наши услуги
+            </div>
+
+            <ul class="systems__list grid grid_flex grid_flex_wrap systems__list_type_grid">
+                <li class="grid__box systems__item heading heading_type_h5">
+                    <span class="icon icon-dev"></span>
+                    Разработка проекта
+                </li>
+                <li class="grid__box systems__item heading heading_type_h5">
+                    <span class="icon icon-kotel"></span>
+                    Установка котла
+                </li>
+                <li class="grid__box systems__item heading heading_type_h5">
+                    <span class="icon icon-razvodka-trub"></span>
+                    Разводка труб
+                </li>
+                <li class="grid__box systems__item heading heading_type_h5">
+                    <span class="icon icon-panel"></span>
+                    Установка панелей<br />
+                    управления
+                </li>
+                <li class="grid__box systems__item heading heading_type_h5">
+                    <span class="icon icon-truba"></span>
+                    Монтаж дымохода
+                </li>
+                <li class="grid__box systems__item heading heading_type_h5">
+                    <span class="icon icon-radiator"></span>
+                    Установка<br />
+                    радиаторов
+                </li>
+            </ul>
+
+            <div class="variant__footer">
+                <a href="#modal_order" class="js-popup-link variant__button button button_theme_lite button_size_s button_align_center" data-heading="Заказать расчет">
+                    <span class="button__text">
+                        Заказать расчет
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_theme_grey section_big">
+        <div class="section__wrp">
+            <p class="caption caption_align_center caption_size_m c_grey">
+                Наши специалисты прошли обучение у&nbsp;ведущих <nobr>фирм-производителей</nobr>
+                котельного оборудования.
+            </p>
+
+            <div class="heading heading_type_h2 heading_align_center">
+                Поможем сделать правильный выбор,<br />
+                подобрать оптимальный вариант
+            </div>
+
+            <div class="partners">
+                <div class="partners__item">
+                    <img src="images/partner/p1.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p2.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p3.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p4.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p5.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p6.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p7.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p8.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p9.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p10.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p11.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p12.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p13.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p14.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p15.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p16.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p18.png" alt=""/>
+                </div>
+                <div class="partners__item">
+                    <img src="images/partner/p17.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_theme_blue section_shadow section_numbered-list section_numbered-list-min">
+        <div class="section__wrp">
+            <div class="section__heading heading heading_type_h2">
+                Выбирайте, что вам нужно
+            </div>
+
+            <div class="numbered-list grid grid_flex numbered-list_size_min carousel-mobile">
+
+                @@loop('components/_numbered.html', [
+                { "number": "01. Заявка", "heading": "Наш менеджер перезвонит <br />вам для уточнения деталей." },
+                { "number": "02. Проектирование", "heading": "Мастер приедет к&nbsp;вам, <br />чтобы снять замеры, а&nbsp;после <br />рассчитает самое оптимальное <br />решение. Эскиз проекта <br />у&nbsp;нас всегда делается <br />бесплатно." },
+                { "number": "03. Предложение", "heading": "Предложим несколько <br />вариантов, исходя из&nbsp;вашего <br />запроса." },
+                { "number": "04. Выезд мастера", "heading": "Останется только договориться <br />о&nbsp;времени установки. <br />Мы&nbsp;приедем, когда вам <br />будет удобно." }
+                ])
+
+            </div>
+
+            <a href='#modal_order' class='js-popup-link button button_theme_lite button_size_s button_align_center' data-heading='Получить предложение'>
+                <span class='button__text'>Получить предложение</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="section section_theme_grey section_advantages-slider">
+        <div class="section__wrp">
+            <div class="heading heading_type_h2">
+                Почему вам стоит обратиться<br />
+                в&nbsp;&laquo;Строительные экосистемы&raquo;?
+            </div>
+
+            <div class="advantages-slider">
+                <div class="advantages-slider__slider">
+                    @@loop('components/_advantages.html', [
+                    {"title": "Опытные сотрудники", "text": "Все наши специалисты&nbsp;&mdash; инженеры с&nbsp;высшим образованием и&nbsp;более чем <nobr>10-летним</nobr> стажем работы. Они не&nbsp;только быстро и&nbsp;качественно установят оборудование, но&nbsp;и&nbsp;покажут, как им&nbsp;пользоваться, а&nbsp;также расскажут о&nbsp;дальнейшем обслуживании."},
+                    {"title": "Высокий уровень качества", "text": "Наша экспертиза позволяет разрабатывать и&nbsp;устанавливать сложные комплексные системы, а&nbsp;также разовые проекты."},
+                    {"title": "Различные варианты оплаты", "text": "Никогда не&nbsp;попросим 100% предоплаты. Вы&nbsp;сможете оплатить все работы после установки любым удобным для вас способом: наличные, по&nbsp;карте, безналичный расчет. Мы&nbsp;также готовы забронировать для вас стоимость оборудования на&nbsp;несколько месяцев."},
+                    {"title": "Работаем без промедления", "text": "Расчет заказа происходит за&nbsp;несколько часов. В&nbsp;90% случаев мы&nbsp;будем готовы приехать к&nbsp;вам на&nbsp;следующий день. Зачем терять время?"}
+                    ])
+                </div>
+
+                <div class="advantages-slider__buttons slider-count-wrap">
+                    <span class="slider-count-wrap__current"></span>
+                    <span class="slider-count-wrap__total"></span>
+                </div>
+
+                <a href="#modal_order" class="js-popup-link advantages-slider__button button button_theme_default button_size_m" data-heading="Оставить заявку">
+                    <span class="button__text">
+                        Оставить заявку
+                    </span>
+                </a>
+            </div>
+
+            <div class="section__promo-img section__promo-img_type2">
+                <img src="images/otoplenie/slider_big.png" alt=""/>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/team/_team.html')
+
+    <section class="reviews section section_standart section_theme_grey">
+        
+        <h2 class="reviews__heading heading heading_type_h2 heading_align_center">
+            Отзывы наших клиентов
+        </h2>
+        
+        <div class="reviews__slider carousel_reviews">
+    
+            @@loop('components/reviews/_review.html', [
+            { "number": "11", "date" : "16.04.2017", "name": "Московская область, деревня Волосово", "heading" : "Склярова Ольга Витальевна", "caption" : "Компания &laquo;Строительные Экосистемы&raquo; справились с&nbsp;задачей полностью. При этом, очень помогли с&nbsp;техническими решениями. Стоимость услуг на&nbsp;100% соответствует результату. Буду рекомендовать друзьям и&nbsp;буду пользоваться услугами сам в&nbsp;дальнейшем." },
+            { "number": "12", "date" : "02.02.2017", "name": "Московская область, деревня Погорелое", "heading" : "Смирнов Илья Арнольдович", "caption" : "Могу дать только отличную оценку работе компании &laquo;Строительные Экосистемы&raquo;. Старательные, общительные, доброжелательные, аккуратные. Считаю профессионалами по&nbsp;отопительным системам. Все финансовые обязательства так&nbsp;же соблюдены." },
+            { "number": "13", "date" : "10.11.2016", "name": "Калужская область, деревня Ерденево", "heading" : "Лыков Антон Борисович", "caption" : "Отлично выполнена работа по&nbsp;ремонту системы отопления в&nbsp;доме, с&nbsp;минимальным нашим присутствием и&nbsp;участием. Все рационально, объективно и&nbsp;вовремя. Большое спасибо." },
+            { "number": "14", "date" : "08.07.2016", "name": "Московская область, деревня Кузяево", "heading" : "Невраев Сергей Александрович", "caption" : "Итог хороший. Всё сделано качественно и&nbsp;хорошо. Всё сроки тоже выдержаны, как мы&nbsp;и&nbsp;договаривались. Всё подметалось, всё выносилось на&nbsp;мусорку. Компания &laquo;Строительные Экосистемы&raquo; всегда на&nbsp;связи, можно позвонить и&nbsp;всё уточнить, если это нужно." },
+            { "number": "15", "date" : "25.09.2016", "name": "Тверская область, село Завидово", "heading" : "Игнатова Анна Петровна", "caption" : "Чудесные мастера компании! Они молодцы! Сэкономили нам очень много денег! Мастер очень быстро сработал, аккуратно. Все необходимое для работы у&nbsp;него было с&nbsp;собой. Спасибо вам большое за&nbsp;таких специалистов!" }
+            ])
+
+		</div>
+    
+    </section>
+
+    @@include('components/_feedback.html', {
+    "image" : "../images/otoplenie/bg_2.jpg"
+    })
+
+@@include('layout/_footer.html', {"theme" : ""})

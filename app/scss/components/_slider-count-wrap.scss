@@ -1,0 +1,36 @@
+//slider-count-wrap
+.slider-count-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding: 0 em(50);
+    margin-right: em(50);
+
+    &__current {
+        font-size: em(27);
+        font-weight: 700;
+        display: inline-block;
+        width: em(20,27);
+    }
+
+    &__total {
+        font-size: em(18);
+        color: $grey;
+        vertical-align: top;
+
+        &::before {
+            content: '/';
+            vertical-align: top;
+            padding: 0 em(5) 0 0;
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        padding: 0 4em;
+    }
+
+    @media #{$breakpointMobile} {
+        padding: 0 4em 3em;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,443 @@
+//section
+.section {
+    &__wrp {
+        @extend %wrp;
+    }
+
+    &__heading {
+        margin-bottom: em(26, 24);
+        
+        &.heading {
+            margin-bottom: em(26, 24);
+        }
+
+        @media #{$breakpointDisplay} {
+            margin-bottom: em(30,20);
+
+            &.heading {
+                margin-bottom: em(30, 20);
+            }
+        }
+
+        @media #{$breakpointTablet} {
+            margin-bottom: em(26,20);
+
+            &.heading {
+                margin-bottom: em(26, 20);
+            }
+        }
+
+        @media #{$breakpointMobile} {
+            margin-bottom: em(26,20);
+            
+            &.heading {
+                margin-bottom: em(26, 20);
+            }
+        }
+    }
+
+    //Theme
+
+    &_theme_blue {
+        @extend %gradient;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+    }
+
+    &_theme_grey {
+        background-color: $grey_bg;
+    }
+
+    &_shadow {
+        @extend %shadow;
+    }
+
+    //Types
+
+    &_align_center {
+        text-align: center;
+    }
+
+    &_numbered-list {
+        padding-top: em(75);
+        padding-bottom: em(70);
+
+        @media #{$breakpointDisplay} {
+            padding-top: em(80,15);
+            padding-bottom: em(95,15);
+        }
+
+        @media #{$breakpointTablet} {
+            padding-top: em(50,13);
+            padding-bottom: em(38,13);
+        }
+
+        @media #{$breakpointMobile} {
+            padding-top: em(40,12);
+            padding-bottom: em(30,12);
+        }
+    }
+
+    &_numbered-list &__wrp {
+        @extend %padding_m;
+    }
+
+    &_numbered-list-min &__wrp {
+        padding-left: $col_lg*2;
+        padding-right: $col_lg*2;
+
+        @media #{$breakpointDisplay} {
+            padding-left: $col_md;
+            padding-right: $col_md;
+        }
+
+        @media #{$breakpointTablet} {
+            padding-left: $col_sm;
+            padding-right: $col_sm;
+        }
+
+        @media #{$breakpointMobile} {
+            padding-left: $col_xs*3;
+            padding-right: $col_xs*3;
+            text-align: center;
+        }
+    }
+
+    &_numbered-list &__heading {
+        margin-bottom: 1.2em;
+    }
+
+    &_factors {
+        padding-top: em(120);
+        padding-bottom: em(40);
+
+        @media #{$breakpointDisplay} {
+            padding-top: em(105,15);
+            padding-bottom: em(100,15);
+        }
+
+        @media #{$breakpointTablet} {
+            padding-top: em(60,13);
+            padding-bottom: em(35,13);
+        }
+
+        @media #{$breakpointMobile} {
+            padding-top: em(35,12);
+            padding-bottom: em(25,12);
+        }
+    }
+
+    &_factors &__wrp {
+        @extend %padding_g;
+
+        @media #{$breakpointDisplay} {
+            padding-left: $col_md*2;
+            padding-right: $col_md*2;
+        }
+
+        @media #{$breakpointTablet} {
+            padding-left: $col_sm;
+            padding-right: $col_sm;
+        }
+
+        @media #{$breakpointMobile} {
+            padding-left: $col_xs*2;
+            padding-right: $col_xs*2;
+        }
+    }
+
+    &_dirty {
+        padding-top: em(110);
+        padding-bottom: em(110);
+
+        @media #{$breakpointDisplay} {
+            padding-top: em(60,15);
+            padding-bottom: em(80,15);
+        }
+
+        @media #{$breakpointTablet} {
+            padding-top: em(75,13);
+            padding-bottom: em(60,13);
+        }
+
+        @media #{$breakpointMobile} {
+            padding-top: em(45,12);
+            padding-bottom: em(40,12);
+        }
+
+        &_xs {
+            padding-top: em(80);
+            padding-bottom: em(80);
+
+            @media #{$breakpointDisplay} {
+                padding-top: em(65,15);
+                padding-bottom: em(70,15);
+            }
+
+            @media #{$breakpointTablet} {
+                padding-top: em(35,13);
+                padding-bottom: em(40,13);
+            }
+
+            @media #{$breakpointMobile} {
+                padding-top: em(20,12);
+                padding-bottom: em(30,12);
+            }
+        }
+    }
+
+    &_dirty &__wrp {
+        @media #{$breakpointDisplay} {
+            padding-left: $col_xs*3;
+            padding-right: $col_xs*3;
+        }
+    }
+
+    &_promo-tabs {
+        padding-bottom: em(125);
+
+        @media #{$breakpointDisplay} {
+            padding-bottom: em(110,15);
+        }
+
+        @media #{$breakpointTablet} {
+            padding-bottom: em(75,13);
+        }
+
+        @media #{$breakpointMobile} {
+            padding-bottom: em(70,12);
+        }
+    }
+
+    &_promo-tabs &__wrp {
+        @extend %padding_s;
+
+        @media #{$breakpointDisplay} {
+            padding-left: em(20,15);
+            padding-right: em(20,15);
+        }
+
+        @media #{$breakpointTablet} {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        @media #{$breakpointMobile} {
+            padding-left: em(10,12);
+            padding-right: em(10,12);
+        }
+    }
+
+    &_promo-tabs &__tabs {
+        margin-top: - em(290);
+        position: relative;
+        z-index: 3;
+
+        @media #{$breakpointDisplay} {
+            margin-top: - em(280,15);
+        }
+
+        @media #{$breakpointTablet} {
+            margin-top: - em(210,13);
+        }
+
+        @media #{$breakpointMobile} {
+            margin-top: - em(210,12);
+        }
+    }
+
+    &_advantages-slider {
+        @media #{$breakpointMobile} {
+            text-align: center;
+        }
+    }
+
+    &_advantages-slider &__wrp {
+        @extend %padding_g;
+        position: relative;
+        padding-top: em(150);
+        padding-bottom: em(200);
+
+        @media #{$breakpointDisplay} {
+            padding-top: em(90,15);
+            padding-bottom: em(100,15);
+        }
+
+        @media #{$breakpointTablet} {
+            padding-top: em(70,13);
+            padding-bottom: em(75,13);
+        }
+
+        @media #{$breakpointMobile} {
+            padding-top: em(40,12);
+            padding-bottom: em(70,12);
+        }
+    }
+
+    &_advantages-slider &__promo-img {
+        position: absolute;
+        right: - 36%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 3;
+        
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        &_type2 {
+            right: -9%;
+        }
+
+        &_type3 {
+            right: -19%;
+            top: 75%;
+        }
+        &_type_4 {
+            right: - 14%;
+            top: 55%;
+        }
+
+        @media #{$breakpointDisplay} {
+            width: 84%;
+
+            &_type2 {
+                width: 50%;
+                right: - 14%;
+            }
+
+            &_type3 {
+                width: 60%;
+            }
+            
+            &_type_4 {
+                width: 63%;
+            }
+        }
+
+        @media #{$breakpointTablet} {
+            width: 85%;
+
+            &_type2 {
+                width: 50%;
+            }
+
+            &_type3 {
+                width: 60%;
+            }
+
+            &_type_4 {
+                width: 70%;
+                right: -20%;
+            }
+            
+        }
+
+        @media #{$breakpointMobile} {
+            display: none;
+        }
+    }
+
+    &_standart {
+        padding-top: em(86);
+        padding-bottom: em(100);
+
+        @media #{$breakpointDisplay} {
+            padding-top: em(60,15);
+            padding-bottom: em(70,15);
+        }
+
+        @media #{$breakpointTablet} {
+            padding-top: em(60,13);
+            padding-bottom: em(60,13);
+        }
+
+        @media #{$breakpointMobile} {
+            padding-top: em(30,12);
+            padding-bottom: em(50,12);
+        }
+    }
+    
+    &_big_top {
+        padding-top: em(120);
+        padding-bottom: em(60);
+
+        @media #{$breakpointDisplay} {
+            padding-top: em(60,15);
+            padding-bottom: em(70,15);
+        }
+
+        @media #{$breakpointTablet} {
+            padding-top: em(60,13);
+            padding-bottom: em(60,13);
+        }
+
+        @media #{$breakpointMobile} {
+            padding-top: em(30,12);
+            padding-bottom: em(50,12);
+        }
+    }
+    
+    &_big &__wrp {
+        padding-top: em(126);
+        padding-bottom: em(130);
+
+        @media #{$breakpointDisplay} {
+            padding-top: em(120,15);
+            padding-bottom: em(120,15);
+        }
+
+        @media #{$breakpointTablet} {
+            padding-top: em(70,13);
+            padding-bottom: em(70,13);
+        }
+
+        @media #{$breakpointMobile} {
+            padding-top: em(50,12);
+            padding-bottom: em(50,12);
+        }
+    }
+
+    &_feedback &__wrp {
+        @extend %padding_g;
+        padding-top: em(86);
+        padding-bottom: em(100);
+        
+        @media #{$breakpointDisplay} {
+            padding-top: em(60,15);
+            padding-bottom: em(60,15);
+        }
+
+        @media #{$breakpointTablet} {
+            padding-top: em(70,13);
+            padding-bottom: em(65,13);
+        }
+
+        @media #{$breakpointMobile} {
+            padding-left: $col_xs*1;
+            padding-right: $col_xs*1;
+            padding-top: em(30,12);
+            padding-bottom: em(30,12);
+        }
+    }
+
+    &_catalog-promo &__wrp {
+        padding-left: $col_lg*2;
+        padding-right: $col_lg*2;
+
+        @media #{$breakpointDisplay} {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        @media #{$breakpointMobile} {
+            padding-right: $col_xs;
+            padding-left: $col_xs;
+        }
+    }
+}

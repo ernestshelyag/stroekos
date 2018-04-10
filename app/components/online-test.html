@@ -1,0 +1,428 @@
+<section id="forms-step" class="online-test">
+  <div class="online-test__block">
+    <div class="heading heading_type_h2 heading_align_center">
+      Узнайте, какой септик подойдет именно вам
+    </div>
+    <p class="c_grey caption caption_size_m caption_align_center">
+      Ответьте на несколько вопросов и мы подберем идеальный вариант для вас.
+    </p>
+    <form method="post" action="ajax.php" enctype="multipart/form-data" class="online-test__form">
+      <div style="display: block;" class="step">
+        <div class="step-box">
+          <span class="title-step">
+            Шаг 1 из 10. Тип архитектурного объекта:
+          </span>
+          <div class="questions__block">
+            <div class="select-box">
+              <input id="option1" type="radio" name="level1" value="ДАЧА, ДОМ, КОТТЕДЖ" onclick="vel(1, 1), openbox('box');">
+              <label for="option1">Дача, дом, коттедж</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option2" type="radio" name="level1" value="РЕСТОРАН, ГОСТИННИЦА И ДР." onclick="vel(2, 1), openbox('box');">
+              <label for="option2">Ресторан, гостиница и т.д.</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option3" type="radio" name="level1" value="ЦЕНТРАЛЬНАЯ КАНАЛИЗАЦИЯ (ПОСЕЛОК)" onclick=" vel(3, 1), openbox('box');">
+              <label for="option3">Центральная канализация (Поселок)</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option4" type="radio" name="level1" value="ДРУГОЕ" onclick="vel(4, 1), openbox('box');">
+              <label for="option4">Другое</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+          </div>
+          <div class="box-btn">
+            <a id="box" style="display: none;" class="main-btn next">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="step">
+        <div class="step-box"><span class="title-step">Шаг 2 из 10. Какой у вас тип проживания?</span>
+          <div class="questions__block">
+            <div class="select-box">
+              <input id="option5" type="radio" name="level2" value="СЕЗОННЫЙ" onclick="vel(5, 2), openbox('box2');">
+              <label for="option5">Сезонный</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option6" type="radio" name="level2" value="ПОСТОЯННЫЙ" onclick="vel(6, 2), openbox('box2');">
+              <label for="option6">Постоянный</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+          </div>
+          <div class="box-btn">
+            <a id="box" style="display: none;" class="main-btn back">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+            <a id="box2" style="display: none;" class="main-btn next">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="step">
+        <div class="step-box"><span class="title-step">Шаг 3 из 10. Сколько человек будут использовать септик?</span>
+          <div class="questions__block">
+            <div class="select-box">
+              <input id="option7" type="radio" name="level3" value="ОТ 1 ДО 5 ЧЕЛ." onclick="vel(7, 3), openbox('box3');">
+              <label for="option7">От 1 до 5 человек</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option8" type="radio" name="level3" value="ОТ 5 ДО 10 ЧЕЛ." onclick="vel(8, 3), openbox('box3');">
+              <label for="option8">От 5 до 10 человек</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option9" type="radio" name="level3" value="БОЛЬШЕ 10 ЧЕЛ." onclick=" vel(9, 3), openbox('box3');">
+              <label for="option9">Больше 10 человек</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+          </div>
+          <div class="box-btn">
+            <a id="box2" style="display: none;" class="main-btn back">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+            <a id="box3" style="display: none;" class="main-btn next">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="step">
+        <div class="step-box"><span class="title-step">Шаг 4 из 10. Какая канализация стоит сейчас?</span>
+          <div class="questions__block">
+            <div class="select-box">
+              <input id="option10" type="radio" name="level4" value="КАНАЛИЗАЦИЯ ОТСУТСТВУЕТ" onclick="vel(10, 4), openbox('box4');">
+              <label for="option10">Канализация отсутствует</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option11" type="radio" name="level4" value="ПЕРЕЛИВНАЯ ИЛИ КОЛЬЦА (ВЫГРЕБНАЯ ЯМА)" onclick="vel(11, 4), openbox('box4');">
+              <label for="option11">Переливная или кольца (выгребная яма)</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option12" type="radio" name="level4" value="ДРУГОЕ" onclick=" vel(12, 4), openbox('box4');">
+              <label for="option12">Другое</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+          </div>
+          <div class="box-btn">
+            <a id="box3" style="display: none;" class="main-btn back">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+            <a id="box4" style="display: none;" class="main-btn next">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="step">
+        <div class="step-box"><span class="title-step">Шаг 5 из 10. А какой тип канализации нужен?</span>
+          <div class="questions__block">
+            <div class="select-box">
+              <input id="option13" type="radio" name="level5" value="С ОТКАЧКОЙ" onclick="vel(10, 5), openbox('box5');">
+              <label for="option13">С откачкой</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option14" type="radio" name="level5" value="БЕЗ ОТКАЧКИ" onclick="vel(11, 5), openbox('box5');">
+              <label for="option14">Без откачки</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option15" type="radio" name="level5" value="НЕ ЗНАЮ, НУЖНА КОНСУЛЬТАЦИЯ ИНЖЕНЕРА (БЕСПЛАТНО)" onclick=" vel(12, 5), openbox('box5');">
+              <label for="option15">Не знаю, нужна консультация инженера (бесплатно)</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+          </div>
+          <div class="box-btn">
+            <a id="box4" style="display: none;" class="main-btn back">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+            <a id="box5" style="display: none;" class="main-btn next">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="step">
+        <div class="step-box"><span class="title-step">Шаг 6 из 10. Какой у вас тип почвы?</span>
+          <div class="questions__block">
+            <div class="select-box">
+              <input id="option16" type="radio" name="level6" value="ГЛИНА" onclick="vel(16, 6), openbox('box6');">
+              <label for="option16">Глина</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option17" type="radio" name="level6" value="СУГЛИНОК" onclick="vel(17, 6), openbox('box6');">
+              <label for="option17">Суглинок</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option18" type="radio" name="level6" value="ПЕСОК" onclick=" vel(18, 6), openbox('box6');">
+              <label for="option18">Песок</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option19" type="radio" name="level6" value="ТОРФ" onclick="vel(19, 6), openbox('box6');">
+              <label for="option19">Торф</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option20" type="radio" name="level6" value="НЕ ЗНАЮ, НУЖНА КОНСУЛЬТАЦИЯ ИНЖЕНЕРА (БЕСПЛАТНО)" onclick=" vel(20, 6), openbox('box6');">
+              <label for="option20">Не знаю, нужна консультация инженера (бесплатно)</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+          </div>
+          <div class="box-btn">
+            <a id="box5" style="display: none;" class="main-btn back">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+            <a id="box6" style="display: none;" class="main-btn next">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="step">
+        <div class="step-box"><span class="title-step">Шаг 7 из 10. Уровень грунтовых вод на вашем участке:</span>
+          <div class="questions__block">
+            <div class="select-box">
+              <input id="option21" type="radio" name="level7" value="ВЫСОКИЕ" onclick="vel(21, 7), openbox('box7');">
+              <label for="option21">Высокие</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option22" type="radio" name="level7" value="НИЗКИЕ" onclick="vel(22, 7), openbox('box7');">
+              <label for="option22">Низкие</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option23" type="radio" name="level7" value="НЕ ЗНАЮ, НУЖНА КОНСУЛЬТАЦИЯ ИНЖЕНЕРА (БЕСПЛАТНО)" onclick=" vel(23, 7), openbox('box7');">
+              <label for="option23">Не знаю, нужна консультация инженера (бесплатно)</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+          </div>
+          <div class="box-btn">
+            <a id="box6" style="display: none;" class="main-btn back">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+            <a id="box7" style="display: none;" class="main-btn next">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="step">
+        <div class="step-box"><span class="title-step">Шаг 8 из 10. Куда планируете отводить очищенную воду?</span>
+          <div class="questions__block">
+            <div class="select-box">
+              <input id="option24" type="radio" name="level8" value="НА РЕЛЬЕФ" onclick="vel(24, 8), openbox('box8');">
+              <label for="option24">На рельеф</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option25" type="radio" name="level8" value="НА ГРУНТ" onclick="vel(25, 8), openbox('box8');">
+              <label for="option25">На грунт</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option26" type="radio" name="level8" value="В НАКОПИТЕЛЬ" onclick=" vel(26, 8), openbox('box8');">
+              <label for="option26">В накопитель</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option27" type="radio" name="level8" value="В ЛИВНЕВУЮ КАНАВУ" onclick="vel(27, 8), openbox('box8');">
+              <label for="option27">В ливневую канаву</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option28" type="radio" name="level8" value="НЕ ЗНАЮ, НУЖНА КОНСУЛЬТАЦИЯ ИНЖЕНЕРА (БЕСПЛАТНО)" onclick=" vel(28, 8), openbox('box8');">
+              <label for="option28">Не знаю, нужна консультация инженера (бесплатно)</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+          </div>
+          <div class="box-btn">
+            <a id="box7" style="display: none;" class="main-btn back">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+            <a id="box8" style="display: none;" class="main-btn next">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="step">
+        <div class="step-box"><span class="title-step">Шаг 9 из 10. В какой бюджет планируете уложиться?</span>
+          <div class="questions__block">
+            <div class="select-box">
+              <input id="option29" type="radio" name="level9" value="ОТ 75000 ДО 100000 РУБЛЕЙ" onclick="vel(29, 9), openbox('box9');">
+              <label for="option29">От 75.000 до 100.000 рублей</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option30" type="radio" name="level9" value="ОТ 100000 ДО 150000 РУБЛЕЙ" onclick="vel(30, 9), openbox('box9');">
+              <label for="option30">От 100.000 до 150.000 рублей</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option31" type="radio" name="level9" value="ОТ 150000 ДО 200000 РУБЛЕЙ" onclick=" vel(31, 9), openbox('box9');">
+              <label for="option31">От 150.000 до 200.000 рублей</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option32" type="radio" name="level9" value="ДРУГОЕ" onclick="vel(32, 9), openbox('box9');">
+              <label for="option32">Другое</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+          </div>
+          <div class="box-btn">
+            <a id="box8" style="display: none;" class="main-btn back">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+            <a id="box9" style="display: none;" class="main-btn next">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="step">
+        <div class="step-box">
+          <span class="title-step">Шаг 10 из 10. Когда вам было бы удобно принять инженера?</span>
+          <span class="small">И получить бесплатно точную смету с учетом типа грунта, глубины подвода коммуникации, уровня грунтовых вод, геологии вашего участка, подбора оборудования и т.д.)</span>
+          <div class="questions__block">
+            <div class="select-box">
+              <input id="option33" type="radio" name="level10" value="ПОКА НЕ ЗНАЮ" onclick="vel(33, 10), openbox('box10');">
+              <label for="option33">Пока не знаю</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+            <div class="select-box">
+              <input id="option34" type="radio" name="level10" value="">
+              <label for="option34">Выберите дату</label>
+              <input id="option35" class="datepicker" type="text" name="level10" onclick="">
+              <label for="option35"></label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </div>
+          </div>
+          <div class="box-btn">
+            <a id="box9" style="display: none;" class="main-btn back">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+            <a id="box10" style="display: none;" class="main-btn next">
+              <span class="icon icon-arrow-next"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="display:none;" class="step">
+        <div class="final-step">
+          <span class="title-step">Почти готово!</span>
+          <span class="small">По вашим критериям подбираем тип оборудования. </span>
+          <span class="form-p">
+            <span id="lev1"></span>
+            <span id="lev2"></span>
+            <span id="lev3"></span>
+            <span id="lev4"></span>
+            <span id="lev5"></span>
+            <span id="lev6"></span>
+            <span id="lev7"></span>
+            <span id="lev8"></span>
+            <span id="lev9"></span>
+            <span id="lev10"></span>
+          </span>
+          <div class="send__form">
+            <div class="info">
+              <p>Проверьте список и введите ваши контактные данные для получения предложений.</p>
+              <input type="text" name="name" placeholder="Имя" class="main-inpt">
+              <input id="phone" type="text" name="phone" placeholder="Телефон" required="" class="main-inpt">
+            </div>
+            <div class="submit">
+              <input type="hidden" name="email" value="mail@mail.ru">
+              <input type="submit" name="submit" value="Получить предложение" class="main-btn">
+            </div><span class="warning">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</span>
+          </div>
+          <div class="box-btn">
+            <a id="box10" style="display: none;" class="main-btn back">
+              <span class="icon icon-arrow-prev"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,67 @@
+@@include('layout/_head.html', {
+    "title" : "Контакты компании «Строительные Экосистемы», г. Москва",
+    "description" : "Адрес, телефоны и другая контактная информация компании «Строительные Экосистемы» в Москве",
+    "keywords" : "строительные экосистемы контактная информация, адрес, телефон, электронная почта"
+})
+    <section class="onepage">
+        @@include('layout/_header.html', {
+            "navigationTheme" : "navigation_theme_dark"
+        })
+
+        <div class="onepage__promo-slider contact promo-slider promo-slider_type_full">
+            <div id="map" class="contact__map"></div>
+
+            <div class="promo-slider__content">
+                <a href="/" class="link-prev promo-slider__link-prev contact__link-prev">
+                    <span class="icon link-prev__icon icon-arrow-left"></span>
+                    Вернуться на&nbsp;главную
+                </a>
+
+                <h1 class="promo-slider__title heading heading_type_h1">
+                    Контактная информация
+                </h1>
+
+                <div class="promo-slider__text">
+                    <p class="caption caption_double_margin">
+                        г.&nbsp;Москва, ул.&nbsp;Краснобогатырская, д. 6, БЦ&nbsp;Villa Riva, оф. 204
+                    </p>
+
+                    <p class="caption caption_double_margin">
+                        <span class="contact__box-text contact__box-text_size_m">+7 (499) 649-64-50</span>
+                        <span class="contact__box-text contact__box-text_size_m">8 800 500-24-92</span>
+                        <a href="mailto:main@septico.ru" class="contact__box-text">main@septico.ru</a>
+                    </p>
+
+                    <p class="caption caption_double_margin">
+                        <span class="contact__box-text">ООО&nbsp;«Строительные Экосистемы»</span>
+                        <span class="contact__box-text">ИНН:&nbsp;7715443878</span>
+                        <span class="contact__box-text">ОГРН&nbsp;5147746023541</span>
+                    </p>
+                </div>
+
+                <div class="feedback-form contact__feedback-form">
+                    <div class="feedback-form__title heading heading_type_h5">
+                        Давайте обсудим ваш проект
+                    </div>
+
+                    <form action="" class="form-data form-data_type_inline form_feedback">
+                        <div class="form-data__parametr">
+                            <input type="text" class="form-data__input" placeholder="Имя" value="" name="name">
+                        </div>
+                        <div class="form-data__parametr">
+                            <input type="text" class="form-data__input" placeholder="Телефон" value="" name="phone">
+                        </div>
+                        <div class="form-data__parametr">
+                            <button class="form-data__button button button_theme_default button_size_m">
+                                Позвоните мне
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+@@include('layout/_footer.html', {
+    "theme" : "footer_theme_grey"
+})

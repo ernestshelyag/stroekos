@@ -1,0 +1,149 @@
+//Member
+.member {
+    position: relative;
+    
+    
+    &__img {
+        overflow: hidden;
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        bottom: 0;
+        width: $col_lg*2;
+        height: auto;
+        max-height: 210px;
+        line-height: 0;
+        
+        
+        img {
+            max-width: 100%;
+            @include translate(-5px,5px);
+            @include transition(all 0.4s ease);
+        }
+    }
+    
+    &__info {
+        padding-left: $col_lg*2;
+        padding-top: em(20);
+        padding-bottom: em(54);
+        padding-right: 1em;
+    }
+    
+    &__name {
+        margin-bottom: em(12,20);
+    }
+    
+    &__position {
+        @include opacity(0.75);
+        min-height: em(36,15);  
+        max-height: em(90,15);
+    }
+    
+    &__email {
+        font-size: em(15);
+        position: absolute;
+        left: $col_lg*2;
+        bottom: em(30,15);
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    :hover > &__img img {
+        @include translate(0,0);
+    }
+
+    @media #{$breakpointDisplay} {
+        
+        &__img {
+            width: $col_md*3;
+            max-height: 220px;
+        }
+
+        &__info {
+            padding-left: $col_md*3;
+            padding-top: em(20,15);
+            padding-bottom: em(60,15);
+        }
+
+        &__name {
+            font-size: em(20,15);
+            line-height: em(27,20);
+            margin-bottom: em(12,20);
+        }
+
+        &__position {
+            min-height: em(36,14);
+            font-size: em(14,17);
+        }
+
+        &__email {
+            font-size: em(14,15);
+            left: $col_md*3;
+            bottom: em(20,15);
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        &__img {
+            width: $col_sm*4;
+        }
+
+        &__info {
+            padding-left: $col_sm*4;
+            padding-top: em(25,13);
+            padding-bottom: em(74,13);
+        }
+
+        &__name {
+            font-size: em(20,13);
+            line-height: em(27,20);
+            margin-bottom: em(12,20);
+        }
+
+        &__position {
+            min-height: em(36,14);
+            font-size: em(16,15);
+        }
+
+        &__email {
+            font-size: em(14,13);
+            left: $col_sm*4;
+            bottom: em(13,13);
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        &__img {
+            width: $col_xs*9;
+            
+            img {
+                @include translate(0,0);
+            }
+        }
+
+        &__info {
+            padding-left: $col_xs*9.25;
+            padding-top: em(20,12);
+            padding-bottom: em(60,12);
+        }
+
+        &__name {
+            font-size: em(20,12);
+            line-height: em(27,20);
+            margin-bottom: em(12,20);
+        }
+
+        &__position {
+            min-height: em(36,14);
+        }
+
+        &__email {
+            font-size: em(14,12);
+            left: $col_xs*9.25;
+            bottom: em(20,14);
+        }
+    }
+}
+

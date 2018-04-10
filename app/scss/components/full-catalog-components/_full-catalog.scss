@@ -1,0 +1,223 @@
+.full-catalog {
+
+  @media #{$breakpointBig} {
+    margin: auto;
+    padding-top: 103px;
+    max-width: 1320px;
+  }
+  max-width: 1021px;
+  margin-right: 0;
+  @media #{$breakpointDisplay} {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .blog__filter-btn {
+    margin-bottom: 8px;
+  }
+  &__main-content {
+    @extend %flexbox;
+    @include justify-content(space-between);
+
+    max-width: 868px;
+
+    @media #{$breakpointMobile} {
+      @include flex-direction(column-reverse);
+      @include align-items(center);
+    }
+  }
+  &__card-block {
+    margin-right: 20px;
+    @include flex-grow(1);
+    max-width: 619px;
+    @extend %flexbox;
+    @include flex-direction(column);
+
+    @media #{$breakpointMobile} {
+      width: 100%;
+      margin-right: 0;
+    }
+
+  }
+  //кнопки фильтр + сортировка на мобильных
+  &__filter-block-hidden-buttons {
+    .trangle {
+      &:after {
+        right: 17px;
+      }
+    }
+    @include flexbox;
+    @include justify-content(space-between);
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    font-size: 15px;
+    @media #{$breakpointMobile} {
+      opacity: 1;
+      position: relative;
+      left: 0;
+    }
+  }
+  &__hidden-filter-btn {
+    width: 40%;
+    border: solid 1px #cacaca;
+    height: 37px;
+    line-height: 37px;
+    margin-left: 10px;
+    padding-left: 17px;
+  }
+  &__hidden-sort-btn {
+    margin-right: 10px;
+    width: 55%;
+  }
+  &__sort-menu {
+    height: 36px;
+    line-height: 36px;
+    @media #{$breakpointTablet} {
+      display: block;
+    }
+  }
+  &__sort-menu-select {
+    width: 100%;
+    border: solid 1px #cacaca;
+    padding-left: 17px;
+
+  }
+  &__sort-menu-option {
+    line-height: 20px;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  //----------------------------
+
+  &__sort-line {
+    height: 36px;
+    background: #f6f6f6;
+    line-height: 36px;
+    margin-bottom: 20px;
+    @extend %flexbox;
+    @include justify-content(space-around);
+
+    @media #{$breakpointTablet} {
+      display: none;
+    }
+
+    &_hidden {
+      display: none;
+      @media #{$breakpointTablet} {
+        display: block;
+      }
+      @media #{$breakpointMobile} {
+        display: none;
+      }
+    }
+  }
+  &__sort-line-text {
+    font-weight: 600;
+    display: block;
+  }
+  &__sort-line-item {
+    padding-right: 15px;
+    cursor: pointer;
+    &.active {
+      font-weight: 600;
+    }
+    &_first {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__card-wrp {
+    @include flex-grow(1);
+
+    @media #{$breakpointTablet} {
+      @include flexbox;
+      @include flex-wrap(wrap);
+      @include justify-content(space-around);
+      @include align-content(flex-start);
+    }
+  }
+  &__pagination {
+    margin-top: 20px;
+  }
+  &__filter-block {
+    width: 216px;
+
+    @media #{$breakpointMobile} {
+      width: 100%;
+      margin-bottom: 25px;
+      max-width: 619px;
+    }
+  }
+  &__filter-form {
+    @media #{$breakpointMobile} {
+      display: none;
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+  &__filter-toggle-btn {
+    width: 100%;
+    color: #000;
+    border: solid 1px #000;
+    cursor: pointer;
+    &:hover {
+      color: #87bb16;
+      border: solid 1px transparent;
+    }
+  }
+
+  //-----------------------------
+  .ui-button {
+    background: #fff;
+    border-radius: 0;
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+    padding: 9px 17px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    font-family: "futurabookcregular", sans-serif;
+    color: #000;
+  }
+  .ui-menu-item-wrapper {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .filter-form {
+    width: 250px !important;
+    input {
+      width: 85px!important;
+    }
+  }
+  .card__wrapper {
+    height: 187px;
+  }
+  .full-catalog__main-content {
+    max-width: 919px!important;
+  }
+  .full-catalog__card-block {
+    max-width: 654px!important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

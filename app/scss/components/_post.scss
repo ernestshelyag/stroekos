@@ -1,0 +1,122 @@
+//Post
+.post {
+    width: $col_lg*5;
+    float: left;
+    margin-right: $col_lg;
+    
+    &_align_center {
+        text-align: center;
+    }
+    
+    &_img_padding {
+        .post__img {
+            padding: 0 em(30);
+        }
+    }
+    
+    &__img {
+        height: $col_lg*5;
+        background-color: #fff;
+        margin-bottom: em(20);
+        text-align: center;
+        line-height: $col_lg*5;
+        
+        img {
+            display: inline-block;
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+        }
+    }
+    
+    &__descr {
+        @include opacity(0.8)
+    }
+    
+    &__title {
+        margin-bottom: em(10,20);
+    }
+    
+    &__caption {
+        color: $grey;
+    }
+
+    @media #{$breakpointDisplay} {
+        width: $col_md*5;
+        margin-right: $col_md;
+
+        &_img_padding {
+            .post__img {
+                padding: em(28,15);
+            }
+        }
+
+        &__img {
+            height: $col_md*5;
+            margin-bottom: em(16,15);
+            line-height: $col_md*5;
+        }
+
+        &__title {
+            margin-bottom: em(7,18);
+        }
+    }
+    
+    @media #{$breakpointTablet} {
+        width: $col_sm*6;
+        margin-right: $col_sm;
+
+        &_img_padding {
+            .post__img {
+                padding: em(15,13);
+            }
+        }
+
+        &__img {
+            height: $col_sm*6;
+            margin-bottom: em(16,13);
+            line-height: $col_sm*6;
+        }
+
+        &__title {
+            margin-bottom: em(7,18);
+            font-size: em(18,13);
+            line-height: em(24,18);
+        }
+
+        &__caption {
+            font-size: em(15,13);
+            line-height: em(20,15);
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        width: $col_xs*14;
+        margin-right: $col_xs*6;
+
+        &_img_padding {
+            .post__img {
+                padding: 0 em(15,12);
+            }
+        }
+
+        &__img {
+            height: $col_xs*14;
+            margin-bottom: em(16,12);
+            line-height: $col_xs*14;
+        }
+
+        &__title {
+            margin-bottom: em(7,18);
+            font-size: em(18,12);
+            line-height: em(24,18);
+        }
+
+        &__caption {
+            text-align: center;
+            font-size: em(15,12);
+            line-height: em(20,15);
+        }
+    }
+}
+

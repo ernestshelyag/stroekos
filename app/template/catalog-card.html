@@ -1,0 +1,76 @@
+@@include('layout/_head.html', {
+"title": "«Строительные Экосистемы» - продажа и установка септиков, систем отопления, водоснабжения в Москве и области",
+"description": "Устанавливаем септики, системы отопления и водоснабжения, также проводим дренажные работы. Все подробности на сайте, заходите!",
+"keywords": "септики от производителя, установка систем отопления, установка водоснабжения, дренажные работы"
+})
+<section class="onepage onepage_type_blog">
+  @@include('layout/_header.html', {
+  "navigationTheme" : "navigation_theme_dark"
+  })
+
+  <div class="onepage__blog blog catalog-card">
+
+    <div class="breadcrumb">
+      <a href="index.html" class="breadcrumb__item breadcrumb__item_link">
+      Главная
+      </a>
+      <a href="full-catalog.html" class="breadcrumb__item breadcrumb__item_link">
+      Каталог
+      </a>
+      <span class="breadcrumb__item">Топас 5</span>
+    </div>
+
+    <div class="blog__content">
+
+      <div class="catalog-card__pick-item">
+        <button data-toggle="item1" class="blog__filter-btn js-filter-btn active button button_size_filter button_theme_filter ">
+          <span class="button__text">
+            ТОПАС 5
+          </span>
+        </button>
+        <button data-toggle="item2" class="blog__filter-btn js-filter-btn button button_size_filter button_theme_filter">
+          <span class="button__text">
+            ТОПАС 5 ПР
+          </span>
+        </button>
+        <button data-toggle="item3" class="blog__filter-btn js-filter-btn button button_size_filter button_theme_filter">
+          <span class="button__text">
+            ТОПАС 5 LONG ПР
+          </span>
+        </button>
+        <button data-toggle="item4" class="blog__filter-btn js-filter-btn button button_size_filter button_theme_filter">
+          <span class="button__text">
+            ТОПАС 5 LONG
+          </span>
+        </button>
+      </div>
+
+      <div data-id="item1" class="js-filter-card catalog-card__card-single card-single active">
+        @@include('components/_card-single.html')
+      </div>
+
+      <div data-id="item2" class="js-filter-card catalog-card__card-single card-single">
+        222222
+      </div>
+
+      <div data-id="item3" class="js-filter-card catalog-card__card-single card-single">
+        333333
+      </div>
+
+      <div data-id="item4" class="js-filter-card catalog-card__card-single card-single">
+        444444
+      </div>
+
+    </div>
+  </div>
+</section>
+
+@@include('components/catalog/_catalog-card-single.html', {
+"id" : "1",
+"heading" : "С&nbsp;этим&nbsp;товаром<br class='br-hide' />&nbsp;также&nbsp;покупают"
+})
+
+
+@@include('layout/_footer.html', {
+"theme" : ""
+})

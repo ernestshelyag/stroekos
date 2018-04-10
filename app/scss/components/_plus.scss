@@ -1,0 +1,46 @@
+//Plus
+.plus {
+    font-family: $roboto;
+    font-weight: 700;
+    margin-bottom: em(76);
+
+    @extend %flexbox;
+    @include align-items(flex-start);
+   
+    
+    &__number {
+        color: $grey_lite;
+        margin-right: em(20,48);
+    }
+    
+    &__text {
+        
+    }
+
+    @media #{$breakpointDisplay} {
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__number {
+            margin-right: em(20,48);
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        margin-bottom: em(45,13);
+        
+        &__number {
+            margin-right: em(14,36);
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        margin-bottom: 0;
+        margin-top: em(15,12);
+        
+        &__number {
+            margin-right: em(23,24);
+        }
+    }
+}

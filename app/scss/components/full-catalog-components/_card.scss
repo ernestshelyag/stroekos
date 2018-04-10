@@ -1,0 +1,101 @@
+.card {
+  @include flex-grow(1);
+  padding: 0 3px;
+
+  display: none;
+  &.active {
+    display: block;
+  }
+  &__ref {
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+  &__wrapper {
+    @extend %flexbox;
+    @include justify-content(space-around);
+    @include align-items(center);
+    border: solid 1px #f6f6f6;
+    transition: all .3s;
+    margin-bottom: 8px;
+    &:hover {
+      @extend %shadow
+    }
+    @media #{$breakpointTablet} {
+      @include flex-direction(column);
+      @include flex-wrap(wrap);
+      border: solid 1px #cacaca;
+      padding: 0 2px;
+      margin-bottom: 6px;
+    }
+  }
+  &__img {
+    width: 145px;
+    height: 145px;
+  }
+  &__title {
+    font-family: "Roboto Slab", serif;
+    transition: all .3s;
+    &:hover {
+      color: #87bb16;
+    }
+    @media #{$breakpointTablet} {
+      padding-left: 7px;
+    }
+  }
+  &__compare {
+    margin: 8px 0;
+  }
+  &__card-table {
+    font-size: 14px;
+    color: #808A91;
+    display: table;
+  }
+  &__card-table-row {
+    display: table-row;
+    @media #{$breakpointTablet} {
+      display: table-cell;
+      padding: 3px 5px;
+    }
+    &_head {
+      font-weight: 600;
+      color: #000;
+    }
+  }
+  &__card-table-item {
+    display: table-cell;
+    padding: 3px 5px;
+    white-space: nowrap;
+    @media #{$breakpointTablet} {
+      display: table-row;
+    }
+  }
+  &__price {
+    @extend %flexbox;
+    @include flex-direction (column);
+    @include align-items(center);
+    @media #{$breakpointTablet} {
+      margin-top: 3px;
+      @include align-items(flex-start);
+    }
+  }
+  &__price-canceled {
+    text-decoration: line-through;
+    color: #808A91;
+    font-size: 14px;
+  }
+  &__price-true {
+    font-size: 18px;
+    font-weight: 600;
+    &_big {
+      font-size: 30px;
+    }
+  }
+  &__price-btn {
+    margin-top: 5px;
+    min-width: 148px;
+    @media #{$breakpointDisplay} {
+      margin-bottom: 20px;
+    }
+  }
+}

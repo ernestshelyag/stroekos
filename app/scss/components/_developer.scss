@@ -1,0 +1,33 @@
+//developer
+.developer {
+    &__icon {
+        width: em(48);
+        float: left;
+        text-decoration: none;
+
+        @media #{$breakpointMobile} {
+            width: em(40,12);
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    &__desc {
+        text-align: left;
+        margin-left: em(55, 14);
+        font-size: em(14);
+        line-height: 1.429;
+        color: $grey;
+
+        @media #{$breakpointMobile} {
+            font-size: em(11,12);
+        }
+    }
+
+    &__link {
+        color: $green_nav;
+    }
+}

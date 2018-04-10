@@ -1,0 +1,29 @@
+[
+  {
+    "parent": "3",
+    "number": "1",
+    "title": "Росток",
+    "price": "22&nbsp;000"
+  },
+
+  {
+    "parent": "3",
+    "number": "2",
+    "title": "Термит",
+    "price": "24&nbsp;120"
+  },
+
+  {
+    "parent": "3",
+    "number": "3",
+    "title": "Флотенк",
+    "price": "66&nbsp;300"
+  },
+
+  {
+    "parent": "3",
+    "number": "4",
+    "title": "Барс",
+    "price": "66&nbsp;300"
+  }
+]

@@ -1,0 +1,27 @@
+//link-prev
+.link-prev {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: $blue_lite;
+    margin-bottom: em(30,14);
+
+    @media #{$breakpointDisplay} {
+        margin-bottom: em(10,14);
+    }
+
+    @media #{$breakpointTablet} {
+        margin-bottom: em(20,14);
+    }
+
+    @media #{$breakpointMobile} {
+        margin-bottom: 0;
+    }
+
+    &__icon {
+        display: inline-block;
+        vertical-align: baseline;
+        line-height: 1;
+        margin-right: em(8,14);
+    }
+}

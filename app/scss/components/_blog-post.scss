@@ -1,0 +1,165 @@
+//Blog-post
+.blog-post {
+	margin-left: $col_lg;
+	margin-right: $col_lg*3;
+	position: relative;
+	padding-top: em(116);
+	padding-bottom: em(35);
+
+	@media #{$breakpointDisplay} {
+		margin-left: $col_md;
+		margin-right: $col_md*3;
+		padding-top: em(100);
+	}
+
+	@media #{$breakpointTablet} {
+		margin-left: $col_sm;
+		margin-right: $col_sm;
+		padding-top: em(70);
+	}
+
+	@media #{$breakpointMobile} {
+		margin-left: $col_xs;
+		margin-right: $col_xs;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	&__title {
+		@media #{$breakpointMobile} {
+			font-size: 24px;
+		}
+	}
+
+	&__info {
+		margin-top: 1.3rem;
+
+		@media #{$breakpointMobile} {
+			@include clearfix();
+		}
+	}
+
+	&__tag {
+		cursor: auto;
+		margin-right: em(24,14);
+
+		@media #{$breakpointMobile} {
+			min-width: 78px;
+			height: 25px;
+			line-height: 23px;
+			padding: 0 16px;
+			margin-right: 0;
+		}
+
+	}
+
+	&__date {
+		font-size: 14px;
+		line-height: em(34,14);
+		vertical-align: bottom;
+		display: inline-block;
+
+		@media #{$breakpointMobile} {
+			line-height: 25px;
+			float: right;
+		}
+	}
+
+	&__img-wrp {
+		width: 41.6667%;
+		max-width: $col_lg*6;
+		overflow: hidden;
+		float: right;
+		padding-bottom: em(70);
+		margin-left: em(34);
+		
+		img {
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		@media #{$breakpointDisplay} {
+			max-width: $col_md*7;
+		}
+
+		@media #{$breakpointTablet} {
+			width: 36%;
+			padding-bottom: em(30);
+			margin-left: em(14);
+		}
+	}
+	
+	&__content {
+		margin-top: em(40);
+		padding-bottom: em(28);
+		@include clearfix();
+		
+		p {
+			line-height: em(20);
+			font-size: 18px;
+			margin-top: 0;
+
+			@media #{$breakpointTablet} {
+				font-size: 16px;
+			}
+			
+		}
+		
+		h2,h3,h4,h5,h6 {
+			color: #6ca0ce;
+		}
+		
+		h2 {
+			font-size: 30px;
+
+			@media #{$breakpointTablet} {
+				font-size: 26px;
+			}
+
+			@media #{$breakpointMobile} {
+				
+			}
+		}
+		
+		h3 {
+			font-size: 24px;
+
+			@media #{$breakpointTablet} {
+				font-size: 20px;
+			}
+
+			@media #{$breakpointMobile} {
+
+			}
+		}
+	}
+	
+
+	&__footer {
+		border-top: 1px solid #e6e6e6;
+	}
+	
+	&__social {
+		padding: em(47) 0;
+
+		@media #{$breakpointMobile} {
+			padding: em(30) 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,217 @@
+//Calculator
+.calc {
+	
+	&__wrp {
+		@extend %wrp;
+		@extend %padding_m;
+		padding-top: em(120);
+		padding-bottom: em(90);
+
+		@media #{$breakpointDisplay} {
+			padding-top: em(60,15);
+			padding-bottom: em(60,15);
+		}
+
+		@media #{$breakpointTablet} {
+			padding-top: em(45,13);
+			padding-bottom: em(40,13);
+			padding-left: $col_sm*2;
+			padding-right: $col_sm*2;
+		}
+
+		@media #{$breakpointMobile} {
+			padding-top: em(45,12);
+			padding-bottom: em(40,12);
+			padding-left: $col_xs;
+			padding-right: $col_xs;
+		}
+	}
+	
+	&__caption {
+		
+		@media #{$breakpointDisplay} {
+			margin: 1.5em 0;
+		}
+
+		@media #{$breakpointTablet} {
+
+		}
+
+		@media #{$breakpointMobile} {
+
+		}
+	}
+	
+	&__content {
+		padding-top: em(30);
+		padding-bottom: em(30);
+
+		@media #{$breakpointDisplay} {
+			padding: em(30) $col_md;
+		}
+
+		@media #{$breakpointTablet} {
+			padding: em(40) 0;
+		}
+
+		@media #{$breakpointMobile} {
+			padding: $col_xs;
+		}
+	}
+	
+	&__form {
+		@include flex-basis($col_lg*5);
+		width: $col_lg*5;
+		margin-right: $col_lg;
+
+		@media #{$breakpointDisplay} {
+			@include flex-basis($col_md*6);
+			width: $col_md*6;
+			margin-right: $col_md;
+		}
+
+		@media #{$breakpointTablet} {
+			@include flex-basis($col_sm*7);
+			width: $col_sm*7;
+			margin-right: $col_sm;
+		}
+
+		@media #{$breakpointMobile} {
+			@include flex-basis(100%);
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+	
+	&__info {
+		@include flex-basis($col_lg*8);
+		width: $col_lg*8;
+
+		@media #{$breakpointDisplay} {
+			@include flex-basis($col_md*7);
+			width: $col_md*7;
+		}
+
+		@media #{$breakpointTablet} {
+			@include flex-basis($col_sm*8);
+			width: $col_sm*8;
+		}
+
+		@media #{$breakpointMobile} {
+			text-align: center;
+			@include flex-basis(100%);
+			width: 100%;
+			margin-top: 45px;
+		}
+	}
+	
+	&__box {
+		visibility: hidden;
+		@include opacity(0);
+		height: 0;
+		@include rotateX(-180deg);
+		@include transform-origin(50% em(58));
+		
+		@include transition (opacity 0.3s ease-in-out, transform 0.6s ease-in-out);
+		position: relative;
+
+		&.calc__calc1 {
+			@media #{$breakpointMobile} {
+				padding-bottom: 0;
+			}
+		}
+
+		&_active {
+			visibility: visible;
+			@include opacity(1);
+			@include rotateX(0deg);
+			height: auto;
+
+			&.calc__calc1 {
+				@media #{$breakpointMobile} {
+					padding-bottom: $col_xs*6;
+				}
+			}
+		}
+		
+		.form-data__parametr {
+			padding-top: em(20);
+		}
+	}
+	
+	
+	&__label {
+		margin-right: em(10,15);
+		vertical-align: middle;
+		@include flex-shrink(0);
+	}
+	
+	&__deep {
+
+		@media #{$breakpointMobile} {
+			@include flex-wrap(nowrap);
+		}
+	}
+	
+	&__hint {
+		position: absolute;
+		left: 0;
+		top: 125%;
+		
+
+		@media #{$breakpointMobile} {
+			top: 40%;
+			text-align: center;
+		}
+		
+		&_2 {
+			top: 110%;
+
+			@media #{$breakpointMobile} {
+				top: 104%;
+				text-align: center;
+				width: 100%;
+			}
+		}
+	}
+	
+	&__total {
+		line-height: 1;
+
+		.js-calc-total {
+			display: inline-block;
+			@include transition (transform 0.8s ease-in-out);
+			@include transform-origin(50% 50%);
+			
+			&.changed {
+				@include rotateX(180deg);
+				
+			}
+			
+			&.normal {
+				@include rotateX(0deg);
+				
+			}
+		}
+	}
+	
+	&__button {
+		margin-top: em(10);
+		
+		span {
+			@include transition (all 0.6s ease-in-out);
+		}
+
+		@media #{$breakpointDisplay} {
+			min-width: $col_md*4;
+		}
+
+		@media #{$breakpointTablet} {
+
+		}
+
+		@media #{$breakpointMobile} {
+
+		}
+	}
+}

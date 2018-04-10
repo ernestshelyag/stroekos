@@ -1,0 +1,144 @@
+//Heading
+.heading {
+    font-family: $roboto;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    font-size: em(36);
+    line-height: em(42,36);
+
+    &_type_h1 {
+        font-size: em(45);
+        line-height: em(54,45);
+    }
+
+    &_type_h2 {
+        font-size: em(42);
+        line-height: em(52,42);
+    }
+
+    &_type_h3 {
+        font-size: em(27);
+        line-height: em(42,27);
+    }
+
+    &_type_h4 {
+        font-size: em(24);
+        line-height: em(36,24);
+    }
+
+    &_type_h5 {
+        font-size: em(20);
+        line-height: em(27,20);
+
+        &_l {
+            line-height: em(36,20);
+        }
+    }
+
+    &_align_center {
+        text-align: center;
+    }
+
+    @media #{$breakpointDisplay} {
+        font-size: em(27,15);
+        line-height: em(36,27);
+
+        &_type_h1 {
+            font-size: em(32,15);
+            line-height: em(48,32);
+        }
+
+        &_type_h2 {
+            font-size: em(36,15);
+            line-height: em(45,36);
+        }
+
+        &_type_h3 {
+            font-size: em(21,15);
+            line-height: em(32,21);
+        }
+
+        &_type_h4 {
+            font-size: em(20,15);
+            line-height: em(36,20);
+        }
+
+        &_type_h5 {
+            font-size: em(18,15);
+            line-height: em(24,18);
+
+            &_l {
+                line-height: em(27,18);
+            }
+        }
+    }
+
+    @media #{$breakpointTablet} {
+        font-size: em(21,13);
+        line-height: em(27,21);
+
+        &_type_h1 {
+            font-size: em(24,13);
+            line-height: em(36,24);
+        }
+
+        &_type_h2 {
+            font-size: em(27,13);
+            line-height: em(36,27);
+        }
+
+        &_type_h3 {
+            font-size: em(18,13);
+            line-height: em(27,18);
+        }
+
+        &_type_h4 {
+            font-size: em(20,13);
+            line-height: em(36,20);
+        }
+
+        &_type_h5 {
+            font-size: em(14,13);
+            line-height: em(21,14);
+
+            &_l {
+                line-height: em(27,18);
+            }
+        }
+    }
+
+    @media #{$breakpointMobile} {
+        font-size: em(21,12);
+        line-height: em(27,21);
+
+        &_type_h1 {
+            font-size: em(16,12);
+            line-height: em(28,16);
+        }
+
+        &_type_h2 {
+            font-size: em(21,12);
+            line-height: em(27,21);
+        }
+
+        &_type_h3 {
+            font-size: em(14,12);
+            line-height: em(21,14);
+        }
+
+        &_type_h4 {
+            font-size: em(20,12);
+            line-height: em(25,20);
+        }
+
+        &_type_h5 {
+            font-size: em(14,12);
+            line-height: em(18,14);
+
+            &_l {
+                line-height: em(21,14);
+            }
+        }
+    }
+}

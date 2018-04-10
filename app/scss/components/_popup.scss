@@ -1,0 +1,117 @@
+//POPUP
+
+.mfp-bg {
+	background-color: $blue_bg;
+	position: fixed !important;
+}
+
+.mfp-wrap {
+	@extend %gradient;
+}
+
+.mfp-close {
+	display: none !important;
+}
+
+.popup__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	@include opacity(1);
+	line-height: em(23);
+	font-size: em(23);
+	color: #fff;
+	text-decoration: none;
+	border: 0;
+	outline: 0;
+	z-index: 5;
+	cursor: pointer;
+	@include transition(all 0.3s linear);
+	
+	span {
+		display: inline-block;
+		padding: em(20,23);
+	}
+
+	&:hover {
+		color: $green;
+	}
+
+	&:active {
+		color: $green;
+		@include scale(0.9);
+	}
+}
+
+.popup {
+	width: 100%;
+	max-width: $col_lg*12;
+	height: 100%;
+	margin: 0 auto;
+	@extend %padding_g;
+	padding-top: em(110);
+	padding-bottom: em(110);
+	position: relative;
+	background: transparent;
+	color: #fff;
+
+	@media #{$breakpointDisplay} {
+		max-width: $col_md*12;
+	}
+
+	@media #{$breakpointTablet} {
+		max-width: $col_sm*12;
+	}
+
+	@media #{$breakpointMobile} {
+		max-width: $col_xs*18;
+	}
+	
+	&_legal {
+		@extend %padding_s;
+	}
+
+	&__content {
+		
+		&_align_center {
+			text-align: center;
+		}
+	}
+	
+	&__form-data {
+		padding: 10px $col_lg*2 0;
+
+		@media #{$breakpointDisplay} {
+			padding: 10px $col_md*2 0;
+		}
+
+		@media #{$breakpointTablet} {
+			padding: 10px $col_sm*2 0;
+		}
+
+		@media #{$breakpointMobile} {
+			padding: 10px $col_xs*2 0;
+		}
+	}
+
+	&__heading {
+		margin-bottom: em(28,45);
+	}
+
+	&__subhead {
+		margin: 1.5em 0;
+	}
+	
+	&__button {
+		margin-top: em(15);
+	}
+
+	.form-data__parametr {
+		margin: em(15) auto 0;
+		padding: 0 4px;
+	}
+	
+	.form-data__input {
+		
+	}
+}

@@ -1,0 +1,49 @@
+//advantages-slider
+.advantages-slider {
+    &__slick-arrow {
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        font-size: $col_lg/2;
+        line-height: 1;
+        @include transition(all 0.4s ease);
+
+        &.slick-prev {
+            left: 0;
+        }
+
+        &.slick-next {
+            right: 0;
+        }
+
+        &:hover {
+            color: $green;
+        }
+
+        &:active {
+            @include scale(0.9);
+        }
+
+        .icon {
+            display: inline-block;
+        }
+
+        @media #{$breakpointTablet} {
+            top: -.2em;
+        }
+    }
+
+    &__slider {
+        margin-bottom: em(50);
+        margin-top: em(50);
+        max-width: 500px;
+
+        @media #{$breakpointTablet} {
+            max-width: 300px;
+        }
+    }
+
+    &__button {
+        vertical-align: middle;
+    }
+}

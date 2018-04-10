@@ -1,0 +1,65 @@
+//Grid
+.grid {
+    width: 100%;
+    
+    
+    &_four {
+        @include clearfix;
+
+        .grid__box {
+            float: left;
+            width: 24.7%;
+            margin: 0 0.139%; 
+        }
+
+        @media #{$breakpointMobile} {
+            .grid__box {
+                width: 100%;
+                margin: 2px 0; 
+            }
+        }
+    }
+
+    &_three {
+        @include clearfix;
+
+        .grid__box {
+            float: left;
+            width: 32%;
+        }
+
+        @media #{$breakpointMobile} {
+            .grid__box {
+                width: 100%;
+            }
+        }
+    }
+    
+    &_flex {
+        @extend %flexbox;
+        @include justify-content(space-between);
+        @include align-items(flex-start);
+        
+        &_center_vertical {
+            @include align-items(center);
+        }
+        
+        &_center {
+            @include justify-content(center);
+            @include flex-wrap(wrap);
+        }
+
+        &_wrap {
+            @include flex-wrap(wrap);
+            @include align-items(center);
+        }
+
+        &_stretch {
+            @include align-items(stretch);
+        }
+
+        @media #{$breakpointMobile} {
+            @include flex-wrap(wrap);
+        }
+    }
+}

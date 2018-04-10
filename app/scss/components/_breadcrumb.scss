@@ -1,0 +1,65 @@
+//breadcrumb
+.breadcrumb {
+	position: absolute;
+	left: 0;
+	top: em(46);
+
+	@media #{$breakpointDisplay} {
+		top: em(45);
+	}
+
+	@media #{$breakpointTablet} {
+		top: em(28);
+	}
+
+	@media #{$breakpointMobile} {
+		display: none;
+	}
+
+	&__item {
+		font-size: em(16);
+		line-height: em(21,16);
+		display: inline-block;
+
+		&_link {
+			color: #000;
+			text-decoration: none;
+			
+			&::after {
+				content: "\e900";
+				@include rotate(180deg);
+				display: inline-block;
+				color: #000;
+				font-size: 1.1em;
+				vertical-align: -28%;
+				margin: 0 16px 0 10px;
+				
+				font-family: $icon_font !important;
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+
+				/* Better Font Rendering =========== */
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			
+			&:hover {
+				color: $green_nav;
+			}
+			
+			&:hover::after {
+				color: #000;
+			}
+		}
+	}
+
+	span.sep {
+		font-size: em(12);
+		vertical-align: -1%;
+		@include transition (all 0.4s ease);
+	}
+}

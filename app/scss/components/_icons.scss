@@ -1,0 +1,95 @@
+/* Icons */
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: $icon_font !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+    content: "\e90f";
+}
+.icon-radiator:before {
+    content: "\e908";
+}
+.icon-truba:before {
+    content: "\e909";
+}
+.icon-dev:before {
+    content: "\e90a";
+}
+.icon-kotel:before {
+    content: "\e90b";
+}
+.icon-panel:before {
+    content: "\e90c";
+}
+.icon-razvodka-trub:before {
+    content: "\e90d";
+}
+.icon-triangle:before {
+    content: "\e90e";
+}
+.icon-cafe:before {
+    content: "\e903";
+}
+.icon-factory:before {
+    content: "\e904";
+}
+.icon-forest:before {
+    content: "\e905";
+}
+.icon-hotel:before {
+    content: "\e906";
+}
+.icon-water:before {
+    content: "\e907";
+}
+.icon-arrow-left:before {
+    content: "\e900";
+}
+.icon-arrow-left:before {
+    content: "\e900";
+	@include rotate(180deg);
+}
+.icon-arrow-next:before {
+    content: "\e901";
+}
+.icon-arrow-prev:before {
+    content: "\e902";
+}
+.icon-radiator:before {
+    content: "\e908";
+}
+.icon-truba:before {
+    content: "\e909";
+}
+.icon-dev:before {
+    content: "\e90a";
+}
+.icon-kotel:before {
+    content: "\e90b";
+}
+.icon-panel:before {
+    content: "\e90c";
+}
+.icon-razvodka-trub:before {
+    content: "\e90d";
+}
+.icon-triangle:before {
+    content: "\e90e";
+}
+.icon-close:before {
+    content: "\e90f";
+}
+.icon-unlink:before {
+    content: "\e910";
+}
